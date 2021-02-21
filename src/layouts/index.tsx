@@ -61,9 +61,7 @@ function Index(props: Props): ReactElement {
           </div>
         </nav>
       </div>
-      <div className="container mx-auto mt-10">
-        {props.children}
-      </div>
+      <div className="container mx-auto mt-10">{props.children}</div>
     </>
   )
 }

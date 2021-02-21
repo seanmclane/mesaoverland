@@ -32,7 +32,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `docs/logo.svg`, // This path is relative to the root of the site.
+        icon: `static/images/logo.svg`, // This path is relative to the root of the site.
       },
     },
     {
@@ -50,6 +50,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     "gatsby-plugin-layout",
-    "gatsby-plugin-netlify-cms"
+    "gatsby-plugin-netlify-cms",
   ],
 }
