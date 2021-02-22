@@ -13,8 +13,8 @@ function Nav(props: Props): ReactElement {
   return (
     <nav className="flex flex-wrap items-center justify-between p-8 bg-gray-800">
       <div className="flex items-center flex-shrink-0 mr-8 text-white">
-        <Link to="/">
-          <span className="text-xl font-semibold tracking-tight text-white no-underline">
+        <Link className="no-underline" to="/">
+          <span className="text-xl font-semibold tracking-tight text-white">
             Mesa Overland
           </span>
         </Link>
