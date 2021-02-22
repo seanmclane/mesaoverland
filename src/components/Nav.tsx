@@ -14,7 +14,7 @@ function Nav(props: Props): ReactElement {
     <nav className="flex flex-wrap items-center justify-between p-8 bg-gray-800">
       <div className="flex items-center flex-shrink-0 mr-8 text-white">
         <Link to="/">
-          <span className="text-xl font-semibold tracking-tight">
+          <span className="text-xl font-semibold tracking-tight text-white no-underline">
             Mesa Overland
           </span>
         </Link>
@@ -48,7 +48,7 @@ function Nav(props: Props): ReactElement {
               onClick={() => {
                 setMenuOpen(false)
               }}
-              className="block mt-4 mr-4 px-4 text-gray-200 lg:inline-block lg:mt-0 hover:text-white"
+              className="block mt-4 mr-4 px-4 text-gray-200 lg:inline-block lg:mt-0 hover:text-white no-underline"
             >
               {link.title}
             </Link>

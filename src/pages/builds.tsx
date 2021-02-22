@@ -23,7 +23,10 @@ function Contact(props: Props): ReactElement {
   return (
     <section className="mx-auto px-6 my-2 lg:m-4">
       {props.data.allMarkdownRemark.edges.map((b) => (
-        <Link to={b.node.frontmatter.slug}>
+        <Link
+          className="no-underline text-gray-800"
+          to={b.node.frontmatter.slug}
+        >
           <h1 className="text-2xl mb-2">{b.node.frontmatter.name}</h1>
           <p className="text-lg">{b.node.frontmatter.date}</p>
         </Link>
