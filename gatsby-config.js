@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Mesa Overland`,
     description: `We build custom 4WD RVs and Campers`,
+    contact_email: `info@mesaoverland.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -51,5 +52,13 @@ module.exports = {
     // `gatsby-plugin-offline`,
     "gatsby-plugin-layout",
     "gatsby-plugin-netlify-cms",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/content/build`,
+        name: `content/build`,
+      },
+    },
+    "gatsby-transformer-remark",
   ],
 }

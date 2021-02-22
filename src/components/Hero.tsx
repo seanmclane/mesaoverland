@@ -1,0 +1,27 @@
+import React, { ReactElement } from "react"
+import Img from "gatsby-image"
+
+interface Props {
+  tagline: string
+  details?: string
+  image?: any
+  imageAlt?: string
+}
+
+function Hero(props: Props): ReactElement {
+  return (
+    <section className="mx-auto px-6 my-2 lg:m-4">
+      <Img fluid={props.image} alt={props.imageAlt} />
+      <div className="">
+        <h1 className="text-5xl lg:text-6xl font-bold text-mesa py-8">
+          {props.tagline}
+        </h1>
+        <p className="text-md lg:text-xl font-light text-gray-800 pb-8">
+          {props.details}
+        </p>
+      </div>
+    </section>
+  )
+}
+
+export default Hero
