@@ -8,7 +8,8 @@ module.exports = {
       colors: {
         orange: colors.orange,
         gray: colors.blueGray,
-        mesa: "#b85641",
+        mesa: "#d66b41",
+        grass: "rgb(79 78 47)",
       },
     },
   },

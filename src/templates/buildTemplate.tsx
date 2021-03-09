@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 
 interface TemplateInput {
   data: {
@@ -9,6 +10,11 @@ interface TemplateInput {
         date: string
         slug: string
         name: string
+        image?: {
+          childImageSharp?: {
+            fluid: any
+          }
+        }
       }
     }
   }
@@ -20,11 +26,15 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="mx-auto px-6 my-2 lg:m-4">
+    <div className="mx-auto px-6 mt-8 max-w-screen-md">
       <div className="">
-        <h1>{frontmatter.name}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div className="" dangerouslySetInnerHTML={{ __html: html }} />
+        <Img
+          alt={frontmatter.image?.childImageSharp?.fluid}
+          fluid={frontmatter.image?.childImageSharp?.fluid}
+        />
+        <h1 className="mt-8 text-3xl">{frontmatter.name}</h1>
+        <h2 className="text-mesa text-sm mt-2">{frontmatter.date}</h2>
+        <div className="mt-8" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </div>
   )
@@ -37,6 +47,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         name
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

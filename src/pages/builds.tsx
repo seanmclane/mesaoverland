@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
+import ImageCard from "../components/ImageCard"
 
 interface MDNode {
   node: {
@@ -7,6 +8,11 @@ interface MDNode {
       name: string
       slug: string
       date: string
+      image?: {
+        childImageSharp?: {
+          fixed: any
+        }
+      }
     }
   }
 }
@@ -19,18 +25,25 @@ interface Props {
   }
 }
 
-function Contact(props: Props): ReactElement {
+function Build(props: Props): ReactElement {
   return (
     <section className="mx-auto px-6 my-2 lg:m-4">
-      {props.data.allMarkdownRemark.edges.map((b) => (
-        <Link
-          className="no-underline text-gray-800"
-          to={b.node.frontmatter.slug}
-        >
-          <h1 className="text-2xl mb-2">{b.node.frontmatter.name}</h1>
-          <p className="text-lg">{b.node.frontmatter.date}</p>
-        </Link>
-      ))}
+      <div className="flex flex-wrap -mx-1 lg:-mx-4">
+        {props.data.allMarkdownRemark.edges.map((b) => (
+          <div
+            key={b.node.frontmatter.slug}
+            className="my-4 px-4 w-full md:w-1/2 lg:w-1/3"
+          >
+            <ImageCard
+              title={b.node.frontmatter.name}
+              date={b.node.frontmatter.date}
+              image={b.node.frontmatter.image?.childImageSharp?.fixed}
+              imageAlt={b.node.frontmatter.name}
+              linkTo={b.node.frontmatter.slug}
+            />
+          </div>
+        ))}
+      </div>
     </section>
   )
 }
@@ -47,6 +60,13 @@ export const query = graphql`
             name
             date(formatString: "MMMM DD, YYYY")
             slug
+            image {
+              childImageSharp {
+                fixed(height: 400) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
         }
       }
@@ -54,4 +74,4 @@ export const query = graphql`
   }
 `
 
-export default Contact
+export default Build

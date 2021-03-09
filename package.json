@@ -1,9 +1,8 @@
 {
-  "name": "gatsby-typescript-tailwind",
+  "name": "mesa-overland-site",
   "private": false,
-  "description": "A gatsby starter kit using TypeScript and Tailwind CSS",
-  "version": "0.1.247",
-  "author": "Florentin Eckl <ecklf@icloud.com>",
+  "description": "A marketing site for Mesa Overland",
+  "version": "0.1.0",
   "dependencies": {
     "gatsby-plugin-layout": "^1.10.0",
     "gatsby-plugin-netlify-cms": "^4.10.0",
@@ -49,13 +48,6 @@
     "tailwindcss": "^2.0.1",
     "typescript": "4.1.2"
   },
-  "keywords": [
-    "gatsby",
-    "typescript",
-    "tailwind",
-    "tailwind css",
-    "starter"
-  ],
   "license": "MIT",
   "scripts": {
     "type-check": "tsc --noEmit",
@@ -66,13 +58,6 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/impulse/gatsby-typescript-tailwind"
-  },
-  "bugs": {
-    "url": "https://github.com/impulse/gatsby-typescript-tailwind/issues"
   },
   "husky": {
     "hooks": {

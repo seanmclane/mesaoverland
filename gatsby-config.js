@@ -3,6 +3,7 @@ module.exports = {
     title: `Mesa Overland`,
     description: `We build custom 4WD RVs and Campers`,
     contact_email: `info@mesaoverland.com`,
+    contact_phone: `970-688-8068`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
