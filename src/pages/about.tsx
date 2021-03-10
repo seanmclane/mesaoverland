@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react"
 import { graphql } from "gatsby"
+import SEO from "../components/SEO"
 
 interface Props {
   data: {
@@ -15,6 +16,7 @@ interface Props {
 function About(props: Props): ReactElement {
   return (
     <>
+      <SEO title="About" />
       <section className="mx-auto h-80 px-6 mt-8 text-center">
         <iframe
           title="Google Maps Embed"

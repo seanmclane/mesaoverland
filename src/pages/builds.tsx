@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react"
 import { graphql } from "gatsby"
 import ImageCard from "../components/ImageCard"
+import SEO from "../components/SEO"
 
 interface MDNode {
   node: {
@@ -27,24 +28,27 @@ interface Props {
 
 function Build(props: Props): ReactElement {
   return (
-    <section className="mx-auto px-6 my-2 lg:m-4">
-      <div className="flex flex-wrap -mx-1 lg:-mx-4">
-        {props.data.allMarkdownRemark.edges.map((b) => (
-          <div
-            key={b.node.frontmatter.slug}
-            className="my-4 px-4 w-full md:w-1/2 lg:w-1/3"
-          >
-            <ImageCard
-              title={b.node.frontmatter.name}
-              date={b.node.frontmatter.date}
-              image={b.node.frontmatter.image?.childImageSharp?.fixed}
-              imageAlt={b.node.frontmatter.name}
-              linkTo={b.node.frontmatter.slug}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
+    <>
+      <SEO title="Builds" />
+      <section className="mx-auto px-6 my-2 lg:m-4">
+        <div className="flex flex-wrap -mx-1 lg:-mx-4">
+          {props.data.allMarkdownRemark.edges.map((b) => (
+            <div
+              key={b.node.frontmatter.slug}
+              className="my-4 px-4 w-full md:w-1/2 lg:w-1/3"
+            >
+              <ImageCard
+                title={b.node.frontmatter.name}
+                date={b.node.frontmatter.date}
+                image={b.node.frontmatter.image?.childImageSharp?.fixed}
+                imageAlt={b.node.frontmatter.name}
+                linkTo={b.node.frontmatter.slug}
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   )
 }
 

@@ -4,6 +4,7 @@
   "description": "A marketing site for Mesa Overland",
   "version": "0.1.0",
   "dependencies": {
+    "gatsby-plugin-google-gtag": "^3.0.0",
     "gatsby-plugin-layout": "^1.10.0",
     "gatsby-plugin-netlify-cms": "^4.10.0",
     "gatsby-transformer-remark": "^2.16.0",

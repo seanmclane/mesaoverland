@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react"
 import { graphql, Link } from "gatsby"
 import Hero from "../components/Hero"
+import SEO from "../components/SEO"
 
 interface Props {
   data: any
@@ -9,6 +10,7 @@ interface Props {
 function Index(props: Props): ReactElement {
   return (
     <>
+      <SEO title="Home" />
       <Hero
         tagline="Build your dreams"
         details="We build custom 4x4 campers, so you can get way out there and camp in style."

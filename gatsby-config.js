@@ -1,12 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: `Mesa Overland`,
-    description: `We build custom 4WD RVs and Campers`,
+    titleTemplate: "Mesa Overland | %s",
+    description: `We build custom 4x4 campers`,
+    image: `/images/tex2.jpg`,
     url: "https://www.mesaoverland.com",
     contact_email: `info@mesaoverland.com`,
     contact_phone: `970-688-8068`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-P82KXREY9G"],
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

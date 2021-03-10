@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import SEO from "../components/SEO"
 
 interface TemplateInput {
   data: {
@@ -26,19 +27,27 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
-    <div className="mx-auto px-6 mt-8 max-w-screen-md">
-      <div className="">
-        <Img
-          alt={frontmatter.image?.childImageSharp?.fluid}
-          fluid={frontmatter.image?.childImageSharp?.fluid}
-        />
-        <h1 className="mt-8 text-3xl font-title uppercase">
-          {frontmatter.name}
-        </h1>
-        <h2 className="text-mesa text-sm mt-2">{frontmatter.date}</h2>
-        <div className="mt-8" dangerouslySetInnerHTML={{ __html: html }} />
+    <>
+      <SEO
+        title={frontmatter.name}
+        description={frontmatter.name}
+        image={frontmatter.image?.childImageSharp?.fluid.src}
+        article
+      />
+      <div className="mx-auto px-6 mt-8 max-w-screen-md">
+        <div className="">
+          <Img
+            alt={frontmatter.image?.childImageSharp?.fluid}
+            fluid={frontmatter.image?.childImageSharp?.fluid}
+          />
+          <h1 className="mt-8 text-3xl font-title uppercase">
+            {frontmatter.name}
+          </h1>
+          <h2 className="text-mesa text-sm mt-2">{frontmatter.date}</h2>
+          <div className="mt-8" dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 export const pageQuery = graphql`
