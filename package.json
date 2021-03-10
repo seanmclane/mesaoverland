@@ -7,6 +7,8 @@
     "gatsby-plugin-google-gtag": "^3.0.0",
     "gatsby-plugin-layout": "^1.10.0",
     "gatsby-plugin-netlify-cms": "^4.10.0",
+    "gatsby-remark-images": "^4.0.0",
+    "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-transformer-remark": "^2.16.0",
     "netlify-cms-app": "^2.14.23",
     "react": "17.0.1",

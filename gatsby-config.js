@@ -10,19 +10,19 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/static/images`,
+        name: "images",
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: ["G-P82KXREY9G"],
       },
     },
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
     "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-purgecss",
@@ -69,6 +69,30 @@ module.exports = {
         name: `content/build`,
       },
     },
-    "gatsby-transformer-remark",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          // gatsby-remark-relative-images must go before gatsby-remark-images
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              // [Optional] The root of "media_folder" in your config.yml
+              // Defaults to "static"
+              staticFolderName: "static",
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 1024,
+            },
+          },
+        ],
+      },
+    },
   ],
 }
