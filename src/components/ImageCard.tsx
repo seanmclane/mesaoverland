@@ -20,9 +20,12 @@ function ImageCard(props: Props): ReactElement {
           <div style={{ height: 400 }} className="h-full"></div>
         )}
       </Link>
-      <header className="flex items-center justify-between leading-tight p-2 md:p-4">
+      <header className="flex items-center justify-between leading-tight p-4">
         <h1 className="text-lg">
-          <Link className="no-underline text-black" to={props.linkTo}>
+          <Link
+            className="no-underline text-black font-title uppercase"
+            to={props.linkTo}
+          >
             {props.title}
           </Link>
         </h1>

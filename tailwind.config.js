@@ -11,6 +11,10 @@ module.exports = {
         mesa: "#d66b41",
         grass: "rgb(79 78 47)",
       },
+      fontFamily: {
+        title: ["Rubik Mono One"],
+        body: ["Nunito"],
+      },
     },
   },
   variants: {

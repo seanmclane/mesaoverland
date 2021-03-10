@@ -28,7 +28,7 @@ function About(props: Props): ReactElement {
         ></iframe>
       </section>
       <section className="mx-auto px-6 mt-8 text-center">
-        <h1 className="text-2xl mb-2">Mesa Overland</h1>
+        <h1 className="text-2xl mb-2 font-title">Mesa Overland</h1>
         <p className="text-lg">1020 Old 6 and 50</p>
         <p className="text-lg">Mack, CO 81525</p>
         <p className="text-lg">{props.data.site.siteMetadata.contact_email}</p>

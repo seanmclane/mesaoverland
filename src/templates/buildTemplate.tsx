@@ -32,7 +32,9 @@ export default function Template({
           alt={frontmatter.image?.childImageSharp?.fluid}
           fluid={frontmatter.image?.childImageSharp?.fluid}
         />
-        <h1 className="mt-8 text-3xl">{frontmatter.name}</h1>
+        <h1 className="mt-8 text-3xl font-title uppercase">
+          {frontmatter.name}
+        </h1>
         <h2 className="text-mesa text-sm mt-2">{frontmatter.date}</h2>
         <div className="mt-8" dangerouslySetInnerHTML={{ __html: html }} />
       </div>

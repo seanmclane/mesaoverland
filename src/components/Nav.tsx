@@ -11,7 +11,7 @@ interface Props {
 function Nav(props: Props): ReactElement {
   const [isMenuOpen, setMenuOpen] = useState(false)
   return (
-    <nav className="flex flex-wrap items-center justify-between p-8 bg-gray-500">
+    <nav className="flex flex-wrap items-center justify-between p-6 bg-gray-500">
       <div className="flex items-center flex-shrink-0 mr-8 text-white">
         <Link className="no-underline" to="/">
           <span
@@ -20,7 +20,9 @@ function Nav(props: Props): ReactElement {
               setMenuOpen(false)
             }}
           >
-            Mesa Overland
+            Mesa
+            <br />
+            Overland
           </span>
         </Link>
       </div>
@@ -51,6 +53,7 @@ function Nav(props: Props): ReactElement {
             <Link
               key={link.href}
               to={link.href}
+              activeClassName="font-bold"
               onClick={() => {
                 setMenuOpen(false)
               }}

@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Mesa Overland`,
     description: `We build custom 4WD RVs and Campers`,
+    url: "https://www.mesaoverland.com",
     contact_email: `info@mesaoverland.com`,
     contact_phone: `970-688-8068`,
   },

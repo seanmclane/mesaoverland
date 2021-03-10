@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react"
+import { Helmet } from "react-helmet"
 
 import Nav from "../components/Nav"
 
@@ -19,14 +20,17 @@ const linkList = [
 
 function Index(props: Props): ReactElement {
   return (
-    <>
-      <header>
+    <div className="font-body">
+      <Helmet>
+        <title>Mesa Overland - Custom 4x4 Campers</title>
+      </Helmet>
+      <header className="font-title uppercase">
         <Nav links={linkList} />
       </header>
       <main id="body-container" className="mt-8 max-w-screen-xl m-auto">
         {props.children}
       </main>
-    </>
+    </div>
   )
 }
 
