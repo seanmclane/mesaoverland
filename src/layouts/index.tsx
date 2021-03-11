@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react"
 
 import Nav from "../components/Nav"
+import Footer from "../components/Footer"
 
 interface Props {
   children: React.ReactNode
@@ -23,9 +24,13 @@ function Index(props: Props): ReactElement {
       <header className="font-title uppercase">
         <Nav links={linkList} />
       </header>
-      <main id="body-container" className="mt-8 max-w-screen-xl m-auto">
+      <main
+        id="body-container"
+        className="mt-8 max-w-screen-xl m-auto min-h-screen"
+      >
         {props.children}
       </main>
+      <Footer />
     </div>
   )
 }

@@ -34,7 +34,7 @@ export default function Template({
         image={frontmatter.image?.childImageSharp?.fluid.src}
         article
       />
-      <div className="mx-auto px-6 mt-8 max-w-screen-md">
+      <div className="mx-auto px-6 mt-8 max-w-screen-md mb-8">
         <div className="">
           <Img
             alt={frontmatter.image?.childImageSharp?.fluid}
