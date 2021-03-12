@@ -10,7 +10,7 @@ interface Props {
 
 function Hero(props: Props): ReactElement {
   return (
-    <section className="mx-8">
+    <section className="">
       <Img fluid={props.image} alt={props.imageAlt} />
       <div className="">
         <h1 className="font-title uppercase text-5xl font-bold text-gray-800 py-8">

@@ -9,6 +9,10 @@ interface Props {
 
 const linkList = [
   {
+    title: "Home",
+    href: "/",
+  },
+  {
     title: "Builds",
     href: "/builds",
   },

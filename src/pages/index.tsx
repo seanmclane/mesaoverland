@@ -16,7 +16,7 @@ function Index(props: Props): ReactElement {
         details="We build custom 4x4 campers, so you can get way out there and camp in style."
         image={props.data.file.childImageSharp.fluid}
       />
-      <div className="bg-mesa text-gray-100 py-40 mx-8 mb-8 mt-2">
+      <div className="bg-mesa text-gray-100 py-40 mb-8 mt-2">
         <div className="flex flex-grow justify-between">
           <div>
             <h2 className="text-3xl font-title uppercase ml-8 md:ml-16">
