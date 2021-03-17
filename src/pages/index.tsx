@@ -39,7 +39,7 @@ function Index(props: Props): ReactElement {
 
 export const query = graphql`
   query HeroImageQuery {
-    file(relativePath: { eq: "tex2.jpg" }) {
+    file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

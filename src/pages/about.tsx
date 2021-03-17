@@ -1,6 +1,7 @@
 import React, { ReactElement } from "react"
 import { graphql } from "gatsby"
 import SEO from "../components/SEO"
+import Image from "gatsby-image"
 
 interface Props {
   data: {
@@ -8,6 +9,21 @@ interface Props {
       siteMetadata: {
         contact_email: string
         contact_phone: string
+      }
+    }
+    sean: {
+      childImageSharp: {
+        fluid: any
+      }
+    }
+    blayne: {
+      childImageSharp: {
+        fluid: any
+      }
+    }
+    floyd: {
+      childImageSharp: {
+        fluid: any
       }
     }
   }
@@ -36,6 +52,35 @@ function About(props: Props): ReactElement {
         <p className="text-lg">{props.data.site.siteMetadata.contact_email}</p>
         <p className="text-lg">{props.data.site.siteMetadata.contact_phone}</p>
       </section>
+      <section className="mx-auto px-6 mt-8 flex flex-col md:flex-row">
+        <div className="flex-1 text-center m-4">
+          <h3 className="font-title text-xl py-2">Sean</h3>
+          <Image
+            className="rounded-full h-40 w-40 m-auto"
+            fluid={props.data.sean.childImageSharp.fluid}
+            alt="Sean"
+          />
+          <p className="py-4">Co-founder</p>
+        </div>
+        <div className="flex-1 text-center m-4">
+          <h3 className="font-title text-xl py-2">Blayne</h3>
+          <Image
+            className="rounded-full h-40 w-40 m-auto"
+            fluid={props.data.blayne.childImageSharp.fluid}
+            alt="Blayne"
+          />
+          <p className="py-4">Co-founder</p>
+        </div>
+        <div className="flex-1 text-center m-4">
+          <h3 className="font-title text-xl py-2">Floyd</h3>
+          <Image
+            className="rounded-full h-40 w-40 m-auto"
+            fluid={props.data.floyd.childImageSharp.fluid}
+            alt="Floyd"
+          />
+          <p className="py-4">Goodest Boy</p>
+        </div>
+      </section>
     </>
   )
 }
@@ -46,6 +91,27 @@ export const query = graphql`
       siteMetadata {
         contact_email
         contact_phone
+      }
+    }
+    sean: file(relativePath: { eq: "sean.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    blayne: file(relativePath: { eq: "blayne.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    floyd: file(relativePath: { eq: "floyd.jpg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }

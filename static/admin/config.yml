@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: static/images
+media_folder: static/images/uploads
 public_folder: /images
 
 collections:
@@ -20,5 +20,4 @@ collections:
       - { label: 'Build Name', name: 'name', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Header Image', name: 'image', widget: 'image'}
-      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
