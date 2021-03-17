@@ -3,9 +3,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const buildTemplate = require.resolve(`./src/templates/buildTemplate.tsx`)
 
-  const result = await graphql(`
+  const buildPages = await graphql(`
     {
       allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/build/" } }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -21,12 +22,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `)
 
   // Handle errors
-  if (result.errors) {
+  if (buildPages.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  await buildPages.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: buildTemplate,
@@ -36,4 +37,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  console.log(buildPages.data.allMarkdownRemark.edges[0])
+  console.log(buildPages.data.allMarkdownRemark.edges[1])
+  console.log(buildPages.data.allMarkdownRemark.edges[2])
+  console.log(buildPages.data.allMarkdownRemark.edges[3])
 }

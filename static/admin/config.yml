@@ -5,6 +5,9 @@ backend:
 media_folder: static/images/uploads
 public_folder: /images
 
+site_url: https://mesaoverland.com
+logo_url: https://mesaoverland.com/images/logo.svg
+
 collections:
   - name: 'build'
     label: 'Build'
@@ -15,9 +18,24 @@ collections:
     public_folder: ''
     path: '{{name}}/index'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Build Name', name: 'name', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Header Image', name: 'image', widget: 'image'}
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'faq'
+    label: 'FAQ'
+    folder: 'src/content/faq'
+    create: false
+    slug: 'index'
+    media_folder: ''
+    public_folder: ''
+    path: '{{title}}/index'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Last Updated', name: 'date', widget: 'datetime' }
       - { label: 'Header Image', name: 'image', widget: 'image'}
       - { label: 'Body', name: 'body', widget: 'markdown' }

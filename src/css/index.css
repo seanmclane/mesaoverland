@@ -5,3 +5,23 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rubik+Mono+One&display=swap');
+
+
+@layer base {
+  h1,h2,h3 {
+    @apply mb-8;
+    @apply font-title;
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  p {
+    @apply pb-6;
+  }
+}
