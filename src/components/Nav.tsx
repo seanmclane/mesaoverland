@@ -30,11 +30,11 @@ function Nav(props: Props): ReactElement {
             </span>
           </Link>
           <div className="hidden lg:block text-gray-700 my-auto">
-            <p>
+            <p className="py-0">
               <span className="">Phone: </span>{" "}
               <span className="font-body lowercase">970-688-8068</span>
             </p>
-            <p>
+            <p className="py-0">
               <span className="">Email: </span>{" "}
               <span className="font-body lowercase">info@mesaoverland.com</span>
             </p>

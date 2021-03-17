@@ -55,7 +55,7 @@
   "scripts": {
     "type-check": "tsc --noEmit",
     "lint": "eslint . --ext ts,tsx",
-    "build": "gatsby build",
+    "build": "gatsby build --verbose",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md,ts,tsx}\"",
     "start": "npm run develop",
