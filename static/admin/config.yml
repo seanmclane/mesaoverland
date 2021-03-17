@@ -24,7 +24,6 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Header Image', name: 'image', widget: 'image'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-collections:
   - name: 'faq'
     label: 'FAQ'
     folder: 'src/content/faq'
