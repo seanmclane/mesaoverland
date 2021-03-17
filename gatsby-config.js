@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Mesa Overland`,
-    titleTemplate: "Mesa Overland | %s",
+    titleTemplate: "%s | Mesa Overland",
     description: `We build custom 4x4 campers`,
-    image: `/images/tex2.jpg`,
+    image: `/images/hero.jpg`,
     url: "https://www.mesaoverland.com",
     contact_email: `info@mesaoverland.com`,
     contact_phone: `970-688-8068`,
@@ -65,8 +65,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/content/build`,
-        name: `content/build`,
+        path: `${__dirname}/src/content`,
+        name: `content`,
       },
     },
     {

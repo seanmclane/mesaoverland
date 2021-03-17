@@ -55,6 +55,7 @@ function Build(props: Props): ReactElement {
 export const query = graphql`
   query BuildsQuery {
     allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/build/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 10
     ) {

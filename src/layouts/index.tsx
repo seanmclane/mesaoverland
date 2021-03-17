@@ -17,6 +17,10 @@ const linkList = [
     href: "/builds",
   },
   {
+    title: "FAQ",
+    href: "/faq",
+  },
+  {
     title: "About",
     href: "/about",
   },
