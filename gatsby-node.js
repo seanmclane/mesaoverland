@@ -27,8 +27,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  buildPages.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    if (node.slug === "/faq/") return
+  await buildPages.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.slug,
       component: buildTemplate,
@@ -38,4 +37,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  console.log(buildPages.data.allMarkdownRemark.edges[0])
+  console.log(buildPages.data.allMarkdownRemark.edges[1])
+  console.log(buildPages.data.allMarkdownRemark.edges[2])
+  console.log(buildPages.data.allMarkdownRemark.edges[3])
 }
