@@ -26,7 +26,7 @@ interface Props {
   }
 }
 
-function Build(props: Props): ReactElement {
+function Builds(props: Props): ReactElement {
   return (
     <>
       <SEO title="Builds" />
@@ -55,7 +55,7 @@ function Build(props: Props): ReactElement {
 export const query = graphql`
   query BuildsQuery {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/build/" } }
+      filter: { fileAbsolutePath: { regex: "/content/build/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 10
     ) {
@@ -79,4 +79,4 @@ export const query = graphql`
   }
 `
 
-export default Build
+export default Builds
