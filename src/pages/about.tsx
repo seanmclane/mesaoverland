@@ -47,10 +47,14 @@ function About(props: Props): ReactElement {
       </section>
       <section className="mx-auto px-6 mt-8 text-center">
         <h1 className="text-2xl mb-2 font-title">Mesa Overland</h1>
-        <p className="text-lg">1020 Old 6 and 50</p>
-        <p className="text-lg">Mack, CO 81525</p>
-        <p className="text-lg">{props.data.site.siteMetadata.contact_email}</p>
-        <p className="text-lg">{props.data.site.siteMetadata.contact_phone}</p>
+        <p className="text-lg pb-0">1020 Old 6 and 50</p>
+        <p className="text-lg pb-0">Mack, CO 81525</p>
+        <p className="text-lg pb-0">
+          {props.data.site.siteMetadata.contact_email}
+        </p>
+        <p className="text-lg pb-0">
+          {props.data.site.siteMetadata.contact_phone}
+        </p>
       </section>
       <section className="mx-auto px-6 mt-8 flex flex-col md:flex-row">
         <div className="flex-1 text-center m-4">
