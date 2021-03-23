@@ -37,9 +37,4 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
-
-  console.log(buildPages.data.allMarkdownRemark.edges[0])
-  console.log(buildPages.data.allMarkdownRemark.edges[1])
-  console.log(buildPages.data.allMarkdownRemark.edges[2])
-  console.log(buildPages.data.allMarkdownRemark.edges[3])
 }
