@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 interface Props {
   title: string
+  subtitle?: string
   date: string
   linkTo: string
   image: any
@@ -20,8 +21,8 @@ function ImageCard(props: Props): ReactElement {
           <div style={{ height: 400 }} className="h-full"></div>
         )}
       </Link>
-      <header className="flex items-center justify-between leading-tight p-4">
-        <h1 className="text-lg">
+      <header className="p-4">
+        <h1 className="text-lg mb-2 mt-0">
           <Link
             className="no-underline text-black font-title uppercase"
             to={props.linkTo}
@@ -29,7 +30,8 @@ function ImageCard(props: Props): ReactElement {
             {props.title}
           </Link>
         </h1>
-        <p className="text-grey-darker text-sm">{props.date}</p>
+        <h2 className="text-sm text-mesa mb-2">{props.subtitle}</h2>
+        <p className="text-grey-darker text-sm mb-auto p-0">{props.date}</p>
       </header>
     </article>
   )

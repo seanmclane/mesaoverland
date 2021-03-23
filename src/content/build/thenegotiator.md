@@ -2,6 +2,7 @@
 name: The Negotiator
 date: 2021-03-11T16:22:06.491Z
 slug: /builds/thenegotiator
+status: In Progress
 image: /images/uploads/negotiator.jpg
 ---
 

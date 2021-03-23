@@ -11,6 +11,7 @@ interface TemplateInput {
         date: string
         slug: string
         name: string
+        status: string
         image?: {
           childImageSharp?: {
             fluid: any
@@ -43,7 +44,12 @@ export default function Template({
           <h1 className="mt-8 text-3xl font-title uppercase">
             {frontmatter.name}
           </h1>
-          <h2 className="text-mesa text-sm mt-2">{frontmatter.date}</h2>
+          <h2 className="text-sm mb-2">
+            STATUS:<span className="text-mesa"> {frontmatter.status}</span>
+          </h2>
+          <h2 className="text-sm">
+            LAST UPDATED: <span className="text-mesa">{frontmatter.date}</span>
+          </h2>
           <div className="mt-8" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
@@ -58,6 +64,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         name
+        status
         image {
           childImageSharp {
             fluid {

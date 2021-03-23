@@ -21,6 +21,10 @@ collections:
       preview: true
     fields:
       - { label: 'Build Name', name: 'name', widget: 'string' }
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options: ["For Sale", "In Progress", "Pre-build"]
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Header Image', name: 'image', widget: 'image'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
