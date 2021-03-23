@@ -9,6 +9,7 @@ interface MDNode {
       name: string
       slug: string
       date: string
+      status: string
       image?: {
         childImageSharp?: {
           fixed: any
@@ -39,6 +40,7 @@ function Builds(props: Props): ReactElement {
             >
               <ImageCard
                 title={b.node.frontmatter.name}
+                subtitle={b.node.frontmatter.status}
                 date={b.node.frontmatter.date}
                 image={b.node.frontmatter.image?.childImageSharp?.fixed}
                 imageAlt={b.node.frontmatter.name}
@@ -65,6 +67,7 @@ export const query = graphql`
             name
             date(formatString: "MMMM DD, YYYY")
             slug
+            status
             image {
               childImageSharp {
                 fixed(height: 400) {
