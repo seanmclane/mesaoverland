@@ -12,11 +12,11 @@ function Hero(props: Props): ReactElement {
   return (
     <section className="">
       <Img fluid={props.image} alt={props.imageAlt} />
-      <div className="">
-        <h1 className="font-title uppercase text-5xl font-bold text-gray-800 py-8">
+      <div className="flex-col text-center my-16 px-2">
+        <h1 className="font-title uppercase text-5xl font-bold text-gray-800">
           {props.tagline}
         </h1>
-        <p className="text-xl font-light text-gray-600 pb-8">{props.details}</p>
+        <p className="text-xl font-light text-gray-600">{props.details}</p>
       </div>
     </section>
   )

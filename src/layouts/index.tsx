@@ -34,7 +34,7 @@ function Index(props: Props): ReactElement {
       </header>
       <main
         id="body-container"
-        className="mt-8 max-w-screen-xl m-auto min-h-screen"
+        className="m-auto min-h-screen"
       >
         {props.children}
       </main>

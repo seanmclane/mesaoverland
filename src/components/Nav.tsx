@@ -13,7 +13,7 @@ function Nav(props: Props): ReactElement {
   return (
     <>
       <header>
-        <div className="m-auto max-w-screen-xl flex justify-between p-4">
+        <div className="m-auto flex justify-between p-4">
           <Link
             className="no-underline m-auto lg:m-0 text-center lg:text-left"
             to="/"
@@ -41,7 +41,7 @@ function Nav(props: Props): ReactElement {
           </div>
         </div>
       </header>
-      <nav className="flex flex-wrap items-center justify-items-center p-6 bg-gray-500 max-w-screen-xl mx-auto">
+      <nav className="flex flex-wrap items-center justify-items-center p-6 bg-gray-500 mx-auto">
         <div className="block lg:hidden m-auto">
           <button
             onClick={() => {
