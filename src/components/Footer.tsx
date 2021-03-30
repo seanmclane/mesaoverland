@@ -5,12 +5,11 @@ interface Props {}
 
 function Footer(props: Props): ReactElement {
   return (
-    <footer className="flex flex-wrap items-center p-6 bg-gray-500 text-white">
-      <div className="m-auto max-w-screen-lg text-center">
-        <Link to="/about">Contact Us</Link>
-        <br />
-        <Link to="/admin">Admin</Link>
-        <p>&#169; Mesa Overland, 2021</p>
+    <footer className="bg-gray-500 text-white w-full py-4">
+      <div className="text-center ">
+        <Link className="px-2" to="/about">Contact Us</Link>
+        <Link className="px-2" to="/admin">Admin</Link>
+        <p className="px-2 pt-1">&#169; Mesa Overland, 2021</p>
       </div>
     </footer>
   )

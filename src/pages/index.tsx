@@ -16,17 +16,17 @@ function Index(props: Props): ReactElement {
         details="We build custom 4x4 campers, so you can get way out there and camp in style."
         image={props.data.file.childImageSharp.fluid}
       />
-      <div className="bg-mesa text-gray-100 py-40 mb-8 mt-2">
-        <div className="flex flex-grow justify-between">
-          <div>
-            <h2 className="text-3xl font-title uppercase ml-8 md:ml-16">
+      <div className="bg-mesa text-gray-100 py-40 px-2">
+        <div className="flex w-full flex-wrap justify-center text-center">
+          <div className="">
+            <h2 className="text-3xl font-title uppercase">
               Check out our builds
             </h2>
-            <p className="ml-8 md:ml-16 text-xl">
+            <p className="text-xl flex-wrap">
               You can have 41-inch tires AND a shower. No compromises.
             </p>
           </div>
-          <Link to="/builds" className="flex mx-8 md:mx-16 items-center">
+          <Link to="/builds" className="flex mx-16 md:mx-16 items-center">
             <button className="p-4 text-xl font-bold font-title uppercase bg-gray-500">
               Builds
             </button>
