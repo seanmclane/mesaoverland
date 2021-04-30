@@ -22,6 +22,7 @@ function Nav(props: Props): ReactElement {
                 setMenuOpen(false)
               }}
               src={logo}
+              alt="Mesa Overland"
               width="300"
             />
           </Link>
