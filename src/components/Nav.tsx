@@ -1,5 +1,6 @@
 import React, { ReactElement, useState } from "react"
 import { Link } from "gatsby"
+const logo = require("../../static/images/logo.png")
 
 interface Props {
   links: Array<{
@@ -13,23 +14,18 @@ function Nav(props: Props): ReactElement {
   return (
     <>
       <header>
-        <div className="m-auto flex justify-between p-4">
-          <Link
-            className="no-underline m-auto lg:m-0 text-center lg:text-left"
-            to="/"
-          >
-            <span
-              className="text-xl font-semibold tracking-tight text-gray-500"
+        <div className="mx-auto text-center p-4">
+          <Link className="" to="/">
+            <img
+              className="m-auto"
               onClick={() => {
                 setMenuOpen(false)
               }}
-            >
-              Mesa
-              <br />
-              Overland
-            </span>
+              src={logo}
+              width="300"
+            />
           </Link>
-          <div className="hidden lg:block text-gray-700 my-auto">
+          <div className="text-gray-700">
             <p className="py-0">
               <span className="">Phone: </span>{" "}
               <span className="font-body lowercase">970-688-8068</span>
@@ -41,7 +37,7 @@ function Nav(props: Props): ReactElement {
           </div>
         </div>
       </header>
-      <nav className="flex flex-wrap items-center justify-items-center p-6 bg-gray-500 mx-auto">
+      <nav className="flex flex-wrap items-center justify-items-center p-6 bg-sky mx-auto">
         <div className="block lg:hidden m-auto">
           <button
             onClick={() => {
