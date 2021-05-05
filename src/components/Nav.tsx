@@ -26,7 +26,7 @@ function Nav(props: Props): ReactElement {
               width="150"
             />
           </Link>
-          <div className="text-outline my-auto">
+          <div className="text-outline my-auto text-sm sm:text-base">
             <p className="py-0">
               <span className="">Phone: </span>{" "}
               <span className="font-body lowercase">970-688-8068</span>
