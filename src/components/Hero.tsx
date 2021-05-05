@@ -6,17 +6,22 @@ interface Props {
   details?: string
   image?: any
   imageAlt?: string
+  className?: string
 }
 
 function Hero(props: Props): ReactElement {
   return (
-    <section className="">
-      <Img fluid={props.image} alt={props.imageAlt} />
-      <div className="flex-col text-center my-16 px-2">
-        <h1 className="font-title uppercase text-5xl font-bold text-gray-800">
+    <section className={props.className}>
+      <Img
+        fluid={props.image}
+        alt={props.imageAlt}
+        className="mx-auto max-w-5xl"
+      />
+      <div className="flex-col text-center py-16 px-2">
+        <h1 className="font-title uppercase text-5xl font-bold">
           {props.tagline}
         </h1>
-        <p className="text-xl font-light text-gray-600">{props.details}</p>
+        <p className="text-xl font-light">{props.details}</p>
       </div>
     </section>
   )

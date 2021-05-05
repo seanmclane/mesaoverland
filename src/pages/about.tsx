@@ -33,7 +33,10 @@ function About(props: Props): ReactElement {
   return (
     <>
       <SEO title="About" />
-      <section className="mx-auto h-80 px-6 mt-8 text-center">
+      <section
+        className="mx-auto px-6 mt-8 text-center"
+        style={{ height: "30rem" }}
+      >
         <iframe
           title="Google Maps Embed"
           width="100%"
@@ -42,7 +45,7 @@ function About(props: Props): ReactElement {
           style={{ border: 0, margin: "auto" }}
           loading="lazy"
           allowFullScreen
-          src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJr5JXhnFXRocRI6AXLBzC-_g&zoom=7&key=AIzaSyAauFuxptANtOMqd_VnZYgNsQdVdT0_9mA"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1582495.266049488!2d-109.98525688437546!3d39.22445647952158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874657611d928359%3A0xe73ae95d3bafebdb!2sMesa%20Overland!5e0!3m2!1sen!2sus!4v1620247470260!5m2!1sen!2sus"
         ></iframe>
       </section>
       <section className="mx-auto px-6 mt-8 text-center">

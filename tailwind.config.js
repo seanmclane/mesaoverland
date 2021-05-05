@@ -8,8 +8,10 @@ module.exports = {
       colors: {
         orange: colors.orange,
         gray: colors.blueGray,
-        mesa: "#d66b41",
-        grass: "rgb(79 78 47)",
+        mesa: "#CF6B4A",
+        sky: "#4F97C8",
+        ground: "#B34F3A",
+        outline: "#2E251F",
       },
       fontFamily: {
         title: ["Rubik Mono One"],

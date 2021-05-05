@@ -6,7 +6,7 @@ media_folder: static/images/uploads
 public_folder: /images
 
 site_url: https://mesaoverland.com
-logo_url: https://mesaoverland.com/images/logo.svg
+logo_url: https://mesaoverland.com/images/logo.png
 
 collections:
   - name: 'build'

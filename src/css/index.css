@@ -8,6 +8,10 @@
 
 
 @layer base {
+  body {
+    @apply text-outline;
+  }
+  
   h1,h2,h3 {
     @apply mb-8;
     @apply font-title;
