@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Hero from "../components/Hero"
 import SEO from "../components/SEO"
 import LinkButton from "../components/LinkButton"
+const logo = require("../../static/images/logo.png")
 
 interface Props {
   data: any
@@ -11,9 +12,9 @@ interface Props {
 function Index(props: Props): ReactElement {
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Home" image={logo} />
       <Hero
-        className="text-gray-800 bg-gray-100 lg:py-10"
+        className="text-outline bg-gray-100 lg:pt-20"
         tagline="Build your dreams"
         details="We build custom 4x4 campers, so you can get way out there and camp in style."
         image={props.data.file.childImageSharp.fluid}

@@ -10,7 +10,7 @@ interface Props {
 function LinkButton({ children, to, className }: Props): ReactElement {
   return (
     <Link to={to} className={className}>
-      <button className="p-4 text-xl font-bold font-title uppercase bg-sky">
+      <button className="p-4 text-xl font-bold font-title uppercase bg-outline">
         {children}
       </button>
     </Link>

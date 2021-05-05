@@ -14,7 +14,7 @@ function Nav(props: Props): ReactElement {
   return (
     <>
       <header>
-        <div className="mx-auto text-center p-4">
+        <div className="flex flex-1 justify-between px-6 py-2 m-auto max-w-5xl">
           <Link className="" to="/">
             <img
               className="m-auto"
@@ -22,11 +22,11 @@ function Nav(props: Props): ReactElement {
                 setMenuOpen(false)
               }}
               src={logo}
-              alt="Mesa Overland"
-              width="300"
+              alt="Mesa Overland Logo"
+              width="150"
             />
           </Link>
-          <div className="text-gray-700">
+          <div className="text-outline my-auto">
             <p className="py-0">
               <span className="">Phone: </span>{" "}
               <span className="font-body lowercase">970-688-8068</span>
@@ -38,13 +38,13 @@ function Nav(props: Props): ReactElement {
           </div>
         </div>
       </header>
-      <nav className="flex flex-wrap items-center justify-items-center p-6 bg-sky mx-auto">
-        <div className="block lg:hidden m-auto">
+      <nav className="flex flex-wrap items-center justify-items-center p-6 bg-outline mx-auto">
+        <div className="block md:hidden m-auto">
           <button
             onClick={() => {
               setMenuOpen((isMenuOpen) => !isMenuOpen)
             }}
-            className="flex items-center px-3 py-2 text-gray-200 rounded hover:text-white"
+            className="flex items-center px-4 text-gray-200 rounded hover:text-white"
           >
             <svg
               className="w-5 h-5 fill-current"
@@ -59,9 +59,9 @@ function Nav(props: Props): ReactElement {
         <div
           className={`w-full ${
             isMenuOpen ? "block" : "hidden"
-          } flex-grow lg:flex lg:items-center lg:w-auto`}
+          } flex-grow md:flex md:items-center md:w-auto`}
         >
-          <div className="text-md text-center lg:flex-grow lg:text-center">
+          <div className="text-md text-center md:flex-grow md:text-center">
             {props.links.map((link) => (
               <Link
                 key={link.href}
@@ -70,7 +70,7 @@ function Nav(props: Props): ReactElement {
                 onClick={() => {
                   setMenuOpen(false)
                 }}
-                className="block mt-4 px-4 text-gray-200 lg:inline-block lg:mt-0 hover:text-white no-underline"
+                className="block mt-4 px-4 text-gray-200 md:inline-block md:mt-0 hover:text-white no-underline"
               >
                 {link.title}
               </Link>

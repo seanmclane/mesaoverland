@@ -5,7 +5,7 @@ interface Props {}
 
 function Footer(props: Props): ReactElement {
   return (
-    <footer className="bg-sky text-white w-full py-4">
+    <footer className="bg-outline text-white w-full py-4">
       <div className="text-center ">
         <Link className="px-2" to="/about">
           Contact Us
