@@ -1,25 +1,36 @@
 ---
 name: The Negotiator
-date: 2021-03-11T16:22:06.491Z
+date: 2021-05-15T00:45:53.380Z
 slug: /builds/thenegotiator
 status: In Progress
 image: /images/uploads/negotiator.jpg
 ---
+## Update May 14, 2021 - Ground Clearance
+
+We've been doing lots of work to get our shop ready to take on the craziest builds, but we finally got to work on updating The Negotiator! No need to worry about departure angles on this former ambulance. Using our 20,000lb lift and nifty plasma cutter, we chopped the rear at the level of the frame. Check out the before and after:
+
+![before](before.jpg)
+
+![after](after.jpeg)
+
+Next step, weld everything back up and fabricate a custom steel bumper.
+
+## Update March 11, 2021
 
 "The Negotiator" came to us from far eastern Kansas in our search for the best off-road camper base vehicles. We could hardly believe our eyes - a '99 7.3 with 175k miles?! There can't be many of them left. And when the keys had a tag with "The Negotiator" scribbled on it, we had found the perfect name. But with this vehicle, there will be no compromises.
 
 Some of our planned upgrades include:
 
-- 4x4 conversion
-- 37" tires
-- 4-5" suspension lift
-- Turbo upgrade
-- New injectors
-- Heated fuel system
-- Fully rebuilt transmission
-- Billet torque converter
-- Interior mountain bike storage
-- 400W solar and lithium batteries
-- and more!
+* 4x4 conversion
+* 37" tires
+* 4-5" suspension lift
+* Turbo upgrade
+* New injectors
+* Heated fuel system
+* Fully rebuilt transmission
+* Billet torque converter
+* Interior mountain bike storage
+* 400W solar and lithium batteries
+* and more!
 
 Contact us at info@mesaoverland.com to put your own touches on this amazing build!
