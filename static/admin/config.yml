@@ -3,7 +3,8 @@ backend:
   branch: main
 
 media_folder: static/images/uploads
-public_folder: /images
+public_folder: /images/uploads
+publish_mode: editorial_workflow
 
 site_url: https://mesaoverland.com
 logo_url: https://mesaoverland.com/images/logo.png
@@ -15,8 +16,9 @@ collections:
     create: true
     slug: 'index'
     path: '{{name}}/index'
-    editor:
-      preview: true
+    media_folder: static/images/uploads
+    public_folder: /images/uploads
+    preview_path: 'build/{{name}}'
     fields:
       - { label: 'Build Name', name: 'name', widget: 'string' }
       - label: "Status"
@@ -32,8 +34,9 @@ collections:
     create: false
     slug: 'index'
     path: '{{title}}/index'
-    editor:
-      preview: true
+    media_folder: static/images/uploads
+    public_folder: /images/uploads
+    preview_path: '{{title}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Last Updated', name: 'date', widget: 'datetime' }
