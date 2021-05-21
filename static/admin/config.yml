@@ -16,7 +16,7 @@ collections:
     create: true
     slug: 'index'
     path: '{{name}}/index'
-    media_folder: static/images/uploads
+    media_folder: /static/images/uploads
     public_folder: /images/uploads
     preview_path: 'build/{{name}}'
     fields:
@@ -34,7 +34,7 @@ collections:
     create: false
     slug: 'index'
     path: '{{title}}/index'
-    media_folder: static/images/uploads
+    media_folder: /static/images/uploads
     public_folder: /images/uploads
     preview_path: '{{title}}'
     fields:
