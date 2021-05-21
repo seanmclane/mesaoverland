@@ -14,8 +14,6 @@ collections:
     folder: 'src/content/build'
     create: true
     slug: 'index'
-    media_folder: ''
-    public_folder: ''
     path: '{{name}}/index'
     editor:
       preview: true
@@ -24,7 +22,7 @@ collections:
       - label: "Status"
         name: "status"
         widget: "select"
-        options: ["For Sale", "In Progress", "Pre-build"]
+        options: ["For Sale", "In Progress", "Pre-Build", "Deposit Received", "Sold"]
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Header Image', name: 'image', widget: 'image'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
@@ -33,8 +31,6 @@ collections:
     folder: 'src/content/faq'
     create: false
     slug: 'index'
-    media_folder: ''
-    public_folder: ''
     path: '{{title}}/index'
     editor:
       preview: true
