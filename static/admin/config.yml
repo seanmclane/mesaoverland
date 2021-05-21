@@ -18,7 +18,7 @@ collections:
     path: '{{name}}'
     media_folder: /static/images/uploads
     public_folder: /images/uploads
-    preview_path: 'build/{{name}}'
+    preview_path: 'builds/{{name}}'
     fields:
       - { label: 'Build Name', name: 'name', widget: 'string' }
       - { label: 'Slug', name: 'slug', widget: 'string' }
