@@ -5,14 +5,13 @@ slug: /builds/thenegotiator
 status: In Progress
 image: /images/uploads/negotiator.jpg
 ---
-
 ## Update May 14, 2021 - Ground Clearance
 
 We've been doing lots of work to get our shop ready to take on the craziest builds, but we finally got to work on updating The Negotiator! No need to worry about departure angles on this former ambulance. Using our 20,000lb lift and nifty plasma cutter, we chopped the rear at the level of the frame. Check out the before and after:
 
-![before](/images/uploads/before.jpg)
+![before](/images/uploads/negotiator-back-chop-before.jpg)
 
-![after](/images/uploads/after.jpeg)
+![after](/images/uploads/negotiator-back-chop-after.jpeg)
 
 Next step, weld everything back up and fabricate a custom steel bumper.
 
@@ -22,16 +21,16 @@ Next step, weld everything back up and fabricate a custom steel bumper.
 
 Some of our planned upgrades include:
 
-- 4x4 conversion
-- 37" tires
-- 4-5" suspension lift
-- Turbo upgrade
-- New injectors
-- Heated fuel system
-- Fully rebuilt transmission
-- Billet torque converter
-- Interior mountain bike storage
-- 400W solar and lithium batteries
-- and more!
+* 4x4 conversion
+* 37" tires
+* 4-5" suspension lift
+* Turbo upgrade
+* New injectors
+* Heated fuel system
+* Fully rebuilt transmission
+* Billet torque converter
+* Interior mountain bike storage
+* 400W solar and lithium batteries
+* and more!
 
 Contact us at info@mesaoverland.com to put your own touches on this amazing build!
