@@ -21,10 +21,11 @@ collections:
     preview_path: 'build/{{name}}'
     fields:
       - { label: 'Build Name', name: 'name', widget: 'string' }
+      - { label: 'Slug', name: 'slug', widget: 'string' }
       - label: "Status"
         name: "status"
         widget: "select"
-        options: ["For Sale", "In Progress", "Pre-Build", "Deposit Received", "Sold"]
+        options: ["Pre-Build", "For Sale", "In Progress", "Deposit Received", "Pending Sale", "Sold"]
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Header Image', name: 'image', widget: 'image'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
