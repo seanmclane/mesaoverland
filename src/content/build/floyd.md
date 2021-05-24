@@ -11,7 +11,7 @@ In addition to being the cutest and fluffiest member of the Mesa Overland team, 
 
 * ~177k miles
 * 6.7L modern PowerStroke diesel engine (skip the 6.0 years)
-* 6' interior height
+* 6'+ interior height
 * Overbuilt aluminum ambulance box
 * Four wheel drive from the factory
 
@@ -26,3 +26,5 @@ In addition to being the cutest and fluffiest member of the Mesa Overland team, 
 * Van-style bed with lots of storage
 
 Contact us at info@mesaoverland.com to place a deposit and put your own touches on this amazing build!
+
+![Floyd interior](/images/uploads/floyd-interior-start.jpg)
