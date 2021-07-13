@@ -1,10 +1,14 @@
 ---
 name: The Negotiator
-date: 2021-05-14T06:00:00.000Z
 slug: /builds/thenegotiator
-status: In Progress
+status: Sold
+date: 2021-07-01T06:00:00.000Z
 image: /images/uploads/negotiator.jpg
 ---
+## Update July 1, 2021 - Love at First Sight
+
+The Negotiator has found its soulmate! We are working with a lovely customer to build out The Negotiator as an ultra-capable winter exploration vehicle. Check back for more updates throughout the build and contact us soon to lock down your own!
+
 ## Update May 14, 2021 - Ground Clearance
 
 We've been doing lots of work to get our shop ready to take on the craziest builds, but we finally got to work on updating The Negotiator! No need to worry about departure angles on this former ambulance. Using our 20,000lb lift and nifty plasma cutter, we chopped the rear at the level of the frame. Check out the before and after:
