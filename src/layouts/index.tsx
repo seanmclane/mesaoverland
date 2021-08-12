@@ -17,6 +17,14 @@ const linkList = [
     href: "/builds",
   },
   {
+    title: "Services",
+    href: "/services",
+  },
+  {
+    title: "Testimonials",
+    href: "/testimonials",
+  },
+  {
     title: "FAQ",
     href: "/faq",
   },
@@ -32,10 +40,7 @@ function Index(props: Props): ReactElement {
       <header className="font-title uppercase">
         <Nav links={linkList} />
       </header>
-      <main
-        id="body-container"
-        className="m-auto min-h-screen"
-      >
+      <main id="body-container" className="m-auto min-h-screen">
         {props.children}
       </main>
       <Footer />
