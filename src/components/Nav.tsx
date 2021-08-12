@@ -14,8 +14,8 @@ function Nav(props: Props): ReactElement {
   return (
     <>
       <header>
-        <div className="flex flex-1 justify-between px-6 py-2 m-auto max-w-5xl">
-          <Link className="" to="/">
+        <div className="flex flex-1 flex-col md:flex-row justify-between px-6 py-2 m-auto max-w-5xl">
+          <Link className="w-20 md:w-40 m-auto md:m-0" to="/">
             <img
               className="m-auto"
               onClick={() => {
@@ -26,7 +26,7 @@ function Nav(props: Props): ReactElement {
               width="150"
             />
           </Link>
-          <div className="text-outline my-auto text-sm sm:text-base">
+          <div className="text-outline my-4 text-center md:my-auto text-md md:text-base">
             <p className="py-0">
               <span className="">Phone: </span>{" "}
               <span className="font-body lowercase">970-688-8068</span>
