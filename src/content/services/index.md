@@ -7,7 +7,7 @@ image: /images/shop-interior.jpg
 
 ### Consulting
 
-Our master mechanic, Blayne, brings years of experience to all mechanical, design, fabrication, and buildout questions. We love talking shop and want to hear what your dreams are!
+Our lead mechanic, Blayne, brings years of experience to all mechanical, design, fabrication, and buildout questions. We love talking shop and want to hear what your dreams are!
 
 ### 4x4 Conversions
 
