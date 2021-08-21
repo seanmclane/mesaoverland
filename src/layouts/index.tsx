@@ -32,6 +32,10 @@ const linkList = [
     title: "About",
     href: "/about",
   },
+  {
+    title: "Contact Us",
+    href: "/contact",
+  },
 ]
 
 function Index(props: Props): ReactElement {
