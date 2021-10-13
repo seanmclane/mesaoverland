@@ -27,6 +27,8 @@ Next step, weld everything back up and fabricate a custom steel bumper.
 
 ## Update March 11, 2021
 
+![The Negotiator](/images/uploads/negotiator.jpg "The Negotiator")
+
 "The Negotiator" came to us from far eastern Kansas in our search for the best off-road camper base vehicles. We could hardly believe our eyes - a '99 7.3 with 175k miles?! There can't be many of them left. And when the keys had a tag with "The Negotiator" scribbled on it, we had found the perfect name. But with this vehicle, there will be no compromises.
 
 Some of our planned upgrades include:
