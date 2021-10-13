@@ -2,9 +2,15 @@
 name: The Negotiator
 slug: /builds/thenegotiator
 status: Sold
-date: 2021-07-01T06:00:00.000Z
-image: /images/uploads/negotiator.jpg
+date: 2021-10-10T06:00:00.000Z
+image: /images/uploads/negotiator-exterior-before-paint.jpg
 ---
+## Update October 10, 2021 - Out of the Shop
+
+![Negotiator exterior before paint](/images/uploads/negotiator-exterior-before-paint.jpg "Negotiator exterior before paint")
+
+The beast has left the lift and drives like a dream! 4x4 converted, new injectors, performance tune, super single rear wheels, new rear leaf springs, airbags, and so much more. Next to paint and finish out the interior.
+
 ## Update July 1, 2021 - Love at First Sight
 
 The Negotiator has found its soulmate! We are working with a lovely customer to build out The Negotiator as an ultra-capable winter exploration vehicle. Check back for more updates throughout the build and contact us soon to lock down your own!
@@ -20,6 +26,8 @@ We've been doing lots of work to get our shop ready to take on the craziest buil
 Next step, weld everything back up and fabricate a custom steel bumper.
 
 ## Update March 11, 2021
+
+![The Negotiator](/images/uploads/negotiator.jpg "The Negotiator")
 
 "The Negotiator" came to us from far eastern Kansas in our search for the best off-road camper base vehicles. We could hardly believe our eyes - a '99 7.3 with 175k miles?! There can't be many of them left. And when the keys had a tag with "The Negotiator" scribbled on it, we had found the perfect name. But with this vehicle, there will be no compromises.
 
