@@ -14,9 +14,9 @@ function Index(props: Props): ReactElement {
     <>
       <SEO title="Home" image={logo} />
       <Hero
-        className="text-outline bg-gray-100 lg:pt-20"
+        className="text-outline bg-gray-100 lg:pt-8"
         tagline="Build your dreams"
-        details="We build custom 4x4 campers, so you can get way out there and camp in style."
+        details="We build custom overland RVs, so you can get way out there and camp in style."
         image={props.data.file.childImageSharp.fluid}
       />
       <div className="bg-mesa text-gray-100 py-40 px-2">
@@ -42,7 +42,7 @@ export const query = graphql`
   query HeroImageQuery {
     file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1200) {
+        fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
         }
       }

@@ -17,7 +17,7 @@ function Hero(props: Props): ReactElement {
         alt={props.imageAlt}
         className="mx-auto max-w-5xl"
       />
-      <div className="flex-col text-center py-16 px-2">
+      <div className="flex-col text-center py-8 px-2">
         <h1 className="font-title uppercase text-5xl font-bold">
           {props.tagline}
         </h1>
