@@ -2,9 +2,14 @@
 name: The Negotiator
 slug: /builds/thenegotiator
 status: Sold
-date: 2021-10-10T06:00:00.000Z
-image: /images/uploads/negotiator-exterior-before-paint.jpg
+date: 2021-11-09T17:46:36.622Z
+image: /images/uploads/negotiator-night-shot.jpg
 ---
+## Update November 9, 2021 - Ready to Go
+With a nice coat of green paint, accessories installed, and interior build complete, the Negotiator is ready to go adventuring!
+
+![Negotiator night shot](/images/uploads/negotiator-night-shot.jpg "Negotiator night shot")
+
 ## Update October 10, 2021 - Out of the Shop
 
 ![Negotiator exterior before paint](/images/uploads/negotiator-exterior-before-paint.jpg "Negotiator exterior before paint")
