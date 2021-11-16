@@ -6,7 +6,25 @@ import LinkButton from "../components/LinkButton"
 const logo = require("../../static/images/logo.png")
 
 interface Props {
-  data: any
+  data: {
+    file: {
+      childImageSharp: {
+        fluid: any
+      }
+    }
+    allMarkdownRemark: {
+      edges: Array<{
+        node: {
+          html: string
+          frontmatter: {
+            title: string
+            author: string
+            date: string
+          }
+        }
+      }>
+    }
+  }
 }
 
 function Index(props: Props): ReactElement {
@@ -34,16 +52,73 @@ function Index(props: Props): ReactElement {
           </LinkButton>
         </div>
       </div>
+      <div className="bg-outline text-gray-100 py-40 px-2">
+        <div className="flex w-full flex-wrap justify-center text-center">
+          <div className="">
+            <h2 className="text-3xl font-title uppercase">Testimonials</h2>
+            <div className="flex flex-wrap">
+              {props.data.allMarkdownRemark.edges.map((t) => {
+                return (
+                  <div className="text-xl lg:w-1/3 lg:max-w-3xl px-10">
+                    <h2 className="mt-8 mb-4 text-2xl font-title uppercase">
+                      {t.node.frontmatter.title}
+                    </h2>
+                    <h3 className="text-md mb-2">
+                      {t.node.frontmatter.author}
+                    </h3>
+                    <h3 className="text-sm text-mesa">
+                      {t.node.frontmatter.date}
+                    </h3>
+                    <div dangerouslySetInnerHTML={{ __html: t.node.html }} />
+                  </div>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="py-40 px-2">
+        <div className="flex w-full flex-wrap justify-center text-center">
+          <div className="">
+            <h2 className="text-3xl font-title uppercase">
+              Start planning your overland camper today!
+            </h2>
+            <LinkButton
+              to="/contact"
+              className="text-gray-100"
+              bgColor="bg-mesa"
+            >
+              Contact Us
+            </LinkButton>
+          </div>
+        </div>
+      </div>
     </>
   )
 }
 
 export const query = graphql`
-  query HeroImageQuery {
+  query HomePageQuery {
     file(relativePath: { eq: "hero.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/testimonial/" } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+      limit: 3
+    ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            title
+            author
+            date(formatString: "MMMM DD, YYYY")
+          }
         }
       }
     }

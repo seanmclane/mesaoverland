@@ -21,10 +21,6 @@ const linkList = [
     href: "/services",
   },
   {
-    title: "Testimonials",
-    href: "/testimonials",
-  },
-  {
     title: "FAQ",
     href: "/faq",
   },

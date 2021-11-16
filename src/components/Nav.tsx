@@ -1,6 +1,8 @@
 import React, { ReactElement, useState } from "react"
 import { Link } from "gatsby"
 const logo = require("../../static/images/logo.png")
+const ig = require("../../static/images/icon-ig.svg")
+const fb = require("../../static/images/icon-fb.svg")
 
 interface Props {
   links: Array<{
@@ -35,6 +37,14 @@ function Nav(props: Props): ReactElement {
               <span className="">Email: </span>{" "}
               <span className="font-body lowercase">info@mesaoverland.com</span>
             </p>
+            <div className="flex flex-row justify-center mt-2">
+              <a href="https://www.instagram.com/mesaoverland/">
+                <img src={ig} alt="instagram" className="mx-2" />
+              </a>
+              <a href="https://www.facebook.com/mesaoverland/">
+                <img src={fb} alt="facebook" className="mx-2" />
+              </a>
+            </div>
           </div>
         </div>
       </header>
