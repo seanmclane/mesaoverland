@@ -5,7 +5,7 @@ status: Sold
 date: 2021-11-09T17:46:36.622Z
 image: /images/uploads/negotiator-night-shot.jpg
 ---
-<iframe width="800" height="450" src="https://www.youtube.com/embed/uET6dbB1_Lo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/uET6dbB1_Lo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
 ## Update November 9, 2021 - Ready to Go
 With a nice coat of green paint, accessories installed, and interior build complete, the Negotiator is ready to go adventuring!
