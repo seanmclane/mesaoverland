@@ -1,6 +1,6 @@
 ---
 name: F250 with Articulating Mount Camper
-slug: f250-baggs
+slug: /builds/f250-baggs
 status: In Progress
 date: 2021-12-26T20:56:15.846Z
 image: /images/uploads/mount1.jpg
