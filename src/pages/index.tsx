@@ -31,12 +31,14 @@ function Index(props: Props): ReactElement {
   return (
     <>
       <SEO title="Home" image={logo} />
-      <Hero
-        className="text-outline bg-gray-100 lg:pt-8"
-        tagline="Build your dreams"
-        details="We build custom overland RVs, so you can get way out there and camp in style."
-        image={props.data.file.childImageSharp.fluid}
-      />
+      <div id="hero-container" className="bg-gray-100">
+        <Hero
+          className="text-outline lg:pt-8 max-w-5xl m-auto"
+          tagline="Build your dreams"
+          details="We build custom overland RVs, so you can get way out there and camp in style."
+          videoSrc="https://www.youtube.com/embed/uET6dbB1_Lo"
+        />
+      </div>
       <div className="bg-mesa text-gray-100 py-40 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
@@ -59,7 +61,10 @@ function Index(props: Props): ReactElement {
             <div className="flex flex-wrap">
               {props.data.allMarkdownRemark.edges.map((t) => {
                 return (
-                  <div className="text-xl lg:w-1/3 lg:max-w-3xl px-10">
+                  <div
+                    className="text-xl lg:w-1/3 lg:max-w-3xl px-10"
+                    key={t.node.frontmatter.author}
+                  >
                     <h2 className="mt-8 mb-4 text-2xl font-title uppercase">
                       {t.node.frontmatter.title}
                     </h2>
