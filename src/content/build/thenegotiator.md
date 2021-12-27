@@ -2,7 +2,7 @@
 name: The Negotiator
 slug: /builds/thenegotiator
 status: Sold
-date: 2021-11-09T17:46:36.622Z
+date: 2021-12-10T17:46:36.622Z
 image: /images/uploads/negotiator-night-shot.jpg
 ---
 ## Update December 10, 2021 - The Negotiator in Action
