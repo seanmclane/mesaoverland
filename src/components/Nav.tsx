@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 const logo = require("../../static/images/logo.png")
 const ig = require("../../static/images/icon-ig.svg")
 const fb = require("../../static/images/icon-fb.svg")
+const yt = require("../../static/images/icon-yt.svg")
 
 interface Props {
   links: Array<{
@@ -43,6 +44,9 @@ function Nav(props: Props): ReactElement {
               </a>
               <a href="https://www.facebook.com/mesaoverland/">
                 <img src={fb} alt="facebook" className="mx-2" />
+              </a>
+              <a href="https://www.youtube.com/channel/UCD4XzcEwC4fL9UzwMZwC2Hg">
+                <img src={yt} alt="youtube" className="mx-2" />
               </a>
             </div>
           </div>
