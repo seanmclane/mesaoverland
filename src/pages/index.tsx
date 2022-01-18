@@ -35,7 +35,7 @@ function Index(props: Props): ReactElement {
         <Hero
           className="text-outline lg:pt-8 max-w-5xl m-auto"
           tagline="Build your dreams"
-          details="We build custom overland RVs, so you can get way out there and camp in style."
+          details="Convert your truck into the ultimate overland RV or find a ready-to-adventure build from our inventory."
           videoSrc="https://www.youtube.com/embed/uET6dbB1_Lo"
         />
       </div>
