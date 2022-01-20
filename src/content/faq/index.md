@@ -15,7 +15,7 @@ At Mesa Overland, we build custom campers that have the accessibility of overlan
 
 ###Can you make my truck into an overland RV?
 
-Yes, if you have a Ford F350+ or Ram 3500+, we can upfit your truck with one of our custom camper models. We can chassis mount with our three-point articulating mount system or mount directly to a flatbed. Our models to fit both 6.5' and 8' beds. And if you've been thinking about a lift or performance modifications, it's the perfect time to upgrade your truck too.
+Yes, if you have a Ford F250+ or Ram 2500+, we can upfit your truck with one of our custom camper models. We can chassis mount with our three-point articulating mount system or mount directly to a flatbed. Our models to fit both 6.5' and 8' beds. And if you've been thinking about a lift or performance modifications, it's the perfect time to upgrade your truck too.
 
 ###What is a three-point articulating mount?
 

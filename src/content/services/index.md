@@ -7,7 +7,7 @@ image: /images/shop-interior.jpg
 
 ### Overland RV Conversion
 
-Your Ford F350+ or Ram 3500+ could become an overland RV! If you already love your vehicle, but want the ability to camp just about anywhere, reach out to learn about how we can fit our 6.5' and 8' camper models to your truck.
+Your Ford F250+ or Ram 2500+ could become an overland RV! If you already love your vehicle, but want the ability to camp just about anywhere, reach out to learn about how we can fit our 6.5' and 8' camper models to your truck.
 
 ### Ambulance RV Conversion
 

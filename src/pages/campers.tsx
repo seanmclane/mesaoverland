@@ -50,7 +50,7 @@ export default function Campers({
         </div>
       </div>
       <div className="bg-gray-100 text-outline py-40 px-2">
-        <div className="flex w-full flex-wrap justify-around text-center">
+        <div className="flex mx-auto flex-wrap justify-around text-center max-w-screen-xl">
           <div className="my-8 md:w-1/2">
             <h2 className="text-3xl font-title uppercase">Features</h2>
             <ul className="text-xl flex-wrap m-8 text-left list-disc">
@@ -65,6 +65,7 @@ export default function Campers({
               <li>Large central enclosed storage</li>
               <li>Dining area with bench seating and removable table</li>
               <li>Kitchen with sink and faucet</li>
+              <li>Butcher block countertop</li>
               <li>Two-burner stovetop</li>
               <li>12v fridge / freezer</li>
               <li>Water heater</li>
@@ -77,7 +78,6 @@ export default function Campers({
               <li>~30 gallon fresh water tank</li>
               <li>~15 gallon gray water tank</li>
               <li>External storage boxes (2) (when chassis-mounted)</li>
-              <li>Vinyl plank flooring</li>
               <li>Exposed steel accents</li>
               <li>Full list coming soon!</li>
             </ul>
