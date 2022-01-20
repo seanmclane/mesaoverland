@@ -35,11 +35,28 @@ function Index(props: Props): ReactElement {
         <Hero
           className="text-outline lg:pt-8 max-w-5xl m-auto"
           tagline="Build your dreams"
-          details="We build custom overland RVs, so you can get way out there and camp in style."
+          details="At Mesa Overland, we love making customers' dream adventure rigs into reality. Whether you want to convert your own truck with a camper, make a rugged campulance, or have us source a truck and build a ready-to-adventure overland RV, we have you covered."
           videoSrc="https://www.youtube.com/embed/uET6dbB1_Lo"
         />
       </div>
       <div className="bg-mesa text-gray-100 py-40 px-2">
+        <div className="flex w-full flex-wrap justify-center text-center">
+          <div className="">
+            <h2 className="text-3xl font-title uppercase">Pick your camper</h2>
+            <p className="text-xl flex-wrap">
+              Turn your truck into an overland RV with our
+              chassis-or-flatbed-mounted campers
+            </p>
+          </div>
+          <LinkButton
+            to="/campers"
+            className="flex mx-16 md:mx-16 items-center"
+          >
+            Campers
+          </LinkButton>
+        </div>
+      </div>
+      <div className="bg-outline text-gray-100 py-40 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
             <h2 className="text-3xl font-title uppercase">
@@ -49,12 +66,16 @@ function Index(props: Props): ReactElement {
               You can have 41-inch tires AND a shower. No compromises.
             </p>
           </div>
-          <LinkButton to="/builds" className="flex mx-16 md:mx-16 items-center">
+          <LinkButton
+            to="/builds"
+            bgColor="bg-mesa"
+            className="flex mx-16 md:mx-16 items-center"
+          >
             Builds
           </LinkButton>
         </div>
       </div>
-      <div className="bg-outline text-gray-100 py-40 px-2">
+      <div className=" py-40 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
             <h2 className="text-3xl font-title uppercase">Testimonials</h2>
@@ -82,17 +103,13 @@ function Index(props: Props): ReactElement {
           </div>
         </div>
       </div>
-      <div className="py-40 px-2">
+      <div className="bg-mesa text-gray-100 py-40 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
             <h2 className="text-3xl font-title uppercase">
               Start planning your overland camper today!
             </h2>
-            <LinkButton
-              to="/contact"
-              className="text-gray-100"
-              bgColor="bg-mesa"
-            >
+            <LinkButton to="/contact" className="text-gray-100">
               Contact Us
             </LinkButton>
           </div>

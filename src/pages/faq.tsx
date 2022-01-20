@@ -37,7 +37,7 @@ export default function FAQ({
       <div className="mx-auto px-6 mt-8 max-w-screen-lg mb-8">
         <div className="">
           <Img
-            alt={frontmatter.image?.childImageSharp?.fluid}
+            alt={frontmatter.title}
             fluid={frontmatter.image?.childImageSharp?.fluid}
           />
           <h1 className="mt-8 text-3xl font-title uppercase">

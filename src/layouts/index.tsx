@@ -13,6 +13,10 @@ const linkList = [
     href: "/",
   },
   {
+    title: "Campers",
+    href: "/campers",
+  },
+  {
     title: "Builds",
     href: "/builds",
   },
