@@ -30,7 +30,7 @@ export default function Campers({
           <div className="">
             <h2 className="text-3xl font-title uppercase">The Indian Creek</h2>
             <p className="text-xl flex-wrap">
-              Our most popular cabover camper made for a 6.5' bed
+              Our most popular cabover camper made for a full-size ~6.5' bed
             </p>
             <p className="text-xl flex-wrap">Photos coming soon!</p>
           </div>
@@ -54,13 +54,14 @@ export default function Campers({
           <div className="my-8 md:w-1/2">
             <h2 className="text-3xl font-title uppercase">Features</h2>
             <ul className="text-xl flex-wrap m-8 text-left list-disc">
-              <li>Welded steel camper frame</li>
-              <li>Aluminum composite panel exterior</li>
-              <li>Two-inch wool insulation</li>
+              <li>Designed for F250+ or Ram 2500+ trucks</li>
               <li>
                 Three-point articulating chassis mount or flatbed mount included
                 (flatbed not included)
               </li>
+              <li>Welded steel camper frame</li>
+              <li>Aluminum composite panel exterior</li>
+              <li>Two-inch wool insulation</li>
               <li>Cabover sleeping area with queen bed</li>
               <li>Large central enclosed storage</li>
               <li>Dining area with bench seating and removable table</li>
@@ -86,6 +87,8 @@ export default function Campers({
             <h2 className="text-3xl font-title uppercase">Options</h2>
             <ul className="text-xl flex-wrap m-8 text-left list-disc">
               <li>Lithium batteries 200-800+Ah</li>
+              <li>Cassette or composting toilet</li>
+              <li>Wet bath with shower</li>
               <li>Full list coming soon!</li>
             </ul>
           </div>
