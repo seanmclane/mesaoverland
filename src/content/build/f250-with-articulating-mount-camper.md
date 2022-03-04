@@ -1,8 +1,8 @@
 ---
 name: F250 with Articulating Mount Camper
 slug: /builds/f250-baggs
-status: In Progress
-date: 2022-02-09T20:06:52.912Z
+status: For Sale
+date: 2022-03-04T14:51:39.042Z
 image: /images/uploads/baggs-articulating-mount.jpg
 ---
 ## March 3, 2022 Update
@@ -20,15 +20,21 @@ We're ready to go! So exciting to see the final product and start the process of
 * Cabover bed area
 * Removable table converts to additional bed
 
+
+
 ![exterior](/images/uploads/1-baggs-exterior.jpg "exterior")
 
-## Feb 9, 2022 Interior Update
+![interior](/images/uploads/2-baggs-interior.jpg "interior")
 
-The camper build is nearly complete with finishing touches in the next weeks. Here's a look behind the cabinets at the heart of the RV systems - solar controller, lithium battery, propane water heater, and all the organization that goes into making a reliable camper.
+![table](/images/uploads/5-baggs-table.jpg "table")
 
-![battery](/images/uploads/baggs-battery.jpg "battery")
+![bed](/images/uploads/7-baggs-upper-bed.jpg "bed")
 
-![water heater](/images/uploads/baggs-water-heater.jpg "water heater")
+![fridge](/images/uploads/8-baggs-fridge.jpg "fridge")
+
+![electrical](/images/uploads/9-baggs-electrical.jpg "electrical")
+
+![storage](/images/uploads/10-baggs-storage.jpg "storage")
 
 ## New Year, New Build
 
