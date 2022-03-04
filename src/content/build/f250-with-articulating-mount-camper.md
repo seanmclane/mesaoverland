@@ -1,17 +1,37 @@
 ---
 name: F250 with Articulating Mount Camper
 slug: /builds/f250-baggs
-status: In Progress
-date: 2022-02-09T20:06:52.912Z
+status: For Sale
+date: 2022-03-04T14:51:39.042Z
 image: /images/uploads/baggs-articulating-mount.jpg
 ---
-## Feb 9, 2022 Interior Update
+## March 3, 2022 Update
 
-The camper build is nearly complete with finishing touches in the next weeks. Here's a look behind the cabinets at the heart of the RV systems - solar controller, lithium battery, propane water heater, and all the organization that goes into making a reliable camper.
+We're ready to go! So exciting to see the final product and start the process of finding the adventurous buyer who will take this camper everywhere it wants to go! Here are the highlights and photos:
 
-![battery](/images/uploads/baggs-battery.jpg "battery")
+* An ever-reliable 2000 F250 7.3L diesel base vehicle
+* Camper fully rebuilt from the steel frame
+* Three-point articulating mount system to dampen vibration from the frame when off-roading
+* Custom camper skirt with storage boxes and large "garage" storage area behind the cab
+* Off-grid electrical system with solar charging, lithium battery, inverter, and shore charging
+* 12V fridge
+* Propane water heater hooked up to sink and outdoor shower
+* Diesel air heater for those chilly mornings
+* Indoor/outdoor stove + oven combo
+* Cabover bed area
+* Removable table converts to additional bed
 
-![water heater](/images/uploads/baggs-water-heater.jpg "water heater")
+#### Photos
+
+![exterior](/images/uploads/1-baggs-exterior.jpg "exterior")
+
+![interior](/images/uploads/2-baggs-interior.jpg "interior")
+
+![table](/images/uploads/5-baggs-table.jpg "table")
+
+![bed](/images/uploads/7-baggs-upper-bed.jpg "bed")
+
+![electrical](/images/uploads/9-baggs-electrical.jpg "electrical")
 
 ## New Year, New Build
 
