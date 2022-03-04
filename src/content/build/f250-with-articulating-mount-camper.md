@@ -12,15 +12,13 @@ We're ready to go! So exciting to see the final product and start the process of
 * An ever-reliable 2000 F250 7.3L diesel base vehicle
 * Camper fully rebuilt from the steel frame
 * Three-point articulating mount system to ensure the camper moves independently of the frame when off-roading
-* Custom camper skirt with storage boxes
+* Custom camper skirt with storage boxes and large "garage" storage area behind the cab
 * Off-grid electrical system with solar charging, lithium battery, inverter, and shore charging
 * Propane water heater hooked up to sink and outdoor shower
 * Diesel air heater for those chilly mornings
 * Indoor/outdoor stove + oven combo
 * Cabover bed area
 * Removable table converts to additional bed
-
-
 
 ![exterior](/images/uploads/1-baggs-exterior.jpg "exterior")
 
@@ -30,11 +28,7 @@ We're ready to go! So exciting to see the final product and start the process of
 
 ![bed](/images/uploads/7-baggs-upper-bed.jpg "bed")
 
-![fridge](/images/uploads/8-baggs-fridge.jpg "fridge")
-
 ![electrical](/images/uploads/9-baggs-electrical.jpg "electrical")
-
-![storage](/images/uploads/10-baggs-storage.jpg "storage")
 
 ## New Year, New Build
 
