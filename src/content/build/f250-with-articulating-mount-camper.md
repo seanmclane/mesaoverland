@@ -17,7 +17,7 @@ We're ready to go! So exciting to see the final product and start the process of
 * 12V fridge
 * Propane water heater hooked up to sink and outdoor shower
 * Diesel air heater for those chilly mornings
-* Indoor/outdoor stove + oven combo
+* Propane stove + oven combo
 * Cabover bed area
 * Removable table converts to additional bed
 
