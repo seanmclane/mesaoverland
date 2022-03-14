@@ -12,7 +12,8 @@
     @apply text-outline;
   }
   
-  h1,h2,h3 {
+  h1,h2,h3,h4,h5,h6 {
+    @apply mt-4;
     @apply mb-8;
     @apply font-title;
   }
@@ -27,5 +28,9 @@
   }
   p {
     @apply pb-6;
+  }
+  li {
+    @apply list-disc;
+    @apply ml-8;
   }
 }
