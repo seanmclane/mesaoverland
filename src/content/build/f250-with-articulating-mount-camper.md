@@ -1,11 +1,11 @@
 ---
-name: F250 with Articulating Mount Camper
+name: F250 4x4 Custom Camper
 slug: /builds/f250-baggs
 status: For Sale
 date: 2022-03-04T14:51:39.042Z
 image: /images/uploads/1a-baggs-exterior.jpg
 ---
-## March 3, 2022 - For Sale at $74,999
+## March 3, 2022 - For Sale at $65,000
 
 We're ready to go! So exciting to see the final product and start the process of finding the adventurous buyer who will take this camper everywhere it wants to go! Here are the highlights and photos:
 
