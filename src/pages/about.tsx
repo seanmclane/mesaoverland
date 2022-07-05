@@ -50,9 +50,9 @@ function About(props: Props): ReactElement {
         <p className="text-lg pb-0">
           {props.data.site.siteMetadata.contact_email}
         </p>
-        <p className="text-lg pb-0">
+        {/* <p className="text-lg pb-0">
           {props.data.site.siteMetadata.contact_phone}
-        </p>
+        </p> */}
       </section>
       <section className="mx-auto mt-8 text-center">
         <h2 className="font-title text-3xl bg-mesa text-white py-8">
