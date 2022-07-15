@@ -79,7 +79,7 @@ export default function Campers({
               If you want something a little different than our standard models,
               reach out! We can fabricate almost anything you can dream up.
             </p>
-            <LinkButton to="/contact" className="text-gray-100">
+            <LinkButton to="/about" className="text-gray-100">
               Contact Us
             </LinkButton>
           </div>

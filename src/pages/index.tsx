@@ -36,7 +36,7 @@ function Index(props: Props): ReactElement {
           className="text-outline lg:pt-8 max-w-5xl m-auto"
           tagline="Build your dreams"
           details="At Mesa Overland, we love making customers' dream adventure rigs into reality."
-          videoSrc="https://www.youtube.com/embed/uET6dbB1_Lo"
+          image={props.data.file.childImageSharp.fluid}
         />
       </div>
       <div className="bg-mesa text-gray-100 py-40 px-2">
@@ -90,7 +90,7 @@ function Index(props: Props): ReactElement {
             <h2 className="text-3xl font-title uppercase">
               Start planning your overland camper today!
             </h2>
-            <LinkButton to="/contact" className="text-gray-100">
+            <LinkButton to="/about" className="text-gray-100">
               Contact Us
             </LinkButton>
           </div>
