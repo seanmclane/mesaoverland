@@ -13,7 +13,7 @@ function Footer(props: Props): ReactElement {
         <Link className="px-2" to="/admin">
           Admin
         </Link>
-        <p className="px-2 pt-1 pb-0">&#169; Mesa Overland, 2022</p>
+        <p className="px-2 pt-1 pb-0">&#169; Mesa Overland LLC, 2022</p>
       </div>
     </footer>
   )
