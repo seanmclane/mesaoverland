@@ -2,11 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `Mesa Overland`,
     titleTemplate: "%s | Mesa Overland",
-    description: `We build custom 4x4 campers`,
+    description: `We build overland truck campers`,
     image: `/images/hero.jpg`,
     url: "https://www.mesaoverland.com",
     contact_email: `info@mesaoverland.com`,
-    contact_phone: `970-688-8068`,
+    contact_phone: `205-613-0330`,
   },
   plugins: [
     {

@@ -54,41 +54,14 @@ export default function Campers({
           <div className="my-8 md:w-1/2">
             <h2 className="text-3xl font-title uppercase">Features</h2>
             <ul className="text-xl flex-wrap m-8 text-left list-disc">
-              <li>Designed for F250+ or Ram 2500+ trucks</li>
-              <li>
-                Three-point articulating chassis mount or flatbed mount included
-                (flatbed not included)
-              </li>
-              <li>Welded steel camper frame</li>
-              <li>Aluminum composite panel exterior</li>
-              <li>Two-inch wool insulation</li>
+              <li>Lightweight, hard-side construction</li>
               <li>Cabover sleeping area with queen bed</li>
-              <li>Large central enclosed storage</li>
-              <li>Dining area with bench seating and removable table</li>
-              <li>Kitchen with sink and faucet</li>
-              <li>Butcher block countertop</li>
-              <li>Two-burner stovetop</li>
-              <li>12v fridge / freezer</li>
-              <li>Water heater</li>
-              <li>Furnace</li>
-              <li>Powered, enclosed ceiling fan</li>
-              <li>200 Ah AGM batteries</li>
-              <li>400W solar panels fixed mounted on roof</li>
-              <li>50A alternator charger and solar controller</li>
-              <li>3000W inverter / charger</li>
-              <li>~30 gallon fresh water tank</li>
-              <li>~15 gallon gray water tank</li>
-              <li>External storage boxes (2) (when chassis-mounted)</li>
-              <li>Exposed steel accents</li>
               <li>Full list coming soon!</li>
             </ul>
           </div>
           <div className="my-8 md:w-1/2">
             <h2 className="text-3xl font-title uppercase">Options</h2>
             <ul className="text-xl flex-wrap m-8 text-left list-disc">
-              <li>Lithium batteries 200-800+Ah</li>
-              <li>Cassette or composting toilet</li>
-              <li>Wet bath with shower</li>
               <li>Full list coming soon!</li>
             </ul>
           </div>
@@ -106,7 +79,7 @@ export default function Campers({
               If you want something a little different than our standard models,
               reach out! We can fabricate almost anything you can dream up.
             </p>
-            <LinkButton to="/contact" className="text-gray-100">
+            <LinkButton to="/about" className="text-gray-100">
               Contact Us
             </LinkButton>
           </div>
