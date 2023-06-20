@@ -17,6 +17,10 @@ const linkList = [
     href: "/campers",
   },
   {
+    title: "For Sale",
+    href: "/builds",
+  },
+  {
     title: "Services",
     href: "/services",
   },

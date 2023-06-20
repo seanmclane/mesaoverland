@@ -110,7 +110,7 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/testimonial/" } }
+      filter: { fileAbsolutePath: { regex: "/content/review/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 3
     ) {

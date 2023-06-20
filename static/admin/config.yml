@@ -1,3 +1,5 @@
+local_backend: true
+
 backend:
   name: git-gateway
   branch: main
@@ -10,62 +12,47 @@ site_url: https://mesaoverland.com
 logo_url: https://mesaoverland.com/images/logo.png
 
 collections:
-  - name: 'build'
-    label: 'Build'
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'FAQ'
+        name: 'faq'
+        file: 'src/content/faq/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Last Updated', name: 'date', widget: 'datetime' }
+          - { label: 'Header Image', name: 'image', widget: 'image'}
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Services'
+        name: 'services'
+        file: 'src/content/services/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Last Updated', name: 'date', widget: 'datetime' }
+          - { label: 'Header Image', name: 'image', widget: 'image'}
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+  - label: 'Builds'
+    name: 'build'
     folder: 'src/content/build'
     create: true
-    slug: '{{name}}'
-    path: '{{name}}'
-    media_folder: /static/images/uploads
-    public_folder: /images/uploads
-    preview_path: 'builds/{{name}}'
+    slug: '{{slug}}'
     fields:
-      - { label: 'Build Name', name: 'name', widget: 'string' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Build Name', name: 'title', widget: 'string' }
+      - { label: 'Active', name: 'active', widget: 'select', options: ['true', 'false'] }
       - label: "Status"
         name: "status"
         widget: "select"
-        options: ["Pre-Build", "For Sale", "In Progress", "Deposit Received", "Pending Sale", "Sold"]
+        options: ["For Sale", "Sold"]
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Header Image', name: 'image', widget: 'image'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'faq'
-    label: 'FAQ'
-    folder: 'src/content/faq'
-    create: false
-    slug: '{{title}}'
-    path: '{{title}}/index'
-    media_folder: /static/images/uploads
-    public_folder: /images/uploads
-    preview_path: '{{title}}'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Last Updated', name: 'date', widget: 'datetime' }
-      - { label: 'Header Image', name: 'image', widget: 'image'}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'services'
-    label: 'Services'
-    folder: 'src/content/services'
-    create: false
-    slug: '{{title}}'
-    path: '{{title}}/index'
-    media_folder: /static/images/uploads
-    public_folder: /images/uploads
-    preview_path: '{{title}}'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Last Updated', name: 'date', widget: 'datetime' }
-      - { label: 'Header Image', name: 'image', widget: 'image'}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'testimonial'
-    label: 'Testimonial'
-    folder: 'src/content/testimonial'
+  - label: 'Reviews'
+    name: 'review'
+    folder: 'src/content/review'
     create: true
-    slug: '{{title}}'
-    path: '{{title}}'
-    media_folder: /static/images/uploads
-    public_folder: /images/uploads
-    preview_path: 'testimonials/{{title}}'
+    slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string' }

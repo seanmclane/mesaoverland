@@ -1,10 +1,12 @@
 ---
-name: The Negotiator
+title: The Negotiator
 slug: /builds/thenegotiator
+active: "true"
 status: Sold
 date: 2021-12-10T17:46:36.622Z
 image: /images/uploads/negotiator-night-shot.jpg
 ---
+
 ## Update December 10, 2021 - The Negotiator in Action
 
 <div style="overflow: hidden; position: relative; padding-top: 56.25%; margin-bottom: 1em;">
@@ -53,16 +55,16 @@ Next step, weld everything back up and fabricate a custom steel bumper.
 
 Some of our planned upgrades include:
 
-* 4x4 conversion
-* 37" tires
-* 4-5" suspension lift
-* Turbo upgrade
-* New injectors
-* Heated fuel system
-* Fully rebuilt transmission
-* Billet torque converter
-* Interior mountain bike storage
-* 400W solar and lithium batteries
-* and more!
+- 4x4 conversion
+- 37" tires
+- 4-5" suspension lift
+- Turbo upgrade
+- New injectors
+- Heated fuel system
+- Fully rebuilt transmission
+- Billet torque converter
+- Interior mountain bike storage
+- 400W solar and lithium batteries
+- and more!
 
 Contact us at info@mesaoverland.com to put your own touches on this amazing build!

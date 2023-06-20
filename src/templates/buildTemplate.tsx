@@ -9,14 +9,16 @@ interface TemplateInput {
       html: string
       frontmatter: {
         date: string
-        slug: string
-        name: string
+        title: string
         status: string
         image?: {
           childImageSharp?: {
             fluid: any
           }
         }
+      }
+      fields: {
+        slug: string
       }
     }
   }
@@ -30,8 +32,8 @@ export default function Template({
   return (
     <>
       <SEO
-        title={frontmatter.name}
-        description={frontmatter.name}
+        title={frontmatter.title}
+        description={frontmatter.title}
         image={frontmatter.image?.childImageSharp?.fluid.src}
         article
       />
@@ -42,7 +44,7 @@ export default function Template({
             fluid={frontmatter.image?.childImageSharp?.fluid}
           />
           <h1 className="mt-8 text-3xl font-title uppercase">
-            {frontmatter.name}
+            {frontmatter.title}
           </h1>
           <h2 className="text-sm mb-2">
             STATUS:<span className="text-mesa"> {frontmatter.status}</span>
@@ -58,12 +60,11 @@ export default function Template({
 }
 export const pageQuery = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        slug
-        name
+        title
         status
         image {
           childImageSharp {
@@ -72,6 +73,9 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+      fields {
+        slug
       }
     }
   }
