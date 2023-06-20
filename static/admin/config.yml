@@ -58,3 +58,22 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - label: Campers
+    name: campers
+    files:
+      - label: 'Mid Size Camper'
+        name: 'midsize'
+        file: 'src/content/campers/midsize.json'
+        extension: json
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Photo', name: 'photo', widget: 'image' }
+          - { label: 'Shell Price', name: 'shell_price', widget: 'number' }
+          - { label: 'Upfit Price', name: 'upfit_price', widget: 'number' }
+          - label: Options
+            name: options
+            widget: list
+            fields:
+            - { label: Name, name: name, widget: string }
+            - { label: Price, name: price, widget: number }
+            - { label: Description, name: description, widget: string }
