@@ -94,7 +94,7 @@ function Index(props: Props): ReactElement {
             <h2 className="text-3xl font-title uppercase">
               Start planning your overland camper today!
             </h2>
-            <LinkButton to="/about" className="text-gray-100">
+            <LinkButton to="/contact" className="text-gray-100">
               Contact Us
             </LinkButton>
           </div>

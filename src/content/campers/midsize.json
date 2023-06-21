@@ -14,5 +14,11 @@
       "description": "Wouldn't you like to know more??"
     }
   ],
-  "photo": "/images/uploads/tex2.jpg"
+  "photo": "/images/uploads/tex2.jpg",
+  "features": [
+    {
+      "name": "Test Feature",
+      "description": "More about it"
+    }
+  ]
 }

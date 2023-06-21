@@ -53,7 +53,7 @@ export default function FullSize({
         <div className="flex mx-auto flex-wrap justify-around text-center max-w-screen-xl">
           <div className="my-8 md:w-1/2">
             <h2 className="text-3xl font-title uppercase">Features</h2>
-            <ul className="text-xl flex-wrap m-8 text-left list-disc">
+            <ul className="text-xl flex-wrap m-8 text-left list-none">
               <li>Lightweight, hard-side construction</li>
               <li>Cabover sleeping area with queen bed</li>
               <li>Full list coming soon!</li>
@@ -61,7 +61,7 @@ export default function FullSize({
           </div>
           <div className="my-8 md:w-1/2">
             <h2 className="text-3xl font-title uppercase">Options</h2>
-            <ul className="text-xl flex-wrap m-8 text-left list-disc">
+            <ul className="text-xl flex-wrap m-8 text-left list-none">
               <li>Full list coming soon!</li>
             </ul>
           </div>
