@@ -8,7 +8,7 @@ interface TemplateInput {
     markdownRemark: {
       html: string
       frontmatter: {
-        date: string
+        price: number
         title: string
         status: string
         image?: {
@@ -29,6 +29,12 @@ export default function Template({
 }: TemplateInput) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  // Create the number formatter.
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  })
   return (
     <>
       <SEO
@@ -46,11 +52,13 @@ export default function Template({
           <h1 className="mt-8 text-3xl font-title uppercase">
             {frontmatter.title}
           </h1>
-          <h2 className="text-sm mb-2">
-            STATUS:<span className="text-mesa"> {frontmatter.status}</span>
+          <h2 className="text-md mb-0">
+            <span className="text-mesa">
+              {formatter.format(frontmatter.price)}
+            </span>
           </h2>
-          <h2 className="text-sm">
-            LAST UPDATED: <span className="text-mesa">{frontmatter.date}</span>
+          <h2 className="text-sm mb-2">
+            <span className="text-black"> {frontmatter.status}</span>
           </h2>
           <div className="mt-8" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
@@ -65,6 +73,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        price
         status
         image {
           childImageSharp {

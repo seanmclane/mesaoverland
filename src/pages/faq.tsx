@@ -9,7 +9,6 @@ interface FAQProps {
       html: string
       frontmatter: {
         date: string
-        slug: string
         title: string
         image?: {
           childImageSharp?: {
@@ -51,11 +50,10 @@ export default function FAQ({
 }
 export const query = graphql`
   query FAQQuery {
-    markdownRemark(frontmatter: { slug: { eq: "/faq" } }) {
+    markdownRemark(fields: { slug: { eq: "/faq/" } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        slug
         title
         image {
           childImageSharp {

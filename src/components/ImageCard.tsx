@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 interface Props {
   title: string
   subtitle?: string
+  price?: number
   date: string
   linkTo: string
   image: any
@@ -12,6 +13,12 @@ interface Props {
 }
 
 function ImageCard(props: Props): ReactElement {
+  // Create the number formatter.
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  })
   return (
     <article className="flex flex-col overflow-hidden rounded-lg shadow-lg">
       <Link className="flex flex-1 bg-gray-100" to={props.linkTo}>
@@ -30,7 +37,12 @@ function ImageCard(props: Props): ReactElement {
             {props.title}
           </Link>
         </h1>
-        <h2 className="text-sm text-mesa mb-2">{props.subtitle}</h2>
+        {props.price ? (
+          <h2 className="text-md text-mesa mb-0">
+            {formatter.format(props.price)}
+          </h2>
+        ) : null}
+        <h2 className="text-sm text-black mb-2">{props.subtitle}</h2>
         <p className="text-grey-darker text-sm mb-auto p-0">{props.date}</p>
       </header>
     </article>

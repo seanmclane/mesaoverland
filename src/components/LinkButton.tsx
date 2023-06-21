@@ -12,7 +12,7 @@ function LinkButton({ children, to, className, bgColor }: Props): ReactElement {
   return (
     <Link to={to} className={className}>
       <button
-        className={`p-4 text-xl font-bold font-title uppercase ${
+        className={`p-4 text-xl font-bold font-title uppercase no-underline ${
           bgColor ? bgColor : "bg-outline"
         }`}
       >

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/SEO"
 
-interface ServicesProps {
+interface FinancingProps {
   data: {
     markdownRemark: {
       html: string
@@ -20,9 +20,9 @@ interface ServicesProps {
   }
 }
 
-export default function Services({
+export default function Financing({
   data, // this prop will be injected by the GraphQL query below.
-}: ServicesProps) {
+}: FinancingProps) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
   return (
@@ -49,8 +49,8 @@ export default function Services({
   )
 }
 export const query = graphql`
-  query ServicesQuery {
-    markdownRemark(fields: { slug: { eq: "/services/" } }) {
+  query FinancingQuery {
+    markdownRemark(fields: { slug: { eq: "/financing/" } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")

@@ -12,6 +12,10 @@
     @apply text-outline;
   }
   
+  a {
+    @apply underline
+  }
+
   h1,h2,h3,h4,h5,h6 {
     @apply mt-4;
     @apply mb-8;

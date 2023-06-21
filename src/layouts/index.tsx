@@ -9,20 +9,24 @@ interface Props {
 
 const linkList = [
   {
-    title: "Home",
-    href: "/",
+    title: "MidSize",
+    href: "/campers/midsize",
   },
   {
-    title: "Campers",
-    href: "/campers",
+    title: "FullSize",
+    href: "/campers/fullsize",
   },
   {
-    title: "For Sale",
+    title: "Builds",
     href: "/builds",
   },
   {
     title: "Services",
     href: "/services",
+  },
+  {
+    title: "Financing",
+    href: "/financing",
   },
   {
     title: "FAQ",
@@ -31,6 +35,10 @@ const linkList = [
   {
     title: "About",
     href: "/about",
+  },
+  {
+    title: "Contact",
+    href: "/contact",
   },
 ]
 

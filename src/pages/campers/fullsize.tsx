@@ -1,10 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 //import Img from "gatsby-image"
-import SEO from "../components/SEO"
-import LinkButton from "../components/LinkButton"
+import SEO from "../../components/SEO"
+import LinkButton from "../../components/LinkButton"
 
-interface CampersProps {
+interface FullSizeProps {
   data: {
     file: {
       childImageSharp: {
@@ -14,14 +14,14 @@ interface CampersProps {
   }
 }
 
-export default function Campers({
+export default function FullSize({
   data, // this prop will be injected by the GraphQL query below.
-}: CampersProps) {
+}: FullSizeProps) {
   return (
     <>
       <SEO
-        title="Campers"
-        description="Campers"
+        title="FullSize"
+        description="FullSize"
         image={data.file.childImageSharp.fluid.src}
         article
       />
@@ -89,7 +89,7 @@ export default function Campers({
   )
 }
 export const query = graphql`
-  query CampersQuery {
+  query FullSizeQuery {
     file(relativePath: { eq: "negotiator.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {

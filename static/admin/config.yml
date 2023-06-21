@@ -33,6 +33,15 @@ collections:
           - { label: 'Last Updated', name: 'date', widget: 'datetime' }
           - { label: 'Header Image', name: 'image', widget: 'image'}
           - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Financing'
+        name: 'financing'
+        file: 'src/content/financing/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Last Updated', name: 'date', widget: 'datetime' }
+          - { label: 'Header Image', name: 'image', widget: 'image'}
+          - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: 'Builds'
     name: 'build'
     folder: 'src/content/build'
@@ -45,7 +54,8 @@ collections:
         name: "status"
         widget: "select"
         options: ["For Sale", "Sold"]
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Price', name: 'price', widget: 'number' }
+      - { label: Date, name: date, widget: date }
       - { label: 'Header Image', name: 'image', widget: 'image'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: 'Reviews'

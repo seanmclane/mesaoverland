@@ -8,6 +8,7 @@ interface MDNode {
     frontmatter: {
       title: string
       date: string
+      price: number
       status: string
       active: string
       image?: {
@@ -31,7 +32,6 @@ interface Props {
 }
 
 function Builds(props: Props): ReactElement {
-  console.log(props)
   return (
     <>
       <SEO title="Builds" />
@@ -47,6 +47,7 @@ function Builds(props: Props): ReactElement {
                   <ImageCard
                     title={b.node.frontmatter.title}
                     subtitle={b.node.frontmatter.status}
+                    price={b.node.frontmatter.price}
                     date={b.node.frontmatter.date}
                     image={b.node.frontmatter.image?.childImageSharp?.fixed}
                     imageAlt={b.node.frontmatter.title}
@@ -76,6 +77,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            price
             status
             active
             image {

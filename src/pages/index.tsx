@@ -30,7 +30,11 @@ interface Props {
 function Index(props: Props): ReactElement {
   return (
     <>
-      <SEO title="Home" image={logo} />
+      <SEO
+        title="Home"
+        description="At Mesa Overland, we love making customers' dream adventure rigs into reality."
+        image={logo}
+      />
       <div id="hero-container" className="bg-gray-100">
         <Hero
           className="text-outline lg:pt-8 max-w-5xl m-auto"
@@ -50,7 +54,7 @@ function Index(props: Props): ReactElement {
           </div>
           <LinkButton
             to="/campers"
-            className="flex mx-16 md:mx-16 items-center"
+            className="flex mx-16 md:mx-16 items-center no-underline"
           >
             Campers
           </LinkButton>

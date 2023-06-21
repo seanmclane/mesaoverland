@@ -3,7 +3,8 @@ title: The Negotiator
 slug: /builds/thenegotiator
 active: "true"
 status: Sold
-date: 2021-12-10T17:46:36.622Z
+price: 25000
+date: 2022-06-09T16:46:36.622Z
 image: /images/uploads/negotiator-night-shot.jpg
 ---
 
