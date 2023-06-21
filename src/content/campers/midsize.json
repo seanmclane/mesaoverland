@@ -1,7 +1,7 @@
 {
   "name": "Midsize Camper",
-  "shell_price": 13000,
-  "upfit_price": 22500,
+  "shell_price": 13500,
+  "upfit_price": 22750,
   "options": [
     {
       "name": "Heat / Hot Water Combo",
@@ -14,7 +14,7 @@
       "description": "Wouldn't you like to know more??"
     }
   ],
-  "photo": "/images/uploads/tex2.jpg",
+  "photo": "/images/uploads/negotiator-night-shot.jpg",
   "features": [
     {
       "name": "Test Feature",
