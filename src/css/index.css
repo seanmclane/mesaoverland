@@ -34,7 +34,7 @@
     @apply pb-6;
   }
   li {
-    @apply list-disc;
+    @apply list-none;
     @apply ml-8;
   }
 }

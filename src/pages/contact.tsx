@@ -21,25 +21,36 @@ function encode(data: FormData) {
 }
 
 function ContactUs() {
-  const [state, setState] = useState({})
+  const [state, setState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  })
 
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
+  const validateEmail = (email) => {
+    var re = /\S+@\S+\.\S+/
+    return re.test(email)
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute("action")))
-      .catch((error) => alert(error))
+    if (validateEmail(state.email)) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": form.getAttribute("name"),
+          ...state,
+        }),
+      })
+        .then(() => navigate(form.getAttribute("action")))
+        .catch((error) => alert(error))
+    }
   }
 
   return (
@@ -61,11 +72,11 @@ function ContactUs() {
           >
             <input type="hidden" name="form-name" value="contact" />
             <p>
-              <label>
-                Name:
+              <label className="font-title">
+                Name
                 <br />
                 <input
-                  className="text-black p-2 w-2/3"
+                  className="text-black font-body p-2 w-2/3"
                   type="text"
                   name="name"
                   onChange={handleChange}
@@ -73,23 +84,28 @@ function ContactUs() {
               </label>
             </p>
             <p>
-              <label>
-                Email:
+              <label className="font-title">
+                Email
                 <br />
                 <input
-                  className="text-black p-2 w-2/3"
+                  className="text-black font-body p-2 w-2/3"
                   type="email"
                   name="email"
                   onChange={handleChange}
                 />
               </label>
+              {validateEmail(state.email) ? null : (
+                <p className="text-sm text-red font-body p-0 m-0">
+                  Please enter a valid email
+                </p>
+              )}
             </p>
             <p>
-              <label>
-                Message:
+              <label className="font-title">
+                Message
                 <br />
                 <textarea
-                  className="text-black p-2 w-2/3 h-40"
+                  className="text-black font-body p-2 w-2/3 h-40"
                   name="message"
                   onChange={handleChange}
                 />
@@ -104,7 +120,6 @@ function ContactUs() {
               </button>
             </p>
           </form>
-          <p>ADD CONFIGURATION HERE</p>
         </div>
       </div>
     </div>

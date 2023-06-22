@@ -4,20 +4,50 @@
   "upfit_price": 22750,
   "options": [
     {
-      "name": "Heat / Hot Water Combo",
-      "price": 2200,
-      "description": "It's a two in one!!"
+      "name": "Shell Only",
+      "description": "The cost is less for a shell model without the build out",
+      "price": -9250
     },
     {
-      "name": "Something Else",
-      "price": 10000,
-      "description": "Wouldn't you like to know more??"
+      "name": "Long Bed",
+      "price": 0,
+      "description": "There is no additional charge for a long bed camper"
+    },
+    {
+      "name": "Heat / Hot Water (Diesel)",
+      "price": 2200,
+      "description": "description"
+    },
+    {
+      "name": "Heat (Diesel for high altitude)",
+      "price": 1250,
+      "description": "description"
+    },
+    {
+      "name": "Shower / mudroom",
+      "price": 1350,
+      "description": "description"
+    },
+    {
+      "name": "Awning",
+      "price": 1800,
+      "description": "description"
+    },
+    {
+      "name": "Mattress ventilation",
+      "price": 220,
+      "description": "description"
+    },
+    {
+      "name": "Additional window",
+      "price": 650,
+      "description": "description"
     }
   ],
-  "photo": "/images/uploads/negotiator-night-shot.jpg",
+  "photo": "/images/uploads/camper-3d-1.png",
   "features": [
     {
-      "name": "Test Feature",
+      "name": "Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces to eliminate “thermal bridging”)",
       "description": "More about it"
     }
   ]

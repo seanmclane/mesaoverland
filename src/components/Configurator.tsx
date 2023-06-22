@@ -57,6 +57,10 @@ function Modal({ show, setShow, camper }) {
       basePrice
     )
   }
+  const validateEmail = (email) => {
+    var re = /\S+@\S+\.\S+/
+    return re.test(email)
+  }
 
   const handleChange = (e) => {
     //Go through all options and see if they're selected or not
@@ -93,16 +97,23 @@ function Modal({ show, setShow, camper }) {
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...configuration,
-      }),
-    })
-      .then(() => navigate(form.getAttribute("action")))
-      .catch((error) => alert(error))
+    const serializedOptions = configuration.selectedOptions.reduce(
+      (total, current) => total + current.name + ", ",
+      ""
+    )
+    if (validateEmail(configuration.customerEmail)) {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "configure",
+          ...configuration,
+          selectedOptions: serializedOptions,
+        }),
+      })
+        .then(() => navigate(form.getAttribute("action")))
+        .catch((error) => alert(error))
+    }
   }
 
   // Create the number formatter.
@@ -117,7 +128,7 @@ function Modal({ show, setShow, camper }) {
     show && (
       <div className="fixed left-0 top-0 min-w-full min-h-full bg-gray-100 overflow-scroll">
         <div className="absolute min-w-full">
-          <div className="fixed right-4 top-4">
+          <div className="fixed left-4 top-4 m-0">
             <Button
               bgColor="bg-transparent"
               textColor="text-outline"
@@ -127,49 +138,82 @@ function Modal({ show, setShow, camper }) {
               &times;
             </Button>
           </div>
-          <div className="bg-gray-100 my-20 mx-2">
-            <div className="flex flex-col w-full justify-center text-center">
-              <img
-                className="max-w-lg mx-auto"
-                src={camper.photo}
-                alt={camper.name}
-              />
-              <h2 className="mb-0 text-2xl">{camper.name}</h2>
-              <h3 className="">{formatter.format(configuration.price)}</h3>
+          <div className="bg-gray-100">
+            <div className="flex flex-col md:flex-row w-full justify-center text-center mx-auto">
+              <div
+                className="w-full min-h-[20em] max-h-screen md:w-3/5 bg-no-repeat bg-cover bg-center"
+                style={{ backgroundImage: `url('${camper.photo}'` }}
+              >
+                {/* <img
+                  className=""
+                  src={camper.photo}
+                  alt={camper.name}
+                /> */}
+              </div>
               <form
                 name="configure"
                 method="post"
                 action="/"
                 data-netlify="true"
                 onSubmit={handleSubmit}
-                className="mx-auto"
+                className="w-full md:w-2/5 min-h-screen mt-4"
               >
+                {/* {camper.features.map((f) => (
+                  <p key={f.name}>{f.name}</p>
+                ))}
+                {configuration.selectedOptions.map((o) => (
+                  <p key={o.name}>{o.name}</p>
+                ))} */}
                 <input type="hidden" name="form-name" value="configure" />
                 {camper.options.map((o) => {
                   return (
                     <p key={o.name} className="text-left">
                       <label className="">
-                        <input
-                          className="text-black mx-4"
-                          type="checkbox"
-                          name={o.name}
-                          value={o.price}
-                          checked={optionState[o.name]}
-                          onChange={handleChange}
-                        />
-                        <span>
-                          {o.name} - {formatter.format(o.price)}
-                        </span>
+                        <h4 className="mb-1 mt-0 mx-4 text-sm">{o.name}</h4>
+                        <div className="flex flex-row justify-between p-4 mx-4 rounded-lg bg-gray-200 text-outline text-sm">
+                          <div>
+                            <input
+                              className="text-black"
+                              type="checkbox"
+                              name={o.name}
+                              value={o.price}
+                              checked={optionState[o.name]}
+                              onChange={handleChange}
+                            />
+                            {optionState[o.name] ? (
+                              <span className="px-4">Option selected</span>
+                            ) : (
+                              <span className="text-gray-500 px-4">
+                                Add option
+                              </span>
+                            )}
+                          </div>
+                          <span className="font-bold">
+                            {formatter.format(o.price)}
+                          </span>
+                        </div>
                       </label>
                     </p>
                   )
                 })}
+                <div className="mb-4">
+                  <p className="py-0 text-xs">
+                    *Some combinations of options are required and/or not
+                    possible.
+                  </p>
+                  <p className="py-0 text-xs">
+                    *Contact me for custom options or specific requests.
+                  </p>
+                  <p className="py-0 text-xs">
+                    *Available color selections and prices subject to change
+                  </p>
+                </div>
                 <p>
-                  <label>
-                    Name:
+                  <label className="font-title">
+                    Name
                     <br />
                     <input
-                      className="text-black p-2 w-2/3"
+                      className="text-outline font-body p-2 w-2/3"
                       type="text"
                       name="customerName"
                       value={configuration.customerName}
@@ -178,39 +222,54 @@ function Modal({ show, setShow, camper }) {
                   </label>
                 </p>
                 <p>
-                  <label>
-                    Email:
+                  <label className="font-title">
+                    Email
                     <br />
                     <input
-                      className="text-black p-2 w-2/3"
+                      className="text-outline font-body p-2 w-2/3"
                       type="email"
                       name="customerEmail"
                       value={configuration.customerEmail}
                       onChange={handleContact}
                     />
+                    {validateEmail(configuration.customerEmail) ? null : (
+                      <p className="text-sm text-red font-body p-0 m-0">
+                        Please enter a valid email
+                      </p>
+                    )}
                   </label>
                 </p>
                 <p>
-                  <label>
-                    Message:
+                  <label className="font-title">
+                    Message
                     <br />
                     <textarea
-                      className="text-black p-2 w-2/3 h-40"
+                      className="text-outline font-body p-2 w-2/3 h-40"
                       name="customerMessage"
                       value={configuration.customerMessage}
                       onChange={handleContact}
                     />
                   </label>
                 </p>
-                <h4 className="mb-0 text-xl">{camper.name}</h4>
-                {camper.features.map((f) => (
-                  <p key={f.name}>{f.name}</p>
-                ))}
-                {configuration.selectedOptions.map((o) => (
-                  <p key={o.name}>{o.name}</p>
-                ))}
-                <h5 className="">{formatter.format(configuration.price)}</h5>
-                <Button onClick={handleSubmit}>Submit</Button>
+                <div className="fixed flex flex-col md:flex-row justify-between left-0 bottom-0 min-w-full bg-outline text-gray-100 px-4">
+                  <div className="flex flex-col mt-4 md:my-auto">
+                    <h4 className="my-auto text-xl ">{camper.name}</h4>
+                    <h5 className="my-auto text-lg">
+                      {formatter.format(configuration.price)}
+                    </h5>
+                  </div>
+                  <div className="flex flex-col mb-2 md:my-auto">
+                    <h4 className="my-auto text-md">Est. Weight</h4>
+                    <h5 className="my-auto text-xs">configuration.weight</h5>
+                  </div>
+                  <Button
+                    bgColor="bg-mesa"
+                    classNames="min-w-full md:min-w-0 my-4"
+                    onClick={handleSubmit}
+                  >
+                    Submit
+                  </Button>
+                </div>
               </form>
             </div>
           </div>
@@ -226,11 +285,11 @@ function Configurator(props: Props): ReactElement {
   return (
     <>
       {/* Overlay "Build and Price" button */}
-      <div className="fixed left-0 bottom-6 min-w-full text-center">
+      <div className="fixed left-0 bottom-0">
         <Button
           textColor="text-outline"
           bgColor="bg-gray-100"
-          classNames="rounded-lg shadow-lg"
+          classNames="rounded-lg shadow-lg m-6"
           onClick={() => setShow(true)}
         >
           Build & Price
