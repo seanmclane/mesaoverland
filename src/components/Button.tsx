@@ -2,6 +2,7 @@ import React, { ReactElement } from "react"
 
 interface Props {
   children: string
+  type: any
   onClick: React.MouseEventHandler<HTMLButtonElement>
   classNames?: string
   bgColor?: string
@@ -10,6 +11,7 @@ interface Props {
 
 function Button({
   children,
+  type,
   onClick,
   classNames,
   bgColor,
@@ -17,6 +19,7 @@ function Button({
 }: Props): ReactElement {
   return (
     <button
+      type={type}
       onClick={onClick}
       className={`p-4 text-xl font-bold font-title uppercase no-underline ${
         bgColor ? bgColor : "bg-outline"

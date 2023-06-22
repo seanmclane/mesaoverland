@@ -165,6 +165,9 @@ function Modal({ show, setShow, camper }) {
                   <p key={o.name}>{o.name}</p>
                 ))} */}
                 <input type="hidden" name="form-name" value="configure" />
+                <input type="hidden" name="camper" value="" />
+                <input type="hidden" name="selectedOptions" value="" />
+                <input type="hidden" name="price" value="" />
                 {camper.options.map((o) => {
                   return (
                     <p key={o.name} className="text-left">
@@ -216,6 +219,7 @@ function Modal({ show, setShow, camper }) {
                       className="text-outline font-body p-2 w-2/3"
                       type="text"
                       name="customerName"
+                      required
                       value={configuration.customerName}
                       onChange={handleContact}
                     />
@@ -229,6 +233,7 @@ function Modal({ show, setShow, camper }) {
                       className="text-outline font-body p-2 w-2/3"
                       type="email"
                       name="customerEmail"
+                      required
                       value={configuration.customerEmail}
                       onChange={handleContact}
                     />
@@ -263,6 +268,7 @@ function Modal({ show, setShow, camper }) {
                     <h5 className="my-auto text-xs">configuration.weight</h5>
                   </div>
                   <Button
+                    type="submit"
                     bgColor="bg-mesa"
                     classNames="min-w-full md:min-w-0 my-4"
                     onClick={handleSubmit}
