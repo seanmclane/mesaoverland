@@ -2,7 +2,7 @@ import React, { ReactElement } from "react"
 
 interface Props {
   children: string
-  type: any
+  type?: any
   onClick: React.MouseEventHandler<HTMLButtonElement>
   classNames?: string
   bgColor?: string

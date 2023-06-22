@@ -165,9 +165,6 @@ function Modal({ show, setShow, camper }) {
                   <p key={o.name}>{o.name}</p>
                 ))} */}
                 <input type="hidden" name="form-name" value="configure" />
-                <input type="hidden" name="camper" value="" />
-                <input type="hidden" name="selectedOptions" value="" />
-                <input type="hidden" name="price" value="" />
                 {camper.options.map((o) => {
                   return (
                     <p key={o.name} className="text-left">

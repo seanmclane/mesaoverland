@@ -88,6 +88,16 @@ function MidSize() {
           </div>
         </div>
       </div>
+      {/* hidden configurator form for netlify to pick up */}
+      <form name="configure" data-netlify="true">
+        <input type="hidden" name="form-name" value="configure" />
+        <input type="hidden" name="camper" value="" />
+        <input type="hidden" name="selectedOptions" value="" />
+        <input type="hidden" name="price" value="" />
+        <input type="hidden" name="customerName" value="" />
+        <input type="hidden" name="customerEmail" value="" />
+        <input type="hidden" name="customerMessage" value="" />
+      </form>
     </>
   )
 }
