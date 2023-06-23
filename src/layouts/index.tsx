@@ -3,18 +3,16 @@ import React, { ReactElement } from "react"
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
 
+import MidSizeData from "../content/campers/midsize.json"
+
 interface Props {
   children: React.ReactNode
 }
 
 const linkList = [
   {
-    title: "MidSize",
+    title: MidSizeData.name,
     href: "/campers/midsize",
-  },
-  {
-    title: "FullSize",
-    href: "/campers/fullsize",
   },
   {
     title: "Builds",

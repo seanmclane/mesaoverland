@@ -15,6 +15,27 @@ collections:
   - label: 'Pages'
     name: 'pages'
     files:
+      - label: 'Home'
+        name: 'home'
+        file: 'src/content/home/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Tagline', name: 'tagline', widget: 'string' }
+          - { label: 'Tagline Description', name: 'tagline_desc', widget: 'string'}
+          - { label: 'Hero Image', name: 'hero_image', widget: 'image'}
+          - { label: 'Midsize Camper Tagline', name: 'midsize_tagline', widget: 'string'}
+          - { label: 'Midsize Camper Tagline Description', name: 'midsize_tagline_desc', widget: 'string'}
+          - { label: 'Midsize Camper Button Text', name: 'midsize_button', widget: 'string'}
+          - { label: 'Midsize Camper Image', name: 'midsize_image', widget: 'image'}
+          - { label: 'Fullsize Camper Tagline', name: 'fullsize_tagline', widget: 'string'}
+          - { label: 'Fullsize Camper Tagline Description', name: 'fullsize_tagline_desc', widget: 'string'}
+          - { label: 'Fullsize Camper Button Text', name: 'fullsize_button', widget: 'string'}
+          - { label: 'Fullsize Camper Image', name: 'fullsize_image', widget: 'image'}
+          - label: Gallery
+            name: gallery
+            widget: list
+            fields:
+            - { label: Image, name: image, widget: image }
       - label: 'FAQ'
         name: 'faq'
         file: 'src/content/faq/index.md'
@@ -42,6 +63,14 @@ collections:
           - { label: 'Last Updated', name: 'date', widget: 'datetime' }
           - { label: 'Header Image', name: 'image', widget: 'image'}
           - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'About'
+        name: 'about'
+        file: 'src/content/about/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Header Image', name: 'image', widget: 'image'}
+          - { label: 'About Text', name: 'body', widget: 'markdown' }
   - label: 'Builds'
     name: 'build'
     folder: 'src/content/build'

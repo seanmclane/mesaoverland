@@ -143,13 +143,7 @@ function Modal({ show, setShow, camper }) {
               <div
                 className="w-full min-h-[20em] max-h-screen md:w-3/5 bg-no-repeat bg-cover bg-center"
                 style={{ backgroundImage: `url('${camper.photo}'` }}
-              >
-                {/* <img
-                  className=""
-                  src={camper.photo}
-                  alt={camper.name}
-                /> */}
-              </div>
+              ></div>
               <form
                 name="configure"
                 method="post"

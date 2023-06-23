@@ -1,10 +1,8 @@
 import React from "react"
-import { graphql } from "gatsby"
-//import Img from "gatsby-image"
 import SEO from "../../components/SEO"
 import LinkButton from "../../components/LinkButton"
 
-import JSONData from "../../content/campers/midsize.json"
+import MidSizeData from "../../content/campers/midsize.json"
 import Configurator from "../../components/Configurator"
 
 function MidSize() {
@@ -18,32 +16,34 @@ function MidSize() {
   return (
     <>
       <SEO
-        title="MidSize"
-        description="MidSize"
-        image={JSONData.photo}
+        title={MidSizeData.name}
+        description={MidSizeData.name}
+        image={MidSizeData.photo}
         article
       />
-      <Configurator {...JSONData} />
+      <Configurator {...MidSizeData} />
       <div className="bg-mesa text-gray-100 py-20 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
-            <h2 className="text-3xl font-title uppercase">{JSONData.name}</h2>
+            <h2 className="text-3xl font-title uppercase">
+              {MidSizeData.name}
+            </h2>
             <img
               className="max-w-3xl mx-auto my-8"
-              src={JSONData.photo}
-              alt={JSONData.name}
+              src={MidSizeData.photo}
+              alt={MidSizeData.name}
             />
             <p className="text-xl flex-wrap">
               Starting at{" "}
               <span className="font-bold">
-                {formatter.format(JSONData.upfit_price)}
+                {formatter.format(MidSizeData.upfit_price)}
               </span>{" "}
               fully upfit
             </p>
             <p className="text-xl flex-wrap">
               Only{" "}
               <span className="font-bold">
-                {formatter.format(JSONData.shell_price)}
+                {formatter.format(MidSizeData.shell_price)}
               </span>{" "}
               as a shell
             </p>
@@ -55,7 +55,7 @@ function MidSize() {
           <div className="my-8 md:w-1/2">
             <h2 className="text-3xl font-title uppercase">Features</h2>
             <ul className="text-xl flex-wrap m-8 text-left">
-              {JSONData.features.map((f) => (
+              {MidSizeData.features.map((f) => (
                 <li key={f.name}>{f.name}</li>
               ))}
             </ul>
@@ -63,7 +63,7 @@ function MidSize() {
           <div className="my-8 md:w-1/2">
             <h2 className="text-3xl font-title uppercase">Options</h2>
             <ul className="text-xl flex-wrap m-8 text-left">
-              {JSONData.options.map((o) => (
+              {MidSizeData.options.map((o) => (
                 <li key={o.name}>{o.name}</li>
               ))}
             </ul>
@@ -75,6 +75,11 @@ function MidSize() {
         </div>
       </div>
       <div className="bg-gray-100 py-20 px-2">
+        <div className="flex w-full flex-wrap justify-center text-center">
+          GALLERY OR MORE TEXT HERE
+        </div>
+      </div>
+      <div className="bg-mesa text-gray-100 py-20 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
             <h2 className="text-3xl font-title uppercase">Custom Models</h2>

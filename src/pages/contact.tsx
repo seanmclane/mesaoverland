@@ -59,7 +59,7 @@ function ContactUs() {
         title="Contact Us"
         description="Contact us about a slide in camper or custom RV work"
       />
-      <div className="bg-mesa text-gray-100 py-40 px-2">
+      <div className="bg-mesa text-gray-100 py-20 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <h2 className="text-3xl font-title uppercase">Contact Us</h2>
           <form

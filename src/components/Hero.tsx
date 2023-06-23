@@ -4,8 +4,10 @@ import Img from "gatsby-image"
 interface Props {
   tagline: string
   details?: string
-  image?: any
+  image?: string
   imageAlt?: string
+  gatsbyImage?: any
+  gatsbyImageAlt?: string
   videoSrc?: string
   className?: string
 }
@@ -27,12 +29,14 @@ function Hero(props: Props): ReactElement {
             frameBorder="0"
           ></iframe>
         </div>
-      ) : (
+      ) : props.gatsbyImage ? (
         <Img
-          fluid={props.image}
-          alt={props.imageAlt}
+          fluid={props.gatsbyImage}
+          alt={props.gatsbyImageAlt}
           className="mx-auto max-w-5xl"
         />
+      ) : (
+        <img src={props.image} alt={props.imageAlt} />
       )}
       <div className="flex-col text-center py-8 px-2">
         <h1 className="font-title uppercase text-5xl font-bold">

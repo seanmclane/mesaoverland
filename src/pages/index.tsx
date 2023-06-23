@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Hero from "../components/Hero"
 import SEO from "../components/SEO"
 import LinkButton from "../components/LinkButton"
+// import HomeData from '../content/home/index.json'
 const logo = require("../../static/images/logo.png")
 
 interface Props {
@@ -12,7 +13,7 @@ interface Props {
         fluid: any
       }
     }
-    allMarkdownRemark: {
+    reviews: {
       edges: Array<{
         node: {
           html: string
@@ -24,48 +25,89 @@ interface Props {
         }
       }>
     }
+    homeData: {
+      edges: Array<{
+        node: {
+          frontmatter: {
+            tagline: string
+            tagline_desc: string
+            hero_image: {
+              childImageSharp?: {
+                fluid: any
+              }
+            }
+            midsize_tagline: string
+            midsize_tagline_desc: string
+            midsize_button: string
+            gallery: Array<{
+              image?: {
+                childImageSharp?: {
+                  fluid: any
+                }
+              }
+            }>
+          }
+        }
+      }>
+    }
   }
 }
 
 function Index(props: Props): ReactElement {
+  const HomeData = props.data.homeData.edges[0].node.frontmatter
   return (
     <>
-      <SEO
-        title="Home"
-        description="At Mesa Overland, we love making customers' dream adventure rigs into reality."
-        image={logo}
-      />
+      <SEO title="Home" description={HomeData.tagline_desc} image={logo} />
       <div id="hero-container" className="bg-gray-100">
         <Hero
           className="text-outline lg:pt-8 max-w-5xl m-auto"
-          tagline="Build your dreams"
-          details="At Mesa Overland, we love making customers' dream adventure rigs into reality."
-          image={props.data.file.childImageSharp.fluid}
+          tagline={HomeData.tagline}
+          details={HomeData.tagline_desc}
+          gatsbyImage={HomeData.hero_image.childImageSharp?.fluid}
+          gatsbyImageAlt="Hero image"
         />
       </div>
       <div className="bg-mesa text-gray-100 py-40 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
-            <h2 className="text-3xl font-title uppercase">Pick your camper</h2>
-            <p className="text-xl flex-wrap">
-              Camp anywhere with one of our flatbed-mounted or slide-in campers
-              on your truck
-            </p>
+            <h2 className="text-3xl font-title uppercase">
+              {HomeData.midsize_tagline}
+            </h2>
+            <p className="text-xl flex-wrap">{HomeData.midsize_tagline_desc}</p>
           </div>
           <LinkButton
-            to="/campers"
-            className="flex mx-16 md:mx-16 items-center no-underline"
+            to="/campers/midsize"
+            classNames="flex mx-16 md:mx-16 items-center no-underline"
           >
-            Campers
+            {HomeData.midsize_button}
           </LinkButton>
         </div>
       </div>
-      <div className=" py-40 px-2">
+      <div className="py-2 px-2">
+        <div className="flex w-full flex-wrap justify-center text-center">
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-2">
+            {props.data.homeData.edges[0].node.frontmatter.gallery.map(
+              (g, i) => {
+                return (
+                  <li className="ml-0">
+                    <img
+                      className="max-w-full h-full object-cover"
+                      src={g.image?.childImageSharp?.fluid.src}
+                      alt={g.image?.childImageSharp?.fluid.alt}
+                    />
+                  </li>
+                )
+              }
+            )}
+          </ul>
+        </div>
+      </div>
+      <div className="py-20 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
             <h2 className="text-3xl font-title uppercase">Testimonials</h2>
             <div className="flex flex-wrap">
-              {props.data.allMarkdownRemark.edges.map((t) => {
+              {props.data.reviews.edges.map((t) => {
                 return (
                   <div
                     className="text-xl lg:w-1/3 lg:max-w-3xl px-10"
@@ -94,7 +136,7 @@ function Index(props: Props): ReactElement {
             <h2 className="text-3xl font-title uppercase">
               Start planning your overland camper today!
             </h2>
-            <LinkButton to="/contact" className="text-gray-100">
+            <LinkButton to="/contact" classNames="text-gray-100">
               Contact Us
             </LinkButton>
           </div>
@@ -106,14 +148,39 @@ function Index(props: Props): ReactElement {
 
 export const query = graphql`
   query HomePageQuery {
-    file(relativePath: { eq: "hero.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
+    homeData: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/home/" } }
+      limit: 6
+    ) {
+      edges {
+        node {
+          frontmatter {
+            tagline
+            tagline_desc
+            hero_image {
+              childImageSharp {
+                fluid(maxWidth: 1200) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            midsize_tagline
+            midsize_tagline_desc
+            midsize_button
+            gallery {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 600) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
-    allMarkdownRemark(
+    reviews: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/review/" } }
       sort: { order: DESC, fields: [frontmatter___date] }
       limit: 3
