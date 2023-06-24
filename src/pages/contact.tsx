@@ -65,7 +65,7 @@ function ContactUs() {
           <form
             name="contact"
             method="post"
-            action="/"
+            action="/thankyou"
             data-netlify="true"
             onSubmit={handleSubmit}
             className="uppercase min-w-full"

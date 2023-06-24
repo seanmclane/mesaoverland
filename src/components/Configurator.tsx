@@ -1,4 +1,4 @@
-import React, { ReactElement, useState } from "react"
+import React, { ReactElement, useState, useEffect } from "react"
 import { navigate } from "gatsby-link"
 import Button from "./Button"
 
@@ -116,7 +116,7 @@ function Modal({ show, setShow, camper }) {
           selectedOptions: serializedOptions,
         }),
       })
-        .then(() => navigate(form.getAttribute("action")))
+        .then(() => navigate("/thankyou"))
         .catch((error) => alert(error))
     }
   }
@@ -142,7 +142,9 @@ function Modal({ show, setShow, camper }) {
               bgColor="bg-transparent"
               textColor="text-outline"
               classNames="text-4xl"
-              onClick={() => setShow(false)}
+              onClick={() => {
+                setShow(false)
+              }}
             >
               &times;
             </Button>
@@ -158,7 +160,7 @@ function Modal({ show, setShow, camper }) {
               <form
                 name="configure"
                 method="post"
-                action="/"
+                action="/thankyou"
                 data-netlify="true"
                 onSubmit={handleSubmit}
                 className="w-full md:w-2/5 min-h-screen mt-4"
@@ -294,6 +296,13 @@ function Modal({ show, setShow, camper }) {
 
 function Configurator(props: Props): ReactElement {
   const [show, setShow] = useState(false)
+
+  //stop body scroll when modal shown so modal scrolls and add scroll back when closed
+  useEffect(() => {
+    show
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "unset")
+  }, [show])
 
   return (
     <>

@@ -53,7 +53,7 @@ function MidSize({ data }: Props) {
   })
   const MidSizeData = data.midSizeData.edges[0].node.frontmatter
   return (
-    <>
+    <div className="">
       <SEO
         title={MidSizeData.name}
         description={MidSizeData.name}
@@ -143,7 +143,12 @@ function MidSize({ data }: Props) {
         </div>
       </div>
       {/* hidden configurator form for netlify to pick up */}
-      <form name="configure" data-netlify="true">
+      <form
+        name="configure"
+        data-netlify="true"
+        action="/thankyou"
+        method="post"
+      >
         <input type="hidden" name="form-name" value="configure" />
         <input type="hidden" name="camper" value="" />
         <input type="hidden" name="selectedOptions" value="" />
@@ -152,7 +157,7 @@ function MidSize({ data }: Props) {
         <input type="hidden" name="customerEmail" value="" />
         <input type="hidden" name="customerMessage" value="" />
       </form>
-    </>
+    </div>
   )
 }
 
