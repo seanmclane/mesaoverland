@@ -1,11 +1,49 @@
 import React from "react"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import SEO from "../../components/SEO"
 import LinkButton from "../../components/LinkButton"
-
-import MidSizeData from "../../content/campers/midsize.json"
 import Configurator from "../../components/Configurator"
 
-function MidSize() {
+interface Props {
+  data: {
+    midSizeData: {
+      edges: Array<{
+        node: {
+          frontmatter: {
+            name: string
+            photo: {
+              childImageSharp?: {
+                fluid: any
+              }
+            }
+            upfit_price: number
+            shell_price: number
+            lead_time_weeks: number
+            features: Array<{
+              name: string
+              description: string
+            }>
+            options: Array<{
+              name: string
+              price: number
+              description: string
+            }>
+            gallery: Array<{
+              image?: {
+                childImageSharp?: {
+                  fluid: any
+                }
+              }
+            }>
+          }
+        }
+      }>
+    }
+  }
+}
+
+function MidSize({ data }: Props) {
   // Create the number formatter.
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -13,24 +51,25 @@ function MidSize() {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   })
+  const MidSizeData = data.midSizeData.edges[0].node.frontmatter
   return (
     <>
       <SEO
         title={MidSizeData.name}
         description={MidSizeData.name}
-        image={MidSizeData.photo}
+        image={MidSizeData.photo.childImageSharp?.fluid}
         article
       />
       <Configurator {...MidSizeData} />
       <div className="bg-mesa text-gray-100 py-20 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
-          <div className="">
+          <div className="w-full">
             <h2 className="text-3xl font-title uppercase">
               {MidSizeData.name}
             </h2>
-            <img
+            <Img
               className="max-w-3xl mx-auto my-8"
-              src={MidSizeData.photo}
+              fluid={MidSizeData.photo.childImageSharp?.fluid}
               alt={MidSizeData.name}
             />
             <p className="text-xl flex-wrap">
@@ -74,9 +113,19 @@ function MidSize() {
           </p>
         </div>
       </div>
-      <div className="bg-gray-100 py-20 px-2">
+      <div className="my-2">
         <div className="flex w-full flex-wrap justify-center text-center">
-          GALLERY OR MORE TEXT HERE
+          <div className="w-auto overflow-auto whitespace-nowrap">
+            {MidSizeData.gallery.map((g) => {
+              return (
+                <img
+                  className="m-0 px-2 inline-block w-auto max-h-[40em] object-cover"
+                  src={g.image?.childImageSharp?.fluid.src}
+                  alt={g.image?.childImageSharp?.fluid.alt}
+                />
+              )
+            })}
+          </div>
         </div>
       </div>
       <div className="bg-mesa text-gray-100 py-20 px-2">
@@ -106,5 +155,49 @@ function MidSize() {
     </>
   )
 }
+
+export const query = graphql`
+  query MidSizeQuery {
+    midSizeData: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/campers/midsize/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            name
+            upfit_price
+            shell_price
+            lead_time_weeks
+            options {
+              name
+              price
+              description
+            }
+            features {
+              name
+              description
+            }
+            photo {
+              childImageSharp {
+                fluid(maxWidth: 1200) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            gallery {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1200) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
 
 export default MidSize

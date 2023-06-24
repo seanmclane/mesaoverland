@@ -102,13 +102,14 @@ collections:
     files:
       - label: 'Mid Size Camper'
         name: 'midsize'
-        file: 'src/content/campers/midsize.json'
-        extension: json
+        file: 'src/content/campers/midsize/index.md'
+        extension: md
         fields:
           - { label: 'Name', name: 'name', widget: 'string' }
           - { label: 'Photo', name: 'photo', widget: 'image' }
           - { label: 'Shell Price', name: 'shell_price', widget: 'number' }
           - { label: 'Upfit Price', name: 'upfit_price', widget: 'number' }
+          - { label: 'Lead Time (# of weeks)', name: 'lead_time_weeks', widget: 'number' }
           - label: Features
             name: features
             widget: list
@@ -122,3 +123,8 @@ collections:
             - { label: Name, name: name, widget: string }
             - { label: Price, name: price, widget: number }
             - { label: Description, name: description, widget: string }
+          - label: Gallery
+            name: gallery
+            widget: list
+            fields:
+            - { label: Image, name: image, widget: image }

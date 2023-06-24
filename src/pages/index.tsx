@@ -83,23 +83,19 @@ function Index(props: Props): ReactElement {
           </LinkButton>
         </div>
       </div>
-      <div className="py-2 px-2">
+      <div className="my-2">
         <div className="flex w-full flex-wrap justify-center text-center">
-          <ul className="grid grid-cols-1 md:grid-cols-3 gap-2">
-            {props.data.homeData.edges[0].node.frontmatter.gallery.map(
-              (g, i) => {
-                return (
-                  <li className="ml-0">
-                    <img
-                      className="max-w-full h-full object-cover"
-                      src={g.image?.childImageSharp?.fluid.src}
-                      alt={g.image?.childImageSharp?.fluid.alt}
-                    />
-                  </li>
-                )
-              }
-            )}
-          </ul>
+          <div className="w-auto overflow-auto whitespace-nowrap">
+            {props.data.homeData.edges[0].node.frontmatter.gallery.map((g) => {
+              return (
+                <img
+                  className="m-0 px-2 inline-block w-auto max-h-[40em] object-cover"
+                  src={g.image?.childImageSharp?.fluid.src}
+                  alt={g.image?.childImageSharp?.fluid.alt}
+                />
+              )
+            })}
+          </div>
         </div>
       </div>
       <div className="py-20 px-2">
@@ -170,7 +166,7 @@ export const query = graphql`
             gallery {
               image {
                 childImageSharp {
-                  fluid(maxWidth: 600) {
+                  fluid(maxWidth: 1200) {
                     ...GatsbyImageSharpFluid
                   }
                 }

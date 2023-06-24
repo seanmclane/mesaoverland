@@ -6,7 +6,12 @@ interface Props {
   name: string
   shell_price: number
   upfit_price: number
-  photo: string
+  lead_time_weeks: number
+  photo: {
+    childImageSharp?: {
+      fluid: any
+    }
+  }
   features: Array<{
     name: string
     description: string
@@ -124,9 +129,13 @@ function Modal({ show, setShow, camper }) {
     maximumFractionDigits: 0,
   })
 
+  //Calculate lead time to display
+  const lead_time = new Date()
+  lead_time.setDate(lead_time.getDate() + camper.lead_time_weeks * 7)
+
   return (
     show && (
-      <div className="fixed left-0 top-0 min-w-full min-h-full bg-gray-100 overflow-scroll">
+      <div className="fixed left-0 top-0 min-w-full min-h-full bg-gray-100 overflow-scroll z-20">
         <div className="absolute min-w-full">
           <div className="fixed left-4 top-4 m-0">
             <Button
@@ -142,7 +151,9 @@ function Modal({ show, setShow, camper }) {
             <div className="flex flex-col md:flex-row w-full justify-center text-center mx-auto">
               <div
                 className="w-full min-h-[20em] max-h-screen md:w-3/5 bg-no-repeat bg-cover bg-center"
-                style={{ backgroundImage: `url('${camper.photo}'` }}
+                style={{
+                  backgroundImage: `url('${camper.photo.childImageSharp.fluid.src}'`,
+                }}
               ></div>
               <form
                 name="configure"
@@ -235,7 +246,7 @@ function Modal({ show, setShow, camper }) {
                     )}
                   </label>
                 </p>
-                <p>
+                <p className="min-h-[30em]">
                   <label className="font-title">
                     Message
                     <br />
@@ -255,8 +266,13 @@ function Modal({ show, setShow, camper }) {
                     </h5>
                   </div>
                   <div className="flex flex-col mb-2 md:my-auto">
-                    <h4 className="my-auto text-md">Est. Weight</h4>
-                    <h5 className="my-auto text-xs">configuration.weight</h5>
+                    <h4 className="my-auto text-md">Est. Delivery</h4>
+                    <h5 className="my-auto text-sm">
+                      {lead_time.toLocaleString("en-us", {
+                        month: "short",
+                        year: "numeric",
+                      })}
+                    </h5>
                   </div>
                   <Button
                     type="submit"
@@ -282,7 +298,7 @@ function Configurator(props: Props): ReactElement {
   return (
     <>
       {/* Overlay "Build and Price" button */}
-      <div className="fixed left-0 bottom-0">
+      <div className="fixed left-0 bottom-0 z-10">
         <Button
           textColor="text-outline"
           bgColor="bg-gray-100"
