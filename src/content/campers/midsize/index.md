@@ -1,5 +1,7 @@
 ---
 name: The Butte
+description: It's an amazing camper you should totally buy. It fits midsize
+  trucks like the Ford Ranger or Toyota Tacoma.
 photo: /images/uploads/camper-3d-1.png
 shell_price: 13500
 upfit_price: 22750
@@ -8,6 +10,12 @@ features:
   - name:
       Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
+    description: description
+  - name: 1.5”+ High R value (7.6) FRP and EPS foam composite wall panels
+    description: description
+  - name: Lightweight FRP/EPS hard-sided construction (easily repairable fiberglass!)
+    description: description
+  - name: Strong mounting points
     description: description
 specs:
   - name: Total height

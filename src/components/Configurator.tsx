@@ -137,7 +137,7 @@ function Modal({ show, setShow, camper }) {
 
   return (
     show && (
-      <div className="fixed left-0 top-0 min-w-full min-h-full bg-gray-100 overflow-scroll z-20">
+      <div className="fixed left-0 top-0 min-w-full min-h-full bg-white overflow-scroll z-20">
         <div className="absolute min-w-full">
           <div className="fixed left-4 top-4 m-0">
             <Button
@@ -151,15 +151,37 @@ function Modal({ show, setShow, camper }) {
               &times;
             </Button>
           </div>
-          <div className="bg-gray-100">
+          <div className="">
             <div className="flex flex-col md:flex-row w-full justify-center text-center mx-auto">
-              <div
-                className="w-full max-h-screen md:w-3/5 bg-no-repeat bg-cover bg-center"
-                style={{
-                  backgroundImage: `url('${camper.photo.childImageSharp.fluid.src}'`,
-                  minHeight: "20em",
-                }}
-              ></div>
+              <div className="w-full max-h-screen md:w-3/5">
+                <div
+                  className="h-full bg-no-repeat bg-cover bg-center rounded-br-lg"
+                  style={{
+                    backgroundImage: `url('${camper.photo.childImageSharp.fluid.src}'`,
+                    minHeight: "20em",
+                  }}
+                ></div>
+                <div className="hidden md:block">
+                  <h3 className="mb-0">Standard Features</h3>
+                  <ul className="text-left w-full px-4">
+                    {camper.features.map((f) => (
+                      <li key={f.name} className="p-1">
+                        {f.name}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="hidden md:block">
+                  <h3 className="mb-0">Selected Options</h3>
+                  <ul className="text-left w-full px-4">
+                    {configuration.selectedOptions.map((o) => (
+                      <li key={o.name} className="p-1">
+                        {o.name}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
               <form
                 name="configure"
                 method="post"
@@ -168,19 +190,13 @@ function Modal({ show, setShow, camper }) {
                 onSubmit={handleSubmit}
                 className="w-full md:w-2/5 min-h-screen mt-4"
               >
-                {/* {camper.features.map((f) => (
-                  <p key={f.name}>{f.name}</p>
-                ))}
-                {configuration.selectedOptions.map((o) => (
-                  <p key={o.name}>{o.name}</p>
-                ))} */}
                 <input type="hidden" name="form-name" value="configure" />
                 {camper.options.map((o) => {
                   return (
                     <p key={o.name} className="text-left">
                       <label className="">
                         <h4 className="mb-1 mt-0 mx-4 text-sm">{o.name}</h4>
-                        <div className="flex flex-row justify-between p-4 mx-4 rounded-lg bg-gray-200 text-outline text-sm">
+                        <div className="flex flex-row justify-between p-4 mx-4 rounded-lg bg-gray-100 text-outline text-sm">
                           <div>
                             <input
                               className="text-black"
@@ -223,7 +239,7 @@ function Modal({ show, setShow, camper }) {
                     Name
                     <br />
                     <input
-                      className="text-outline font-body p-2 w-2/3"
+                      className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
                       type="text"
                       name="customerName"
                       required
@@ -237,7 +253,7 @@ function Modal({ show, setShow, camper }) {
                     Email
                     <br />
                     <input
-                      className="text-outline font-body p-2 w-2/3"
+                      className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
                       type="email"
                       name="customerEmail"
                       required
@@ -257,7 +273,7 @@ function Modal({ show, setShow, camper }) {
                     Message
                     <br />
                     <textarea
-                      className="text-outline font-body p-2 w-2/3 h-40"
+                      className="resize-none text-outline font-body p-2 w-2/3 h-40 border-gray-300 border-2"
                       name="customerMessage"
                       value={configuration.customerMessage}
                       onChange={handleContact}
@@ -265,15 +281,19 @@ function Modal({ show, setShow, camper }) {
                   </label>
                 </p>
                 <div className="fixed flex flex-col md:flex-row justify-between left-0 bottom-0 min-w-full bg-outline text-gray-100 px-4">
-                  <div className="flex flex-col mt-4 md:my-auto">
-                    <h4 className="my-auto text-xl ">{camper.name}</h4>
-                    <h5 className="my-auto text-lg">
+                  <div className="flex flex-col mt-2 md:my-auto">
+                    <h4 className="my-auto text-lg md:text-xl ">
+                      {camper.name}
+                    </h4>
+                    <h5 className="my-auto text-md md:text-lg">
                       {formatter.format(configuration.price)}
                     </h5>
                   </div>
-                  <div className="flex flex-col mb-2 md:my-auto">
-                    <h4 className="my-auto text-md">Est. Delivery</h4>
-                    <h5 className="my-auto text-sm">
+                  <div className="flex flex-col mb-0 md:my-auto">
+                    <h4 className="my-auto text-sm md:text-md">
+                      Est. Delivery
+                    </h4>
+                    <h5 className="my-auto text-xs md:text-sm">
                       {lead_time.toLocaleString("en-us", {
                         month: "short",
                         year: "numeric",
@@ -314,8 +334,8 @@ function Configurator(props: Props): ReactElement {
       <div className="fixed left-0 bottom-0 z-10">
         <Button
           textColor="text-outline"
-          bgColor="bg-gray-100"
-          classNames="rounded-lg shadow-lg m-6"
+          bgColor="bg-white"
+          classNames="rounded-r-lg shadow-lg my-6"
           onClick={() => setShow(true)}
         >
           Build & Price

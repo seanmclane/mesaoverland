@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react"
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Hero from "../components/Hero"
 import SEO from "../components/SEO"
 import LinkButton from "../components/LinkButton"
@@ -26,35 +27,31 @@ interface Props {
       }>
     }
     homeData: {
-      edges: Array<{
-        node: {
-          frontmatter: {
-            tagline: string
-            tagline_desc: string
-            hero_image: {
-              childImageSharp?: {
-                fluid: any
-              }
-            }
-            midsize_tagline: string
-            midsize_tagline_desc: string
-            midsize_button: string
-            gallery: Array<{
-              image?: {
-                childImageSharp?: {
-                  fluid: any
-                }
-              }
-            }>
+      frontmatter: {
+        tagline: string
+        tagline_desc: string
+        hero_image: {
+          childImageSharp?: {
+            fluid: any
           }
         }
-      }>
+        midsize_tagline: string
+        midsize_tagline_desc: string
+        midsize_button: string
+        gallery: Array<{
+          image?: {
+            childImageSharp?: {
+              fluid: any
+            }
+          }
+        }>
+      }
     }
   }
 }
 
 function Index(props: Props): ReactElement {
-  const HomeData = props.data.homeData.edges[0].node.frontmatter
+  const HomeData = props.data.homeData.frontmatter
   return (
     <>
       <SEO title="Home" description={HomeData.tagline_desc} image={logo} />
@@ -83,14 +80,15 @@ function Index(props: Props): ReactElement {
           </LinkButton>
         </div>
       </div>
-      <div className="my-2">
+      <div className="mt-2">
         <div className="flex w-full flex-wrap justify-center text-center">
-          <div className="w-auto overflow-auto whitespace-nowrap">
-            {props.data.homeData.edges[0].node.frontmatter.gallery.map((g) => {
+          <div className="w-full overflow-auto whitespace-nowrap mr-2">
+            {HomeData.gallery.map((g) => {
               return (
-                <img
-                  className="m-0 px-2 inline-block w-auto max-h-[40em] object-cover"
-                  src={g.image?.childImageSharp?.fluid.src}
+                <Img
+                  className="ml-2 inline-block rounded-lg w-4/5 md:w-2/3"
+                  style={{ maxHeight: "40em", minHeight: "20em" }}
+                  fluid={g.image?.childImageSharp?.fluid}
                   alt={g.image?.childImageSharp?.fluid.alt}
                 />
               )
@@ -144,32 +142,25 @@ function Index(props: Props): ReactElement {
 
 export const query = graphql`
   query HomePageQuery {
-    homeData: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/home/" } }
-      limit: 6
-    ) {
-      edges {
-        node {
-          frontmatter {
-            tagline
-            tagline_desc
-            hero_image {
-              childImageSharp {
-                fluid(maxWidth: 1200) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
+    homeData: markdownRemark(fileAbsolutePath: { regex: "/content/home/" }) {
+      frontmatter {
+        tagline
+        tagline_desc
+        hero_image {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
             }
-            midsize_tagline
-            midsize_tagline_desc
-            midsize_button
-            gallery {
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 1200) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+          }
+        }
+        midsize_tagline
+        midsize_tagline_desc
+        midsize_button
+        gallery {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

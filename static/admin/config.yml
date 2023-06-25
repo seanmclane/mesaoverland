@@ -106,6 +106,7 @@ collections:
         extension: md
         fields:
           - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
           - { label: 'Photo', name: 'photo', widget: 'image' }
           - { label: 'Shell Price', name: 'shell_price', widget: 'number' }
           - { label: 'Upfit Price', name: 'upfit_price', widget: 'number' }

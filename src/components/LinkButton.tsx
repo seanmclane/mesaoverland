@@ -19,7 +19,7 @@ function LinkButton({
   return (
     <Link to={to} className={classNames}>
       <button
-        className={`p-4 text-xl font-bold font-title uppercase no-underline ${
+        className={`p-3 md:p-4 text-lg md:text-xl font-bold font-title uppercase no-underline ${
           bgColor ? bgColor : "bg-outline"
         } ${textColor ? textColor : "text-gray-100"}`}
       >
