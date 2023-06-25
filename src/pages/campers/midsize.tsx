@@ -22,6 +22,10 @@ interface Props {
           name: string
           description: string
         }>
+        specs: Array<{
+          name: string
+          value: string
+        }>
         options: Array<{
           name: string
           price: number
@@ -127,6 +131,21 @@ function MidSize({ data }: Props) {
           </div>
         </div>
       </div>
+      <div className="bg-gray-100 text-outline py-20 px-2">
+        <div className="flex w-full flex-wrap justify-center text-center">
+          <div className="">
+            <h2 className="text-3xl font-title uppercase">Specifications</h2>
+            <ul className="m-4 text-lg text-left flex flex-wrap flex-row">
+              {MidSizeData.specs.map((s) => (
+                <li key={s.name} className="ml-0 px-4 w-1/3">
+                  <h4 className="m-0">{s.name}</h4>
+                  <p className="m-0">{s.value}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
       <div className="bg-mesa text-gray-100 py-20 px-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
@@ -178,6 +197,10 @@ export const query = graphql`
         features {
           name
           description
+        }
+        specs {
+          name
+          value
         }
         photo {
           childImageSharp {

@@ -9,6 +9,15 @@ features:
       Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
     description: description
+specs:
+  - name: Total height
+    value: 78.5"
+  - name: Total width
+    value: 78"
+  - name: Short bed floor length
+    value: 57.75"
+  - name: Long bed floor length
+    value: 72.5"
 options:
   - name: Shell Only
     price: -9250
