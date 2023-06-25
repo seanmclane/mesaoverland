@@ -127,7 +127,7 @@ function MidSize({ data }: Props) {
               return (
                 <Img
                   className="ml-2 inline-block rounded-lg w-4/5 md:w-2/3"
-                  style={{ maxHeight: "40em" }}
+                  style={{ maxHeight: "40em", minHeight: "20em" }}
                   fluid={g.image?.childImageSharp?.fluid}
                   alt={g.image?.childImageSharp?.fluid.alt}
                 />
