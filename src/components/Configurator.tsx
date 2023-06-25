@@ -154,9 +154,10 @@ function Modal({ show, setShow, camper }) {
           <div className="bg-gray-100">
             <div className="flex flex-col md:flex-row w-full justify-center text-center mx-auto">
               <div
-                className="w-full min-h-[20em] max-h-screen md:w-3/5 bg-no-repeat bg-cover bg-center"
+                className="w-full max-h-screen md:w-3/5 bg-no-repeat bg-cover bg-center"
                 style={{
                   backgroundImage: `url('${camper.photo.childImageSharp.fluid.src}'`,
+                  minHeight: "20em",
                 }}
               ></div>
               <form
@@ -251,7 +252,7 @@ function Modal({ show, setShow, camper }) {
                     )}
                   </label>
                 </p>
-                <p className="min-h-[30em]">
+                <p style={{ minHeight: "30em" }}>
                   <label className="font-title">
                     Message
                     <br />

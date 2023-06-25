@@ -3,7 +3,7 @@ name: The Butte
 photo: /images/uploads/camper-3d-1.png
 shell_price: 13500
 upfit_price: 22750
-lead_time_weeks: 24
+lead_time_weeks: 16
 features:
   - name:
       Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
