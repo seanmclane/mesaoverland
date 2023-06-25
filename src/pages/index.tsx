@@ -55,9 +55,9 @@ function Index(props: Props): ReactElement {
   return (
     <>
       <SEO title="Home" description={HomeData.tagline_desc} image={logo} />
-      <div id="hero-container" className="bg-gray-100">
+      <div id="hero-container" className="">
         <Hero
-          className="text-outline lg:pt-8 max-w-5xl m-auto"
+          className="text-outline"
           tagline={HomeData.tagline}
           details={HomeData.tagline_desc}
           gatsbyImage={HomeData.hero_image.childImageSharp?.fluid}
@@ -93,6 +93,22 @@ function Index(props: Props): ReactElement {
                 />
               )
             })}
+          </div>
+        </div>
+      </div>
+      <div className="bg-outline text-gray-100 py-40 px-2">
+        <div className="flex w-full flex-wrap justify-center text-center">
+          <div className="">
+            <h2 className="text-3xl font-title uppercase">
+              We finance! See how much you could be approved for
+            </h2>
+            <LinkButton
+              to="/financing"
+              bgColor="bg-mesa"
+              classNames="text-gray-100"
+            >
+              Financing
+            </LinkButton>
           </div>
         </div>
       </div>

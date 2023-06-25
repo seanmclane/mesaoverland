@@ -92,7 +92,7 @@ function MidSize({ data }: Props) {
             </h2>
             <ul className="text-xl flex-wrap m-8 text-left">
               {MidSizeData.features.map((f) => (
-                <li key={f.name} className="p-1">
+                <li key={f.name} className="py-1 ml-0">
                   {f.name}
                 </li>
               ))}
@@ -104,7 +104,10 @@ function MidSize({ data }: Props) {
             </h2>
             <ul className="text-xl flex-wrap m-8 text-left">
               {MidSizeData.options.map((o) => (
-                <li key={o.name} className="flex flex-row justify-between p-1">
+                <li
+                  key={o.name}
+                  className="flex flex-row justify-between py-1 ml-0"
+                >
                   <span>{o.name}</span>
                   <span className="font-bold">{formatter.format(o.price)}</span>
                 </li>

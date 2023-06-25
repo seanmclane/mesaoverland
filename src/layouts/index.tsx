@@ -64,7 +64,11 @@ function Index(props: Props): ReactElement {
           )}
         />
       </header>
-      <main id="body-container" className="m-auto min-h-screen">
+      <main
+        id="body-container"
+        className="m-auto"
+        style={{ minHeight: "75vh" }}
+      >
         {props.children}
       </main>
       <Footer />
