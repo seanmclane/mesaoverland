@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react"
+import { StaticQuery, graphql } from "gatsby"
 
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
@@ -7,9 +8,13 @@ interface Props {
   children: React.ReactNode
 }
 
-const linkList = [
+const linkList = (midSizeName: string) => [
   {
-    title: "Midsize",
+    title: "Home",
+    href: "/",
+  },
+  {
+    title: midSizeName,
     href: "/campers/midsize",
   },
   {
@@ -42,7 +47,22 @@ function Index(props: Props): ReactElement {
   return (
     <div className="font-body">
       <header className="font-title uppercase">
-        <Nav links={linkList} />
+        <StaticQuery
+          query={graphql`
+            query LayoutQuery {
+              midSizeData: markdownRemark(
+                fileAbsolutePath: { regex: "/content/campers/midsize/" }
+              ) {
+                frontmatter {
+                  name
+                }
+              }
+            }
+          `}
+          render={(data) => (
+            <Nav links={linkList(data.midSizeData.frontmatter.name)} />
+          )}
+        />
       </header>
       <main id="body-container" className="m-auto min-h-screen">
         {props.children}

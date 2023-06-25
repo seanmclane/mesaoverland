@@ -7,12 +7,7 @@ interface FormData {
   name: string
   email: string
   message: string
-  configuration?: any
 }
-
-// interface FormProps {
-//   configuration: any
-// }
 
 function encode(data: FormData) {
   return Object.keys(data)
@@ -31,15 +26,17 @@ function ContactUs() {
     setState({ ...state, [e.target.name]: e.target.value })
   }
 
+  const [emailValidState, setEmailValidState] = useState(true)
+
   const validateEmail = (email) => {
     var re = /\S+@\S+\.\S+/
-    return re.test(email)
+    setEmailValidState(re.test(email))
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
-    if (validateEmail(state.email)) {
+    if (emailValidState) {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -92,10 +89,11 @@ function ContactUs() {
                   type="email"
                   name="email"
                   onChange={handleChange}
+                  onBlur={() => validateEmail(state.email)}
                 />
               </label>
-              {validateEmail(state.email) ? null : (
-                <p className="text-sm text-red font-body p-0 m-0">
+              {emailValidState ? null : (
+                <p className="text-sm font-body p-0 m-0">
                   Please enter a valid email
                 </p>
               )}

@@ -62,9 +62,11 @@ function Modal({ show, setShow, camper }) {
       basePrice
     )
   }
+
+  const [emailValidState, setEmailValidState] = useState(true)
   const validateEmail = (email) => {
     var re = /\S+@\S+\.\S+/
-    return re.test(email)
+    setEmailValidState(re.test(email))
   }
 
   const handleChange = (e) => {
@@ -106,7 +108,7 @@ function Modal({ show, setShow, camper }) {
       (total, current) => total + current.name + ", ",
       ""
     )
-    if (validateEmail(configuration.customerEmail)) {
+    if (emailValidState) {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -240,9 +242,10 @@ function Modal({ show, setShow, camper }) {
                       required
                       value={configuration.customerEmail}
                       onChange={handleContact}
+                      onBlur={() => validateEmail(configuration.customerEmail)}
                     />
-                    {validateEmail(configuration.customerEmail) ? null : (
-                      <p className="text-sm text-red font-body p-0 m-0">
+                    {emailValidState ? null : (
+                      <p className="text-sm text-red-600 font-body p-0 m-0">
                         Please enter a valid email
                       </p>
                     )}

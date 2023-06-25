@@ -8,37 +8,33 @@ import Configurator from "../../components/Configurator"
 interface Props {
   data: {
     midSizeData: {
-      edges: Array<{
-        node: {
-          frontmatter: {
-            name: string
-            photo: {
-              childImageSharp?: {
-                fluid: any
-              }
-            }
-            upfit_price: number
-            shell_price: number
-            lead_time_weeks: number
-            features: Array<{
-              name: string
-              description: string
-            }>
-            options: Array<{
-              name: string
-              price: number
-              description: string
-            }>
-            gallery: Array<{
-              image?: {
-                childImageSharp?: {
-                  fluid: any
-                }
-              }
-            }>
+      frontmatter: {
+        name: string
+        photo: {
+          childImageSharp?: {
+            fluid: any
           }
         }
-      }>
+        upfit_price: number
+        shell_price: number
+        lead_time_weeks: number
+        features: Array<{
+          name: string
+          description: string
+        }>
+        options: Array<{
+          name: string
+          price: number
+          description: string
+        }>
+        gallery: Array<{
+          image?: {
+            childImageSharp?: {
+              fluid: any
+            }
+          }
+        }>
+      }
     }
   }
 }
@@ -51,7 +47,7 @@ function MidSize({ data }: Props) {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   })
-  const MidSizeData = data.midSizeData.edges[0].node.frontmatter
+  const MidSizeData = data.midSizeData.frontmatter
   return (
     <div className="">
       <SEO
@@ -103,7 +99,10 @@ function MidSize({ data }: Props) {
             <h2 className="text-3xl font-title uppercase">Options</h2>
             <ul className="text-xl flex-wrap m-8 text-left">
               {MidSizeData.options.map((o) => (
-                <li key={o.name}>{o.name}</li>
+                <li key={o.name} className="flex flex-row justify-between">
+                  <span>{o.name}</span>
+                  <span className="font-bold">{formatter.format(o.price)}</span>
+                </li>
               ))}
             </ul>
           </div>
@@ -163,39 +162,35 @@ function MidSize({ data }: Props) {
 
 export const query = graphql`
   query MidSizeQuery {
-    midSizeData: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/campers/midsize/" } }
+    midSizeData: markdownRemark(
+      fileAbsolutePath: { regex: "/content/campers/midsize/" }
     ) {
-      edges {
-        node {
-          frontmatter {
-            name
-            upfit_price
-            shell_price
-            lead_time_weeks
-            options {
-              name
-              price
-              description
+      frontmatter {
+        name
+        upfit_price
+        shell_price
+        lead_time_weeks
+        options {
+          name
+          price
+          description
+        }
+        features {
+          name
+          description
+        }
+        photo {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
             }
-            features {
-              name
-              description
-            }
-            photo {
-              childImageSharp {
-                fluid(maxWidth: 1200) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            gallery {
-              image {
-                childImageSharp {
-                  fluid(maxWidth: 1200) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
+          }
+        }
+        gallery {
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
