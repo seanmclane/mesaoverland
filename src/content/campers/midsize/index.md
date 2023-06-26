@@ -46,7 +46,7 @@ specs:
   - name: Total width
     value: 78"
   - name: Short bed floor length
-    value: 57.75"
+    value: 57.5"
   - name: Long bed floor length
     value: 72.5"
 options:
