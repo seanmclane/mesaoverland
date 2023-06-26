@@ -108,7 +108,7 @@ function Modal({ show, setShow, camper }) {
       (total, current) => total + current.name + ", ",
       ""
     )
-    if (emailValidState) {
+    if (emailValidState && configuration.customerEmail) {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },

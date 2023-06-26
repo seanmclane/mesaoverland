@@ -4,7 +4,7 @@ description: It's an amazing camper you should totally buy. It fits midsize
   trucks like the Ford Ranger or Toyota Tacoma.
 photo: /images/uploads/camper-3d-1.png
 shell_price: 13500
-upfit_price: 22750
+upfit_price: 24750
 lead_time_weeks: 16
 features:
   - name:

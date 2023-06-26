@@ -44,6 +44,9 @@ const linkList = (midSizeName: string) => [
 ]
 
 function Index(props: Props): ReactElement {
+  //ensure scroll is reset from configure modal if not "x"ed out
+  document.body.style.overflow = "unset"
+
   return (
     <div className="font-body">
       <header className="font-title uppercase">

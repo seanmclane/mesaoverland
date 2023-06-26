@@ -42,7 +42,6 @@ collections:
         extension: 'md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Last Updated', name: 'date', widget: 'datetime' }
           - { label: 'Header Image', name: 'image', widget: 'image'}
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Services'
@@ -51,7 +50,6 @@ collections:
         extension: 'md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Last Updated', name: 'date', widget: 'datetime' }
           - { label: 'Header Image', name: 'image', widget: 'image'}
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'Financing'
@@ -60,7 +58,6 @@ collections:
         extension: 'md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Last Updated', name: 'date', widget: 'datetime' }
           - { label: 'Header Image', name: 'image', widget: 'image'}
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'About'
@@ -69,7 +66,6 @@ collections:
         extension: 'md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Header Image', name: 'image', widget: 'image'}
           - { label: 'About Text', name: 'body', widget: 'markdown' }
   - label: 'Builds'
     name: 'build'

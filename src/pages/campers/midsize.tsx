@@ -115,8 +115,8 @@ function MidSize({ data }: Props) {
             </ul>
           </div>
           <p>
-            *Listed features, options, and pricing subject to change and vehicle
-            approval. Contact us for a quote.
+            *Listed features, options, pricing, and delivery subject to change
+            and vehicle approval. Contact us for a quote.
           </p>
         </div>
       </div>
@@ -157,7 +157,7 @@ function MidSize({ data }: Props) {
             <h2 className="text-3xl font-title uppercase">Custom Models</h2>
             <p className="text-xl flex-wrap">
               If you want something a little different than our standard models,
-              reach out! We can fabricate almost anything you can dream up.
+              reach out! We can build almost anything you can dream up.
             </p>
             <LinkButton to="/contact" textColor="text-gray-100">
               Contact Us
