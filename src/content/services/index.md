@@ -1,8 +1,6 @@
 ---
 title: Services
-date: 2021-03-16T16:22:06.491Z
-slug: /services
-image: /images/negotiator.jpg
+image: /images/uploads/negotiator-night-shot.jpg
 ---
 
 ### Consulting

@@ -1,3 +1,5 @@
+local_backend: true
+
 backend:
   name: git-gateway
   branch: main
@@ -10,64 +12,122 @@ site_url: https://mesaoverland.com
 logo_url: https://mesaoverland.com/images/logo.png
 
 collections:
-  - name: 'build'
-    label: 'Build'
+  - label: 'Pages'
+    name: 'pages'
+    files:
+      - label: 'Home'
+        name: 'home'
+        file: 'src/content/home/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Tagline', name: 'tagline', widget: 'string' }
+          - { label: 'Tagline Description', name: 'tagline_desc', widget: 'string'}
+          - { label: 'Hero Image', name: 'hero_image', widget: 'image'}
+          - { label: 'Midsize Camper Tagline', name: 'midsize_tagline', widget: 'string'}
+          - { label: 'Midsize Camper Tagline Description', name: 'midsize_tagline_desc', widget: 'string'}
+          - { label: 'Midsize Camper Button Text', name: 'midsize_button', widget: 'string'}
+          - { label: 'Midsize Camper Image', name: 'midsize_image', widget: 'image'}
+          - { label: 'Fullsize Camper Tagline', name: 'fullsize_tagline', widget: 'string'}
+          - { label: 'Fullsize Camper Tagline Description', name: 'fullsize_tagline_desc', widget: 'string'}
+          - { label: 'Fullsize Camper Button Text', name: 'fullsize_button', widget: 'string'}
+          - { label: 'Fullsize Camper Image', name: 'fullsize_image', widget: 'image'}
+          - label: Gallery
+            name: gallery
+            widget: list
+            fields:
+            - { label: Image, name: image, widget: image }
+      - label: 'FAQ'
+        name: 'faq'
+        file: 'src/content/faq/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Header Image', name: 'image', widget: 'image'}
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Services'
+        name: 'services'
+        file: 'src/content/services/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Header Image', name: 'image', widget: 'image'}
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Financing'
+        name: 'financing'
+        file: 'src/content/financing/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Header Image', name: 'image', widget: 'image'}
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'About'
+        name: 'about'
+        file: 'src/content/about/index.md'
+        extension: 'md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'About Text', name: 'body', widget: 'markdown' }
+  - label: 'Builds'
+    name: 'build'
     folder: 'src/content/build'
     create: true
-    slug: '{{name}}'
-    path: '{{name}}'
-    media_folder: /static/images/uploads
-    public_folder: /images/uploads
-    preview_path: 'builds/{{name}}'
+    slug: '{{slug}}'
     fields:
-      - { label: 'Build Name', name: 'name', widget: 'string' }
-      - { label: 'Slug', name: 'slug', widget: 'string' }
+      - { label: 'Build Name', name: 'title', widget: 'string' }
+      - { label: 'Active', name: 'active', widget: 'select', options: ['true', 'false'] }
       - label: "Status"
         name: "status"
         widget: "select"
-        options: ["Pre-Build", "For Sale", "In Progress", "Deposit Received", "Pending Sale", "Sold"]
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+        options: ["For Sale", "Sold"]
+      - { label: 'Price', name: 'price', widget: 'number' }
+      - { label: Date, name: date, widget: date }
       - { label: 'Header Image', name: 'image', widget: 'image'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'faq'
-    label: 'FAQ'
-    folder: 'src/content/faq'
-    create: false
-    slug: '{{title}}'
-    path: '{{title}}/index'
-    media_folder: /static/images/uploads
-    public_folder: /images/uploads
-    preview_path: '{{title}}'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Last Updated', name: 'date', widget: 'datetime' }
-      - { label: 'Header Image', name: 'image', widget: 'image'}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'services'
-    label: 'Services'
-    folder: 'src/content/services'
-    create: false
-    slug: '{{title}}'
-    path: '{{title}}/index'
-    media_folder: /static/images/uploads
-    public_folder: /images/uploads
-    preview_path: '{{title}}'
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Last Updated', name: 'date', widget: 'datetime' }
-      - { label: 'Header Image', name: 'image', widget: 'image'}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - name: 'testimonial'
-    label: 'Testimonial'
-    folder: 'src/content/testimonial'
+  - label: 'Reviews'
+    name: 'review'
+    folder: 'src/content/review'
     create: true
-    slug: '{{title}}'
-    path: '{{title}}'
-    media_folder: /static/images/uploads
-    public_folder: /images/uploads
-    preview_path: 'testimonials/{{title}}'
+    slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - label: Campers
+    name: campers
+    files:
+      - label: 'Mid Size Camper'
+        name: 'midsize'
+        file: 'src/content/campers/midsize/index.md'
+        extension: md
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Description', name: 'description', widget: 'string' }
+          - { label: 'Photo', name: 'photo', widget: 'image' }
+          - { label: 'Shell Price', name: 'shell_price', widget: 'number' }
+          - { label: 'Upfit Price', name: 'upfit_price', widget: 'number' }
+          - { label: 'Lead Time (# of weeks)', name: 'lead_time_weeks', widget: 'number' }
+          - label: Features
+            name: features
+            widget: list
+            fields:
+            - { label: Name, name: name, widget: string }
+            - { label: Description, name: description, widget: string }
+          - label: Specifications
+            name: specs
+            widget: list
+            fields:
+            - { label: Name, name: name, widget: string }
+            - { label: Value, name: value, widget: string }
+          - label: Options
+            name: options
+            widget: list
+            fields:
+            - { label: Name, name: name, widget: string }
+            - { label: Price, name: price, widget: number }
+            - { label: Description, name: description, widget: string }
+          - label: Gallery
+            name: gallery
+            widget: list
+            fields:
+            - { label: Image, name: image, widget: image }

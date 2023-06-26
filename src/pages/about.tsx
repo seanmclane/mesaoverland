@@ -5,15 +5,16 @@ import Image from "gatsby-image"
 
 interface Props {
   data: {
+    markdownRemark: {
+      html: string
+      frontmatter: {
+        title: string
+      }
+    }
     site: {
       siteMetadata: {
         contact_email: string
         contact_phone: string
-      }
-    }
-    sean: {
-      childImageSharp: {
-        fluid: any
       }
     }
     blayne: {
@@ -26,23 +27,13 @@ interface Props {
         fluid: any
       }
     }
-    interior: {
-      childImageSharp: {
-        fluid: any
-      }
-    }
-    exterior: {
-      childImageSharp: {
-        fluid: any
-      }
-    }
   }
 }
 
 function About(props: Props): ReactElement {
   return (
     <>
-      <SEO title="About" />
+      <SEO title={props.data.markdownRemark.frontmatter.title} />
       <section className="mx-auto px-6 mt-8 text-center">
         <h1 className="text-2xl mb-2 font-title">Mesa Overland</h1>
         {/* <p className="text-lg pb-0">1020 Old 6 and 50</p>
@@ -53,6 +44,12 @@ function About(props: Props): ReactElement {
         {/* <p className="text-lg pb-0">
           {props.data.site.siteMetadata.contact_phone}
         </p> */}
+      </section>
+      <section className="mx-auto mt-8 text-center">
+        <div
+          className="mt-8"
+          dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
+        />
       </section>
       <section className="mx-auto mt-8 text-center">
         <h2 className="font-title text-3xl bg-mesa text-white py-8">
@@ -85,6 +82,20 @@ function About(props: Props): ReactElement {
 
 export const query = graphql`
   query AboutQuery {
+    markdownRemark(fields: { slug: { eq: "/about/" } }) {
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
     site {
       siteMetadata {
         contact_email

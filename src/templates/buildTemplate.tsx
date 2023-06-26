@@ -8,15 +8,17 @@ interface TemplateInput {
     markdownRemark: {
       html: string
       frontmatter: {
-        date: string
-        slug: string
-        name: string
+        price: number
+        title: string
         status: string
         image?: {
           childImageSharp?: {
             fluid: any
           }
         }
+      }
+      fields: {
+        slug: string
       }
     }
   }
@@ -27,11 +29,18 @@ export default function Template({
 }: TemplateInput) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
+  // Create the number formatter.
+  const formatter = new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    minimumFractionDigits: 0,
+    maximumFractionDigits: 0,
+  })
   return (
     <>
       <SEO
-        title={frontmatter.name}
-        description={frontmatter.name}
+        title={frontmatter.title}
+        description={frontmatter.title}
         image={frontmatter.image?.childImageSharp?.fluid.src}
         article
       />
@@ -42,13 +51,15 @@ export default function Template({
             fluid={frontmatter.image?.childImageSharp?.fluid}
           />
           <h1 className="mt-8 text-3xl font-title uppercase">
-            {frontmatter.name}
+            {frontmatter.title}
           </h1>
-          <h2 className="text-sm mb-2">
-            STATUS:<span className="text-mesa"> {frontmatter.status}</span>
+          <h2 className="text-md mb-0">
+            <span className="text-mesa">
+              {formatter.format(frontmatter.price)}
+            </span>
           </h2>
-          <h2 className="text-sm">
-            LAST UPDATED: <span className="text-mesa">{frontmatter.date}</span>
+          <h2 className="text-sm mb-2">
+            <span className="text-black"> {frontmatter.status}</span>
           </h2>
           <div className="mt-8" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
@@ -58,12 +69,12 @@ export default function Template({
 }
 export const pageQuery = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        slug
-        name
+        title
+        price
         status
         image {
           childImageSharp {
@@ -72,6 +83,9 @@ export const pageQuery = graphql`
             }
           }
         }
+      }
+      fields {
+        slug
       }
     }
   }

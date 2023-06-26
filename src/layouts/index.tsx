@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react"
+import { StaticQuery, graphql } from "gatsby"
 
 import Nav from "../components/Nav"
 import Footer from "../components/Footer"
@@ -7,18 +8,26 @@ interface Props {
   children: React.ReactNode
 }
 
-const linkList = [
+const linkList = (midSizeName: string) => [
   {
     title: "Home",
     href: "/",
   },
   {
-    title: "Campers",
-    href: "/campers",
+    title: midSizeName,
+    href: "/campers/midsize",
+  },
+  {
+    title: "Builds",
+    href: "/builds",
   },
   {
     title: "Services",
     href: "/services",
+  },
+  {
+    title: "Financing",
+    href: "/financing",
   },
   {
     title: "FAQ",
@@ -28,15 +37,43 @@ const linkList = [
     title: "About",
     href: "/about",
   },
+  {
+    title: "Contact",
+    href: "/contact",
+  },
 ]
 
 function Index(props: Props): ReactElement {
+  //ensure scroll is reset from configure modal if not "x"ed out
+  if (typeof window !== "undefined" && window.document) {
+    document.body.style.overflow = "unset"
+  }
+
   return (
     <div className="font-body">
       <header className="font-title uppercase">
-        <Nav links={linkList} />
+        <StaticQuery
+          query={graphql`
+            query LayoutQuery {
+              midSizeData: markdownRemark(
+                fileAbsolutePath: { regex: "/content/campers/midsize/" }
+              ) {
+                frontmatter {
+                  name
+                }
+              }
+            }
+          `}
+          render={(data) => (
+            <Nav links={linkList(data.midSizeData.frontmatter.name)} />
+          )}
+        />
       </header>
-      <main id="body-container" className="m-auto min-h-screen">
+      <main
+        id="body-container"
+        className="m-auto"
+        style={{ minHeight: "75vh" }}
+      >
         {props.children}
       </main>
       <Footer />

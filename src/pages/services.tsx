@@ -9,7 +9,6 @@ interface ServicesProps {
       html: string
       frontmatter: {
         date: string
-        slug: string
         title: string
         image?: {
           childImageSharp?: {
@@ -37,7 +36,7 @@ export default function Services({
       <div className="mx-auto px-6 mt-8 max-w-screen-lg mb-8">
         <div className="">
           <Img
-            alt={frontmatter.image?.childImageSharp?.fluid}
+            alt={frontmatter.title}
             fluid={frontmatter.image?.childImageSharp?.fluid}
           />
           <h1 className="mt-8 text-3xl font-title uppercase">
@@ -51,11 +50,10 @@ export default function Services({
 }
 export const query = graphql`
   query ServicesQuery {
-    markdownRemark(frontmatter: { slug: { eq: "/services" } }) {
+    markdownRemark(fields: { slug: { eq: "/services/" } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
-        slug
         title
         image {
           childImageSharp {

@@ -12,6 +12,10 @@
     @apply text-outline;
   }
   
+  a {
+    @apply underline
+  }
+
   h1,h2,h3,h4,h5,h6 {
     @apply mt-4;
     @apply mb-8;
@@ -30,7 +34,7 @@
     @apply pb-6;
   }
   li {
-    @apply list-disc;
+    @apply list-none;
     @apply ml-8;
   }
 }
