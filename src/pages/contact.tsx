@@ -36,7 +36,7 @@ function ContactUs() {
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target
-    if (emailValidState) {
+    if (emailValidState && state.email) {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
