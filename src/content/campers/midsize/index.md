@@ -57,23 +57,41 @@ options:
     price: 500
     description: description
   - description: description
-    name: Heat / Hot Water (Diesel)
-    price: 2200
+    name: Heat and hot water (Diesel)
+    price: 2975
   - description: description
-    price: 1250
+    price: 1525
     name: Heat (Diesel for high altitude)
   - description: description
     name: Shower / mudroom
     price: 1350
   - name: Awning
-    price: 1800
+    price: 1230
     description: description
   - name: Matress ventilation
     price: 220
     description: description
-  - name: Additional window
-    price: 650
-    description: description
+  - name: Additional large window on side
+    price: 925
+    description: 550mm x 900mm
+  - name: Small window in cabover area
+    price: 660
+    description: 300mm x 500mm
+  - name: Electric roof hatch
+    price: 2055
+    description: Arctic Tern electric roof hatch
+  - name: Overhead removable duffel bags (per side)
+    price: 345
+    description: "Patagonia 40l duffels "
+  - name: Additional 100ah LiFePO4 battery
+    price: 495
+    description: "100ah LiFePO4 battery and associated components "
+  - name: Additional 100w solar panel
+    price: 175
+    description: 100w solar panel
+  - name: Camper jacks
+    price: 1550
+    description: "Manual camper jacks for easy camper removal. "
 gallery:
   - image: /images/uploads/mesa_overland-13.jpg
   - image: /images/uploads/mesa_overland-19.jpg
