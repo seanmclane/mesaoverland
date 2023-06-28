@@ -47,7 +47,7 @@ function About(props: Props): ReactElement {
       </section>
       <section className="mx-auto mt-8 text-center">
         <div
-          className="mt-8"
+          className="mt-8 max-w-5xl mx-auto px-4"
           dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
         />
       </section>

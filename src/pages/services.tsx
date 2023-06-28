@@ -33,7 +33,7 @@ export default function Services({
         image={frontmatter.image?.childImageSharp?.fluid.src}
         article
       />
-      <div className="mx-auto px-6 mt-8 max-w-screen-lg mb-8">
+      <div className="mx-auto px-4 mt-8 max-w-5xl mb-8">
         <div className="">
           <Img
             alt={frontmatter.title}
