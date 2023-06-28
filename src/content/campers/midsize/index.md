@@ -1,7 +1,9 @@
 ---
 name: The Butte
-description: It's an amazing camper you should totally buy. It fits midsize
-  trucks like the Ford Ranger or Toyota Tacoma.
+description: "Designed for midsized trucks like the Ford Ranger and Toyota
+  Tacoma, this truck camper is ready for whatever adventure you throw its way.
+  Its compact and lightweight construction helps you get to the places you love
+  without sacrificing comfort. "
 photo: /images/uploads/camper-3d-1.png
 shell_price: 14500
 upfit_price: 24750
