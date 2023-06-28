@@ -11,9 +11,9 @@ fullsize_tagline_desc: Test
 fullsize_button: Test
 fullsize_image: /images/uploads/camper-3d-1.png
 gallery:
-  - image: /images/uploads/mesa_overland-26.jpg
-  - image: /images/uploads/mesa_overland-19.jpg
-  - image: /images/uploads/mesa_overland-20.jpg
+  - image: /images/uploads/20230401_192502.jpg
+  - image: /images/uploads/screen-shot-2023-06-27-at-11.43.36-pm.png
+  - image: /images/uploads/20230414_160329.jpg
   - image: /images/uploads/mesa_overland-13.jpg
   - image: /images/uploads/negotiator-night-shot.jpg
 ---
