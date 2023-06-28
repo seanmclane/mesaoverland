@@ -93,7 +93,8 @@ options:
     price: 1550
     description: "Manual camper jacks for easy camper removal. "
 gallery:
-  - image: /images/uploads/mesa_overland-13.jpg
-  - image: /images/uploads/mesa_overland-19.jpg
-  - image: /images/uploads/mesa_overland-20.jpg
+  - image: /images/uploads/screen-shot-2023-06-27-at-11.14.00-pm.png
+  - image: /images/uploads/screen-shot-2023-06-27-at-11.42.30-pm.png
+  - image: /images/uploads/screen-shot-2023-06-27-at-11.14.51-pm.png
+  - image: /images/uploads/screen-shot-2023-06-27-at-11.43.36-pm.png
 ---
