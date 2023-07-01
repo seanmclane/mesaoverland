@@ -1,7 +1,7 @@
 ---
 title: The Jumbo
 active: "true"
-status: For Sale
+status: Sold
 price: 21500
 date: 2023-06-27T15:09:18.805Z
 image: /images/uploads/20230401_192502.jpg
