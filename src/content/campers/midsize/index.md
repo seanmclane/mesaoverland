@@ -27,10 +27,13 @@ features:
     description: description
   - name: "Power roof fan with intake and exhaust "
     description: "Description "
-  - name: 100ah LiFePO4 Battery w/ 200w solar, 40a MPPT solar charge controller,
-      1000w inverter, 20a “shore charging”
+  - name: VTOMAN FlashSpeed 1500 Portable Power Station 1500W (3000W Peak), 1548Wh
+      LiFePO4 (LFP) Battery Powered Generator with 3x 1500W AC Outlets, 6x USB
+      Ports, Recharge 0-100% within 1H, for Indoor Outdoor
     description: description
-  - name: LED lights and USB outlets, 12v and 120v power, and electric water pump
+  - name: 200/300w bifacial solar panel
+    description: description
+  - name: "LED lights with bluetooth "
     description: description
   - name: Portable Oven/stove combo
     description: "description "
@@ -40,8 +43,6 @@ features:
     description: "description "
   - name: "12v Fridge with small freezer "
     description: "TF49 "
-  - name: Customizable colors
-    description: "description "
 specs:
   - name: Total height
     value: 78.5"
@@ -64,30 +65,24 @@ options:
   - description: description
     price: 1525
     name: Heat (Diesel for high altitude)
-  - description: description
-    name: Shower / mudroom
-    price: 1350
   - name: Awning
     price: 1230
     description: description
   - name: Matress ventilation
     price: 220
     description: description
-  - name: Additional large window on side
-    price: 925
-    description: 550mm x 900mm
-  - name: Small window in cabover area
-    price: 660
-    description: 300mm x 500mm
+  - name: Window in door
+    price: 600
+    description: 500mm x 300mm
+  - name: Small window in cabover area (add up to two)
+    price: 600
+    description: "300mm x 500mm "
   - name: Electric roof hatch
     price: 2055
     description: Arctic Tern electric roof hatch
-  - name: Overhead removable duffel bags (per side)
-    price: 345
-    description: "Patagonia 40l duffels "
-  - name: Additional 100ah LiFePO4 battery
-    price: 495
-    description: "100ah LiFePO4 battery and associated components "
+  - name: Additional 1548wh battery capacity
+    price: 1000
+    description: VTOMAN battery expansion pack
   - name: Additional 100w solar panel
     price: 175
     description: 100w solar panel
