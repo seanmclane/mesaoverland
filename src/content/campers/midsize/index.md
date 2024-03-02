@@ -4,15 +4,15 @@ description: "Designed for midsized trucks like the Ford Ranger and Toyota
   Tacoma, this truck camper is ready for whatever adventure you throw its way.
   Its compact and lightweight construction helps you get to the places you love
   without sacrificing comfort. "
-photo: /images/uploads/camper-3d-1.png
-shell_price: 14500
-upfit_price: 24750
+photo: /images/uploads/20240302_074649.jpg
+shell_price: 14000
+upfit_price: 26750
 lead_time_weeks: 16
 features:
   - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
     description: description
-  - name: 1.5”+ High R value (7.6) FRP and EPS foam composite wall panels
+  - name: '2" thick high R value composite construction '
     description: description
   - name: Lightweight FRP/EPS hard-sided construction (easily repairable fiberglass!)
     description: description
@@ -20,9 +20,6 @@ features:
     description: description
   - name: Two Arctic Tern windows
     description: Double pane windows with built in bug screen and thermal sun shade
-  - name: 28" wide entry door to accommodate for wheelchairs or whatever else you
-      want inside!
-    description: description
   - name: Full size bed (75”x54”)
     description: description
   - name: "Power roof fan with intake and exhaust "
@@ -31,9 +28,9 @@ features:
       LiFePO4 (LFP) Battery Powered Generator with 3x 1500W AC Outlets, 6x USB
       Ports, Recharge 0-100% within 1H, for Indoor Outdoor
     description: description
-  - name: 200/300w bifacial solar panel
+  - name: 200w lightweight solar panel
     description: description
-  - name: "LED lights with bluetooth "
+  - name: dimmable LED lights
     description: description
   - name: Portable Oven/stove combo
     description: "description "
@@ -54,7 +51,7 @@ specs:
     value: 72.5"
 options:
   - name: Shell Only
-    price: -9250
+    price: -12752
     description: description
   - name: Long Bed
     price: 500
@@ -90,8 +87,8 @@ options:
     price: 1550
     description: "Manual camper jacks for easy camper removal. "
 gallery:
-  - image: /images/uploads/screen-shot-2023-06-27-at-11.14.00-pm.png
-  - image: /images/uploads/screen-shot-2023-06-27-at-11.42.30-pm.png
-  - image: /images/uploads/screen-shot-2023-06-27-at-11.14.51-pm.png
-  - image: /images/uploads/screen-shot-2023-06-27-at-11.43.36-pm.png
+  - image: /images/uploads/20240201_130609.jpg
+  - image: /images/uploads/20240205_173700.jpg
+  - image: /images/uploads/20240205_174213.jpg
+  - image: /images/uploads/20240205_173745.jpg
 ---
