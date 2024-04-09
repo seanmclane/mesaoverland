@@ -17,6 +17,13 @@ interface MDNode {
           fluid: any
         }
       }
+      gallery: Array<{
+        image?: {
+          childImageSharp?: {
+            fluid: any
+          }
+        }
+      }>
     }
     fields: {
       slug: string
@@ -89,6 +96,25 @@ function Chassis(props: Props): ReactElement {
           </div>
         </div>
       </section>
+      <div className="my-4 text-center">
+        <h2 className="text-2xl">Chassis Mounted Camper Photos</h2>
+        <div className="flex w-full flex-wrap justify-center text-center">
+          <div className="w-full overflow-auto whitespace-nowrap mr-2">
+            {props.data.allMarkdownRemark.edges.map((n) =>
+              n.node.frontmatter.gallery.map((g) => {
+                return (
+                  <Img
+                    className="ml-2 inline-block rounded-lg w-4/5 md:w-2/3"
+                    style={{ maxHeight: "40em", minHeight: "20em" }}
+                    fluid={g.image?.childImageSharp?.fluid}
+                    alt={g.image?.childImageSharp?.fluid.alt}
+                  />
+                )
+              })
+            )}
+          </div>
+        </div>
+      </div>
     </>
   )
 }
@@ -114,6 +140,15 @@ export const query = graphql`
                 }
                 fluid {
                   ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            gallery {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1200) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }
