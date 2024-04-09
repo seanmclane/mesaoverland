@@ -1,0 +1,130 @@
+import React, { ReactElement, useState } from "react"
+import { graphql } from "gatsby"
+import ModelCard from "../../components/ModelCard"
+import SEO from "../../components/SEO"
+import Img from "gatsby-image"
+
+interface MDNode {
+  node: {
+    frontmatter: {
+      name: string
+      short_description: string
+      shell_price: number
+      description: string
+      photo: {
+        childImageSharp?: {
+          fixed: any
+          fluid: any
+        }
+      }
+    }
+    fields: {
+      slug: string
+    }
+  }
+}
+
+interface Props {
+  data: {
+    allMarkdownRemark: {
+      edges: Array<MDNode>
+    }
+  }
+}
+
+function Chassis(props: Props): ReactElement {
+  return (
+    <>
+      <SEO
+        title="Chassis Mounted Campers"
+        description="Chassis mounted camper models from Mesa Overland"
+        image={
+          props.data.allMarkdownRemark.edges[0].node.frontmatter.photo
+            ?.childImageSharp?.fixed
+        }
+      />
+      <div className="bg-mesa text-gray-100 md:py-8">
+        <div className="flex w-full flex-wrap flex-row justify-between text-center mx-auto">
+          <div className="m-auto w-full md:w-1/2 p-4 max-w-md">
+            <h2 className="text-5xl font-title uppercase">
+              Chassis Mounted Campers
+            </h2>
+            <p className="text-xl flex-wrap">
+              These chassis mounted campers attach directly to the frame on
+              heavy duty trucks
+            </p>
+          </div>
+          <Img
+            className="w-full md:w-1/2 md:rounded-l-lg"
+            fluid={
+              props.data.allMarkdownRemark.edges[0].node.frontmatter.photo
+                ?.childImageSharp?.fluid
+            }
+            alt="Chassis mounted camper photo"
+          />
+        </div>
+      </div>
+      <section className="mx-auto px-6 my-2 lg:m-4">
+        <div className="max-w-screen-xl mx-auto">
+          <div className="flex flex-wrap -mx-1 lg:-mx-4">
+            {props.data.allMarkdownRemark.edges.length > 0 ? (
+              props.data.allMarkdownRemark.edges.map((b) => (
+                <div
+                  key={b.node.fields.slug}
+                  className="my-4 px-4 w-full sm:w-1/2 xl:w-1/3"
+                >
+                  <ModelCard
+                    name={b.node.frontmatter.name}
+                    short_description={b.node.frontmatter.short_description}
+                    price={b.node.frontmatter.shell_price}
+                    image={b.node.frontmatter.photo?.childImageSharp?.fixed}
+                    imageAlt={b.node.frontmatter.name}
+                    linkTo={b.node.fields.slug}
+                  />
+                </div>
+              ))
+            ) : (
+              <h2 className="mx-auto">Oops, something went wrong!</h2>
+            )}
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
+export const query = graphql`
+  query ChassisQuery {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/content/campers/chassis/" } }
+      sort: { order: ASC, fields: [frontmatter___name] }
+      limit: 10
+    ) {
+      edges {
+        node {
+          frontmatter {
+            name
+            short_description
+            shell_price
+            description
+            photo {
+              childImageSharp {
+                fixed(height: 400) {
+                  ...GatsbyImageSharpFixed
+                }
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
+
+export default Chassis

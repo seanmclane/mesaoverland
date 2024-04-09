@@ -1,6 +1,6 @@
 ---
 title: The Negotiator
-slug: /builds/thenegotiator
+slug: /build/thenegotiator
 active: "false"
 status: Sold
 price: 90000

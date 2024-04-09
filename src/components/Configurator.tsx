@@ -5,17 +5,16 @@ import Button from "./Button"
 interface Props {
   name: string
   shell_price: number
-  upfit_price: number
   lead_time_weeks: number
+  features: Array<{
+    name: string
+    description: string
+  }>
   photo: {
     childImageSharp?: {
       fluid: any
     }
   }
-  features: Array<{
-    name: string
-    description: string
-  }>
   options: Array<{
     name: string
     price: number
@@ -46,7 +45,7 @@ function Modal({ show, setShow, camper }) {
   //Configuration state will be form data sent in the end
   const [configuration, setConfiguration]: [Configuration, any] = useState({
     camper: camper.name,
-    price: camper.upfit_price, //default to upfit price
+    price: camper.shell_price,
     selectedOptions: [],
     customerName: "",
     customerEmail: "",
@@ -86,7 +85,7 @@ function Modal({ show, setShow, camper }) {
       )
     }
     //Set the options list and the updated price
-    const newPrice = calculatePrice(camper.upfit_price, newSelectedOptions)
+    const newPrice = calculatePrice(camper.shell_price, newSelectedOptions)
     setConfiguration({
       ...configuration,
       price: newPrice,
@@ -103,6 +102,7 @@ function Modal({ show, setShow, camper }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    // eslint-disable-next-line
     const form = e.target
     const serializedOptions = configuration.selectedOptions.reduce(
       (total, current) => total + current.name + ", ",
@@ -162,7 +162,7 @@ function Modal({ show, setShow, camper }) {
                   }}
                 ></div>
                 <div className="hidden md:block">
-                  <h3 className="mb-0">Standard Features</h3>
+                  <h3 className="mb-0">Standard Build Out</h3>
                   <ul className="text-left w-full px-4">
                     {camper.features.map((f) => (
                       <li key={f.name} className="p-1">
@@ -170,6 +170,9 @@ function Modal({ show, setShow, camper }) {
                       </li>
                     ))}
                   </ul>
+                  <p className="py-0 text-xs">
+                    *Must select "Standard Build Out" option
+                  </p>
                 </div>
                 <div className="hidden md:block">
                   <h3 className="mb-0">Selected Options</h3>

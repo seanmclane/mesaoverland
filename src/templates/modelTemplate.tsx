@@ -1,13 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import SEO from "../../components/SEO"
-import LinkButton from "../../components/LinkButton"
-import Configurator from "../../components/Configurator"
+import SEO from "../components/SEO"
+import Configurator from "../components/Configurator"
 
-interface Props {
+interface TemplateInput {
   data: {
-    midSizeData: {
+    markdownRemark: {
       frontmatter: {
         name: string
         description: string
@@ -16,7 +15,6 @@ interface Props {
             fluid: any
           }
         }
-        upfit_price: number
         shell_price: number
         lead_time_weeks: number
         features: Array<{
@@ -40,11 +38,16 @@ interface Props {
           }
         }>
       }
+      fields: {
+        slug: string
+      }
     }
   }
 }
 
-function MidSize({ data }: Props) {
+export default function Template({
+  data, // this prop will be injected by the GraphQL query below.
+}: TemplateInput) {
   // Create the number formatter.
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -52,35 +55,31 @@ function MidSize({ data }: Props) {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   })
-  const MidSizeData = data.midSizeData.frontmatter
+  const ModelData = data.markdownRemark.frontmatter
   return (
     <div className="">
       <SEO
-        title={MidSizeData.name}
-        description={MidSizeData.name}
-        image={MidSizeData.photo.childImageSharp?.fluid}
-        article
+        title={ModelData.name}
+        description={ModelData.description}
+        image={ModelData.photo.childImageSharp?.fluid}
       />
-      <Configurator {...MidSizeData} />
+      <Configurator {...ModelData} />
       <div className="bg-mesa text-gray-100 md:py-8">
         <div className="flex w-full flex-wrap flex-row justify-between text-center mx-auto">
           <div className="m-auto w-full md:w-1/2 p-4 max-w-md">
-            <h2 className="text-5xl font-title uppercase">
-              {MidSizeData.name}
-            </h2>
-            <p className="text-xl flex-wrap">{MidSizeData.description}</p>
+            <h2 className="text-5xl font-title uppercase">{ModelData.name}</h2>
+            <p className="text-xl flex-wrap">{ModelData.description}</p>
             <p className="text-xl flex-wrap">
               Starting at{" "}
               <span className="font-bold">
-                {formatter.format(MidSizeData.upfit_price)}
-              </span>{" "}
-              fully upfit*
+                {formatter.format(ModelData.shell_price)}
+              </span>
             </p>
           </div>
           <Img
             className="w-full md:w-1/2 md:rounded-l-lg"
-            fluid={MidSizeData.photo.childImageSharp?.fluid}
-            alt={MidSizeData.name}
+            fluid={ModelData.photo.childImageSharp?.fluid}
+            alt={ModelData.name}
           />
         </div>
       </div>
@@ -88,11 +87,11 @@ function MidSize({ data }: Props) {
         <div className="flex mx-auto flex-wrap justify-around text-center max-w-screen-xl">
           <div className="my-8 md:w-1/2">
             <h2 className="text-3xl font-title uppercase px-4">
-              Standard Features
+              Standard Build Out
             </h2>
             <ul className="text-xl flex-wrap m-8 text-left">
-              {MidSizeData.features.map((f) => (
-                <li key={f.name} className="py-1 ml-0">
+              {ModelData.features.map((f) => (
+                <li key={f.name} className="py-1 ml-0 group">
                   {f.name}
                 </li>
               ))}
@@ -103,7 +102,7 @@ function MidSize({ data }: Props) {
               Available Options
             </h2>
             <ul className="text-xl flex-wrap m-8 text-left">
-              {MidSizeData.options.map((o) => (
+              {ModelData.options.map((o) => (
                 <li
                   key={o.name}
                   className="flex flex-row justify-between py-1 ml-0"
@@ -123,7 +122,7 @@ function MidSize({ data }: Props) {
       <div className="mt-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="w-full overflow-auto whitespace-nowrap mr-2">
-            {MidSizeData.gallery.map((g) => {
+            {ModelData.gallery.map((g) => {
               return (
                 <Img
                   className="ml-2 inline-block rounded-lg w-4/5 md:w-2/3"
@@ -140,28 +139,17 @@ function MidSize({ data }: Props) {
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
             <h2 className="text-3xl font-title uppercase">Specifications</h2>
-            <ul className="m-4 text-lg text-left flex flex-wrap flex-row">
-              {MidSizeData.specs.map((s) => (
-                <li key={s.name} className="ml-0 px-4 w-1/3">
-                  <h4 className="m-0">{s.name}</h4>
-                  <p className="m-0">{s.value}</p>
-                </li>
+            <table className="m-4 text-lg text-left w-full">
+              {ModelData.specs.map((s) => (
+                <tr
+                  key={s.name}
+                  style={{ borderBottomWidth: "1px", borderColor: "black" }}
+                >
+                  <td className="px-8 font-title">{s.name}</td>
+                  <td className="px-8">{s.value}</td>
+                </tr>
               ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="bg-mesa text-gray-100 py-20 px-2">
-        <div className="flex w-full flex-wrap justify-center text-center">
-          <div className="">
-            <h2 className="text-3xl font-title uppercase">Custom Models</h2>
-            <p className="text-xl flex-wrap">
-              If you want something a little different than our standard models,
-              reach out! We can build almost anything you can dream up.
-            </p>
-            <LinkButton to="/contact" textColor="text-gray-100">
-              Contact Us
-            </LinkButton>
+            </table>
           </div>
         </div>
       </div>
@@ -183,16 +171,12 @@ function MidSize({ data }: Props) {
     </div>
   )
 }
-
-export const query = graphql`
-  query MidSizeQuery {
-    midSizeData: markdownRemark(
-      fileAbsolutePath: { regex: "/content/campers/midsize/" }
-    ) {
+export const pageQuery = graphql`
+  query($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         name
         description
-        upfit_price
         shell_price
         lead_time_weeks
         options {
@@ -225,8 +209,9 @@ export const query = graphql`
           }
         }
       }
+      fields {
+        slug
+      }
     }
   }
 `
-
-export default MidSize
