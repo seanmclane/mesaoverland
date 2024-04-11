@@ -1,6 +1,6 @@
 ---
 name: Grand Mesa
-short_description: Fits heavy duty trucks with 6.5' original beds
+short_description: Fits heavy duty trucks with 6.5' beds
 description: "A more nimble chassis mounted camper..."
 photo: /images/uploads/20240229_170253.jpg
 shell_price: 31000

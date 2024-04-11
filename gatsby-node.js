@@ -37,6 +37,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `)
 
   const modelTemplate = require.resolve(`./src/templates/modelTemplate.tsx`)
+  const configuratorTemplate = require.resolve(
+    `./src/templates/configuratorTemplate.tsx`
+  )
 
   const buildModelPages = await graphql(`
     {
@@ -81,6 +84,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.fields.slug,
       component: modelTemplate,
+      context: {
+        // additional data can be passed via context
+        slug: node.fields.slug,
+      },
+    })
+  })
+
+  await buildModelPages.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug + "configure",
+      component: configuratorTemplate,
       context: {
         // additional data can be passed via context
         slug: node.fields.slug,

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/SEO"
-import Configurator from "../components/Configurator"
+import LinkButton from "../components/LinkButton"
 
 interface TemplateInput {
   data: {
@@ -29,6 +29,7 @@ interface TemplateInput {
           name: string
           price: number
           description: string
+          category: string
         }>
         gallery: Array<{
           image?: {
@@ -63,7 +64,6 @@ export default function Template({
         description={ModelData.description}
         image={ModelData.photo.childImageSharp?.fluid}
       />
-      <Configurator {...ModelData} />
       <div className="bg-mesa text-gray-100 md:py-8">
         <div className="flex w-full flex-wrap flex-row justify-between text-center mx-auto">
           <div className="m-auto w-full md:w-1/2 p-4 max-w-md">
@@ -102,15 +102,19 @@ export default function Template({
               Available Options
             </h2>
             <ul className="text-xl flex-wrap m-8 text-left">
-              {ModelData.options.map((o) => (
-                <li
-                  key={o.name}
-                  className="flex flex-row justify-between py-1 ml-0"
-                >
-                  <span>{o.name}</span>
-                  <span className="font-bold">{formatter.format(o.price)}</span>
-                </li>
-              ))}
+              {ModelData.options
+                .filter((o) => o.category !== "color")
+                .map((o) => (
+                  <li
+                    key={o.name}
+                    className="flex flex-row justify-between py-1 ml-0"
+                  >
+                    <span>{o.name}</span>
+                    <span className="font-bold">
+                      {formatter.format(o.price)}
+                    </span>
+                  </li>
+                ))}
             </ul>
           </div>
           <p>
@@ -153,21 +157,16 @@ export default function Template({
           </div>
         </div>
       </div>
-      {/* hidden configurator form for netlify to pick up */}
-      <form
-        name="configure"
-        data-netlify="true"
-        action="/thankyou"
-        method="post"
-      >
-        <input type="hidden" name="form-name" value="configure" />
-        <input type="hidden" name="camper" value="" />
-        <input type="hidden" name="selectedOptions" value="" />
-        <input type="hidden" name="price" value="" />
-        <input type="hidden" name="customerName" value="" />
-        <input type="hidden" name="customerEmail" value="" />
-        <input type="hidden" name="customerMessage" value="" />
-      </form>
+      <div className="fixed left-0 bottom-0 z-10">
+        <LinkButton
+          textColor="text-outline"
+          bgColor="bg-white"
+          classNames="rounded-r-lg shadow-lg my-6"
+          to={`${data.markdownRemark.fields.slug}configure`}
+        >
+          Build & Price
+        </LinkButton>
+      </div>
     </div>
   )
 }
@@ -183,6 +182,7 @@ export const pageQuery = graphql`
           name
           price
           description
+          category
         }
         features {
           name

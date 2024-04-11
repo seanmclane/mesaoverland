@@ -1,6 +1,6 @@
 ---
 name: Whole Enchilada
-short_description: Fits heavy duty trucks with 8' original beds
+short_description: Fits heavy duty trucks with 8' beds
 description: "The ultimate chassis mounted camper..."
 photo: /images/uploads/20240229_170253.jpg
 shell_price: 36000
@@ -24,6 +24,8 @@ specs:
 options:
   - name: Standard Build Out
     price: 139000
+    description: includes...
+    category: standard
 
 gallery:
   - image: /images/uploads/20240229_170253.jpg
