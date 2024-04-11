@@ -8,6 +8,22 @@ description: "Designed for midsized trucks like the Ford Ranger and Toyota
 photo: /images/uploads/20240201_130609.jpg
 shell_price: 13600
 lead_time_weeks: 16
+features:
+  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
+      to eliminate “thermal bridging”)
+  - name: '2" thick high R value composite construction '
+  - name: Lightweight FRP/EPS hard-sided construction (easily repairable fiberglass!)
+  - name: Strong mounting points
+  - name: Two Arctic Tern windows
+  - name: Full size bed (75”x54”)
+  - name: Power roof fan with intake and exhaust
+  - name: VTOMAN FlashSpeed 1500 Portable Power Station 1500W (3000W Peak), 1548Wh
+  - name: 200w lightweight solar panel
+  - name: dimmable LED lights
+  - name: Portable Oven/stove combo
+  - name: Removable table
+  - name: Externally mounted propane tank
+  - name: 12v Fridge with small freezer
 specs:
   - name: Total height
     value: 78.5"
@@ -22,13 +38,13 @@ options:
   - name: Select Custom Windows (remove all standard build windows)
     price: -2000
     category: standard
-  - description: description
-    name: Heat and hot water (Diesel)
+  - description: ""
+    name: Heat and hot water (diesel)
     price: 2975
     category: interior
-  - description: description
+  - description: ""
     price: 1525
-    name: Heat (Diesel for high altitude)
+    name: Heat (diesel high altitude)
     category: interior
   - name: Awning
     price: 1230
@@ -76,23 +92,6 @@ options:
     price: 0
     description: "#000000"
     category: color
-features:
-  - name:
-      Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
-      to eliminate “thermal bridging”)
-  - name: '2" thick high R value composite construction '
-  - name: Lightweight FRP/EPS hard-sided construction (easily repairable fiberglass!)
-  - name: Strong mounting points
-  - name: Two Arctic Tern windows
-  - name: Full size bed (75”x54”)
-  - name: Power roof fan with intake and exhaust
-  - name: VTOMAN FlashSpeed 1500 Portable Power Station 1500W (3000W Peak), 1548Wh
-  - name: 200w lightweight solar panel
-  - name: dimmable LED lights
-  - name: Portable Oven/stove combo
-  - name: Removable table
-  - name: Externally mounted propane tank
-  - name: 12v Fridge with small freezer
 gallery:
   - image: /images/uploads/20240201_130609.jpg
   - image: /images/uploads/20240205_173700.jpg
