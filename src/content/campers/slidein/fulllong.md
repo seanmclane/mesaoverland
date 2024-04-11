@@ -1,61 +1,56 @@
 ---
-name: The Butte
-description: "Designed for midsized trucks like the Ford Ranger and Toyota
-  Tacoma, this truck camper is ready for whatever adventure you throw its way.
+name: Full Size 8' Slide In
+short_description: Fits full size trucks with 8' beds
+description: "Designed for full size trucks like the Ford F-250 and Ram
+  2500, this truck camper is ready for whatever adventure you throw its way.
   Its compact and lightweight construction helps you get to the places you love
-  without sacrificing comfort. "
+  without sacrificing comfort."
 photo: /images/uploads/20240302_074649.jpg
-shell_price: 14000
-upfit_price: 26750
+shell_price: 15500
 lead_time_weeks: 16
 features:
-  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
+  - name:
+      Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
-    description: description
+
   - name: '2" thick high R value composite construction '
-    description: description
+
   - name: Lightweight FRP/EPS hard-sided construction (easily repairable fiberglass!)
-    description: description
+
   - name: Strong mounting points
-    description: description
+
   - name: Two Arctic Tern windows
-    description: Double pane windows with built in bug screen and thermal sun shade
+
   - name: Full size bed (75”x54”)
-    description: description
-  - name: "Power roof fan with intake and exhaust "
-    description: "Description "
-  - name: VTOMAN FlashSpeed 1500 Portable Power Station 1500W (3000W Peak), 1548Wh
+
+  - name: Power roof fan with intake and exhaust
+
+  - name:
+      VTOMAN FlashSpeed 1500 Portable Power Station 1500W (3000W Peak), 1548Wh
       LiFePO4 (LFP) Battery Powered Generator with 3x 1500W AC Outlets, 6x USB
       Ports, Recharge 0-100% within 1H, for Indoor Outdoor
-    description: description
+
   - name: 200w lightweight solar panel
-    description: description
+
   - name: dimmable LED lights
-    description: description
+
   - name: Portable Oven/stove combo
-    description: "description "
+
   - name: Removable table
-    description: "description "
+
   - name: Externally mounted propane tank
-    description: "description "
+
   - name: "12v Fridge with small freezer "
     description: "TF49 "
 specs:
   - name: Total height
-    value: 78.5"
+    value: coming soon
   - name: Total width
-    value: 78"
-  - name: Short bed floor length
-    value: 57.5"
-  - name: Long bed floor length
-    value: 72.5"
+    value: coming soon
 options:
-  - name: Shell Only
-    price: -12752
-    description: description
-  - name: Long Bed
-    price: 500
-    description: description
+  - name: Standard Build Out
+    price: 21500
+
   - description: description
     name: Heat and hot water (Diesel)
     price: 2975
@@ -64,10 +59,10 @@ options:
     name: Heat (Diesel for high altitude)
   - name: Awning
     price: 1230
-    description: description
+
   - name: Matress ventilation
     price: 220
-    description: description
+
   - name: Window in door
     price: 600
     description: 500mm x 300mm

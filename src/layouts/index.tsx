@@ -8,14 +8,22 @@ interface Props {
   children: React.ReactNode
 }
 
-const linkList = (midSizeName: string) => [
+const linkList = [
   {
     title: "Home",
     href: "/",
   },
   {
-    title: midSizeName,
-    href: "/campers/midsize",
+    title: "Slide In",
+    href: "/campers/slidein",
+  },
+  {
+    title: "Flat Bed",
+    href: "/campers/flatbed",
+  },
+  {
+    title: "Chassis Mounted",
+    href: "/campers/chassis",
   },
   {
     title: "Builds",
@@ -64,9 +72,7 @@ function Index(props: Props): ReactElement {
               }
             }
           `}
-          render={(data) => (
-            <Nav links={linkList(data.midSizeData.frontmatter.name)} />
-          )}
+          render={(data) => <Nav links={linkList} />}
         />
       </header>
       <main

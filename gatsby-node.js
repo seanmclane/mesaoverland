@@ -18,7 +18,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const buildTemplate = require.resolve(`./src/templates/buildTemplate.tsx`)
 
-  const buildPages = await graphql(`
+  const buildBuildPages = await graphql(`
     {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/build/" } }
@@ -36,16 +36,65 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
+  const modelTemplate = require.resolve(`./src/templates/modelTemplate.tsx`)
+  const configuratorTemplate = require.resolve(
+    `./src/templates/configuratorTemplate.tsx`
+  )
+
+  const buildModelPages = await graphql(`
+    {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/campers/" } }
+        limit: 100
+      ) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+
   // Handle errors
-  if (buildPages.errors) {
+  if (buildBuildPages.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
 
-  await buildPages.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  await buildBuildPages.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: buildTemplate,
+      context: {
+        // additional data can be passed via context
+        slug: node.fields.slug,
+      },
+    })
+  })
+
+  if (buildModelPages.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  await buildModelPages.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: modelTemplate,
+      context: {
+        // additional data can be passed via context
+        slug: node.fields.slug,
+      },
+    })
+  })
+
+  await buildModelPages.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug + "configure",
+      component: configuratorTemplate,
       context: {
         // additional data can be passed via context
         slug: node.fields.slug,

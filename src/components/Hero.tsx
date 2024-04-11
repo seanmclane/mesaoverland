@@ -13,9 +13,9 @@ interface Props {
 function Hero(props: Props): ReactElement {
   return (
     <section className={props.className}>
-      <div className="absolute left-4 z-10">
+      <div className="absolute left-8 z-10">
         <div className="flex my-4 md:my-20">
-          <h1 className="font-title uppercase text-6xl md:text-8xl font-bold max-w-sm md:max-w-lg">
+          <h1 className="font-title uppercase text-gray-100 text-5xl md:text-7xl max-w-sm md:max-w-lg">
             {props.tagline}
           </h1>
         </div>
@@ -36,7 +36,7 @@ function Hero(props: Props): ReactElement {
           fluid={props.gatsbyImage}
           alt={props.gatsbyImageAlt}
           className=""
-          style={{ maxHeight: "75vh" }}
+          style={{ maxHeight: "60vh" }}
         />
       )}
       <div className="flex w-full my-20 text-center">

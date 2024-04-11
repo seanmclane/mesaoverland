@@ -35,9 +35,22 @@ interface Props {
             fluid: any
           }
         }
-        midsize_tagline: string
-        midsize_tagline_desc: string
-        midsize_button: string
+        highlight_camper_1_tagline: string
+        highlight_camper_1_tagline_desc: string
+        highlight_camper_1_button: string
+        highlight_camper_1_image: {
+          childImageSharp?: {
+            fluid: any
+          }
+        }
+        highlight_camper_2_tagline: string
+        highlight_camper_2_tagline_desc: string
+        highlight_camper_2_button: string
+        highlight_camper_2_image: {
+          childImageSharp?: {
+            fluid: any
+          }
+        }
         gallery: Array<{
           image?: {
             childImageSharp?: {
@@ -64,20 +77,48 @@ function Index(props: Props): ReactElement {
           gatsbyImageAlt="Hero image"
         />
       </div>
-      <div className="bg-mesa text-gray-100 py-40 px-2">
-        <div className="flex w-full flex-wrap justify-center text-center">
-          <div className="">
+      <div className="bg-mesa text-gray-100 md:py-8">
+        <div className="flex w-full flex-wrap flex-row justify-between text-center mx-auto">
+          <Img
+            className="w-full md:w-1/2 md:rounded-r-lg"
+            fluid={HomeData.highlight_camper_1_image.childImageSharp?.fluid}
+            alt="Highlighted camper 1 photo"
+          />
+          <div className="m-auto w-full md:w-1/2 p-4 max-w-md text-center">
             <h2 className="text-3xl font-title uppercase">
-              {HomeData.midsize_tagline}
+              {HomeData.highlight_camper_1_tagline}
             </h2>
-            <p className="text-xl flex-wrap">{HomeData.midsize_tagline_desc}</p>
+            <p className="text-xl flex-wrap">
+              {HomeData.highlight_camper_1_tagline_desc}
+            </p>
+            <LinkButton to="/campers/chassis/long" classNames="no-underline">
+              {HomeData.highlight_camper_1_button}
+            </LinkButton>
           </div>
-          <LinkButton
-            to="/campers/midsize"
-            classNames="flex mx-16 md:mx-16 items-center no-underline"
-          >
-            {HomeData.midsize_button}
-          </LinkButton>
+        </div>
+      </div>
+      <div className="bg-outline text-gray-100 md:py-8">
+        <div className="flex w-full flex-wrap flex-row justify-between text-center mx-auto">
+          <div className="m-auto w-full md:w-1/2 p-4 max-w-md text-center">
+            <h2 className="text-3xl font-title uppercase">
+              {HomeData.highlight_camper_2_tagline}
+            </h2>
+            <p className="text-xl flex-wrap">
+              {HomeData.highlight_camper_2_tagline_desc}
+            </p>
+            <LinkButton
+              to="/campers/slidein/midshort"
+              classNames="no-underline"
+              bgColor="bg-mesa"
+            >
+              {HomeData.highlight_camper_2_button}
+            </LinkButton>
+          </div>
+          <Img
+            className="w-full md:w-1/2 md:rounded-l-lg"
+            fluid={HomeData.highlight_camper_2_image.childImageSharp?.fluid}
+            alt="Highlighted camper 1 photo"
+          />
         </div>
       </div>
       <div className="mt-2">
@@ -169,9 +210,26 @@ export const query = graphql`
             }
           }
         }
-        midsize_tagline
-        midsize_tagline_desc
-        midsize_button
+        highlight_camper_1_tagline
+        highlight_camper_1_tagline_desc
+        highlight_camper_1_button
+        highlight_camper_1_image {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        highlight_camper_2_tagline
+        highlight_camper_2_tagline_desc
+        highlight_camper_2_button
+        highlight_camper_2_image {
+          childImageSharp {
+            fluid(maxWidth: 1200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         gallery {
           image {
             childImageSharp {

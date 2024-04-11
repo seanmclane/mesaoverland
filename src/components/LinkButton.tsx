@@ -17,11 +17,11 @@ function LinkButton({
   textColor,
 }: Props): ReactElement {
   return (
-    <Link to={to} className={classNames}>
+    <Link to={to}>
       <button
         className={`p-3 md:p-4 text-lg md:text-xl font-bold font-title uppercase no-underline ${
           bgColor ? bgColor : "bg-outline"
-        } ${textColor ? textColor : "text-gray-100"}`}
+        } ${textColor ? textColor : "text-gray-100"} ${classNames}`}
       >
         {children}
       </button>
