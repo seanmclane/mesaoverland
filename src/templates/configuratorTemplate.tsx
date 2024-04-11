@@ -298,6 +298,20 @@ export default function Template({
             <h3 className="bg-outline text-gray-100 rounded-lg mb-4">
               Accessories
             </h3>
+            <div className="flex flex-row flex-wrap">
+              {camper.options
+                .filter((o) => o.category === "accessory")
+                .map((o) => {
+                  return (
+                    <FormOption
+                      option={o}
+                      handleChange={handleChange}
+                      checked={optionState[o.name]}
+                      fullWidth={false}
+                    />
+                  )
+                })}
+            </div>
             <div className="mb-4">
               <p className="py-0 text-xs">
                 *Note custom options or specific requests in the message box

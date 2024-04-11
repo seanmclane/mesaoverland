@@ -123,7 +123,12 @@ collections:
           widget: list
           fields:
           - { label: Name, name: name, widget: string }
+          - { label: 'Description', name: 'description', widget: 'string' }
           - { label: Price, name: price, widget: number }
+          - label: Category:
+            name: category
+            widget: select
+            options: ['standard', 'exterior', 'interior', 'window', 'accessory', 'color']
         - label: Gallery
           name: gallery
           widget: list

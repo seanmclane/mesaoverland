@@ -62,7 +62,7 @@ options:
     category: exterior
   - name: Camper jacks
     price: 1550
-    description: "Manual camper jacks for easy camper removal. "
+    description: Manual camper jacks for easy camper removal
     category: exterior
   - name: Default White
     price: 0
