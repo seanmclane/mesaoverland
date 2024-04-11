@@ -228,7 +228,7 @@ export default function Template({
                 })}
             </div>
             <h3 className="bg-outline text-gray-100 rounded-lg mb-0">
-              Custom Windows
+              Windows
             </h3>
             <div className="flex flex-row flex-wrap">
               {camper.options
