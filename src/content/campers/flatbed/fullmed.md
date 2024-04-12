@@ -6,32 +6,32 @@ description: "Designed for midsized trucks like the Ford Ranger and Toyota
   Its compact and lightweight construction helps you get to the places you love
   without sacrificing comfort. "
 photo: /images/uploads/20240222_103050.jpg
-shell_price: 14300
+shell_price: 15300
 lead_time_weeks: 16
 features:
   - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
   - name: '2" thick high R value composite construction '
-  - name: Lightweight FRP/EPS hard-sided construction (easily repairable fiberglass!)
-  - name: Strong mounting points
-  - name: Two Arctic Tern windows
-  - name: Full size bed (75”x54”)
+  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction
+  - name: Arctic Tern windows
+  - name: Queen size bed
   - name: Power roof fan with intake and exhaust
-  - name: VTOMAN FlashSpeed 1500 Portable Power Station 1500W (3000W Peak), 1548Wh
-      LiFePO4 (LFP) Battery Powered Generator with 3x 1500W AC Outlets, 6x USB
-      Ports, Recharge 0-100% within 1H, for Indoor Outdoor
-  - name: 200w lightweight solar panel
-  - name: dimmable LED lights
+  - name: 200ah LiFePO4 battery with Bluetooth monitoring
+  - name: 400w solar
+  - name: Victron smart solar 100/30
+  - name: Victron phoenix 12/500 inverter
+  - name: Dimmable LED lights
   - name: Portable Oven/stove combo
   - name: Removable table
-  - name: Externally mounted propane tank
-  - name: "12v Fridge with small freezer "
+  - name: "12v Fridge with freezer "
     description: "TF49 "
+  - name: Portable stove with storage location
+  - name: 28" wide door with window and screen door
 specs:
   - name: Total height
-    value: coming soon
+    value: 86.60"
   - name: Total width
-    value: coming soon
+    value: 81"
 options:
   - name: Standard Build Out
     price: 19460
@@ -117,4 +117,5 @@ options:
     category: exterior
 gallery:
   - image: /images/uploads/20240222_103050.jpg
+  - image: /images/uploads/20231226_124357.jpg
 ---
