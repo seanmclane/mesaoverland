@@ -2,38 +2,18 @@
 title: FAQ
 image: /images/uploads/mesa_overland-19.jpg
 ---
-## Do you do custom work?
 
-Yes we do!
 
-## D﻿o you install Arctic Tern products on my camper/van?
 
-Y﻿es, but keep in mind some applications are not as straight forward as others. 
 
-## C﻿an I get a full-size tuck camper or flatbed model?
+**Can you do custom work?** Absolutely! We thrive on creativity and love bringing your unique ideas to life. While most of our projects allow for customization and customer input, fully custom projects are also on the table. Just a heads-up, though—custom projects may take a bit longer due to their bespoke nature. Additionally, custom sizing starts with a $1500 design and engineering fee, with the price increasing based on materials and labor used from the closest standard size camper.
 
-O﻿f course you can! Just use the contact form to get started on your dream. 
+**Do you install Arctic Tern products on my camper?** You bet we do! Our Arctic Tern products are designed to elevate your camping experience, and we're more than happy to install them on your camper. If you don't find what you're looking for on our build page, just drop us a message, and we'll whip up a custom quote tailored to your needs.
 
-## D﻿o you build vans?
+**Can you help me find a truck?** Absolutely! Our team is a treasure trove of knowledge when it comes to both campers and vehicles. Whether you're in the market for a truck or need some recommendations, we've got your back. Feel free to reach out, and we'll steer you in the right direction.
 
-I﻿f you supply it we can build it. 
+**Do you build "RV" style campers or frame-mounted campers?** You're in luck! We specialize in both "RV" style campers and frame-mounted ones. Check out our "chassis mounted" section for more details. We highly recommend platforms like the new or newer Ram 4500-5500s and Ford 450-550s, but if you're eyeing something smaller, platforms like the 250/2500-350/3500 work just as well. Our secret sauce? A 4-point articulating mount system that seamlessly integrates all our habitats to the frame. And hey, if you have a custom project in mind on a different chassis, don't hesitate to drop us a line!
 
-## C﻿an you help me find a truck?
+**Can I come by for a visit and see the shop/campers?** Absolutely! We love showing off our space and campers. Just remember, we operate by appointment only, Monday to Friday from 8:30 am to 5 pm. Drop us a line, and we'll set up a time for you to swing by and soak in all the camper goodness.
 
-O﻿ yes! Our team has extensive knowledge in both campers and vehicles and will happily give you some recommendations.
-
-## D﻿o you build "RV" style camper or frame mounted campers? 
-
-S﻿ure do, you just supply the appropriate truck. 
-
-## C﻿an I come by for a visit and see the shop/campers?
-
-A﻿bsolutely! Just keep in mind we are open by appointment only.
-
-## D﻿o you accept trade ins or can you help me sell my van/camper?
-
-I﻿t really depends on what you have and what you are looking for. We are always happy to help however we can. 
-
-## W﻿ill you do the electrical and solar on my project?
-
-Y﻿es. Just try to keep in mind our minds may work a little differently and we might have to remove or add some things along the way.
+**Will you do the electrical and solar on my project?** For sure! If you're purchasing a camper from us, we've got you covered on the electrical and solar fronts. However, if you already have a camper or van and are looking for some upgrades or assistance, we'll do our best to accommodate. Just a heads-up, though—we're pretty busy with our composite camper builds. But hey, don't hesitate to reach out, and we'll see what we can do to brighten up your camper life!
