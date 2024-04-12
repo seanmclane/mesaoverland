@@ -8,80 +8,64 @@ description: "Designed for mid sized trucks like the Ford Ranger and Toyota
 photo: /images/uploads/20240201_130609.jpg
 shell_price: 14000
 lead_time_weeks: 16
+features:
+  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
+      to eliminate “thermal bridging”)
+  - name: '2" thick high R value composite construction '
+  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction (easily
+      repairable fiberglass!)
+  - name: Strong mounting points
+  - name: Arctic Tern windows
+  - name: Full size bed (75”x54”)
+  - name: Power roof fan with light
+  - name: 100ah LiFePO4 battery with Bluetooth monitoring
+  - name: 200w solar panel
+  - name: "Victron smart solar 100/30 "
+  - name: Victron phoenix 12/250 inverter
+  - name: dimmable LED lights
+  - name: Portable propane stove
+  - name: Removable table
+  - name: Externally mounted propane tank
+  - name: 12v Fridge with small freezer
 specs:
   - name: Total height
-    value: 78.5"
+    value: 79.5"
   - name: Total width
     value: 78"
   - name: Floor length
     value: 72.5"
+  - name: Interior height
+    value: "73.87"
 options:
   - name: Standard Build Out
-    price: 7000
-
-  - description: description
-    name: Heat and hot water (Diesel)
-    price: 2975
-  - description: description
-    price: 1525
-    name: Heat (Diesel for high altitude)
+    price: 10780
+    category: standard
+  - description: ""
+    name: Dickinson P9000 propane heater
+    price: 2000
+    category: interior
   - name: Awning
     price: 1230
-
+    category: exterior
   - name: Matress ventilation
     price: 220
-
-  - name: Window in door
-    price: 600
-    description: 500mm x 300mm
+    category: interior
   - name: Small window in cabover area (add up to two)
     price: 600
     description: "300mm x 500mm "
-  - name: Electric roof hatch
-    price: 2055
-    description: Arctic Tern electric roof hatch
-  - name: Additional 1548wh battery capacity
-    price: 1000
-    description: VTOMAN battery expansion pack
-  - name: Additional 100w solar panel
-    price: 175
-    description: 100w solar panel
+    category: window
+  - name: Additional 100ah battery
+    price: 550
+    description: 100ah LiFePO4 battery
+    category: interior
+  - name: Additional 200w solar panel
+    price: 460
+    description: 200w solar panel
+    category: exterior
   - name: Camper jacks
     price: 1550
     description: "Manual camper jacks for easy camper removal. "
-features:
-  - name:
-      Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
-      to eliminate “thermal bridging”)
-
-  - name: '2" thick high R value composite construction '
-
-  - name: Lightweight FRP/EPS hard-sided construction (easily repairable fiberglass!)
-
-  - name: Strong mounting points
-
-  - name: Two Arctic Tern windows
-
-  - name: Full size bed (75”x54”)
-
-  - name: Power roof fan with intake and exhaust
-
-  - name:
-      VTOMAN FlashSpeed 1500 Portable Power Station 1500W (3000W Peak), 1548Wh
-      LiFePO4 (LFP) Battery Powered Generator with 3x 1500W AC Outlets, 6x USB
-      Ports, Recharge 0-100% within 1H, for Indoor Outdoor
-
-  - name: 200w lightweight solar panel
-
-  - name: dimmable LED lights
-
-  - name: Portable Oven/stove combo
-
-  - name: Removable table
-
-  - name: Externally mounted propane tank
-
-  - name: 12v Fridge with small freezer
+    category: exterior
 gallery:
   - image: /images/uploads/20240201_130609.jpg
   - image: /images/uploads/20240205_173700.jpg
