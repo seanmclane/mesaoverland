@@ -1,11 +1,9 @@
 ---
 name: Full Size 6.5' Flat Bed
 short_description: Fits full size trucks with 6.5' beds
-description: "Designed for midsized trucks like the Ford Ranger and Toyota
-  Tacoma, this truck camper is ready for whatever adventure you throw its way.
-  Its compact and lightweight construction helps you get to the places you love
-  without sacrificing comfort. "
-photo: /images/uploads/20240222_103050.jpg
+description: Designed for full-size trucks with aftermarket flatbeds such as a
+  Ram 2500/3500 or a Ford F250/f350.
+photo: /images/uploads/20230728_150234-5-.jpg
 shell_price: 15300
 lead_time_weeks: 16
 features:
@@ -21,7 +19,6 @@ features:
   - name: Victron smart solar 100/30
   - name: Victron phoenix 12/500 inverter
   - name: Dimmable LED lights
-  - name: Portable Oven/stove combo
   - name: Removable table
   - name: "12v Fridge with freezer "
     description: "TF49 "
