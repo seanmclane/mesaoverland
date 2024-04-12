@@ -1,13 +1,11 @@
 ---
 name: Full Size 8' Flat Bed
-short_description: Fits full size trucks with 8' beds
-description: "Designed for midsized trucks like the Ford Ranger and Toyota
-  Tacoma, this truck camper is ready for whatever adventure you throw its way.
-  Its compact and lightweight construction helps you get to the places you love
-  without sacrificing comfort. "
+short_description: Fits full size trucks with 8' flat beds
+description: "Designed for full-size trucks with aftermarket flatbeds such as a
+  Ram 3500 or a Ford F250. "
 photo: /images/uploads/20240222_103050.jpg
 shell_price: 16600
-lead_time_weeks: 14
+lead_time_weeks: 16
 features:
   - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
