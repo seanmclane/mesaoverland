@@ -40,6 +40,7 @@ interface Props {
 }
 
 function Chassis(props: Props): ReactElement {
+  const [selectedTruck, setSelectedTruck] = useState("")
   return (
     <>
       <SEO
@@ -71,25 +72,45 @@ function Chassis(props: Props): ReactElement {
           />
         </div>
       </div>
+      <div className="mt-4 flex justify-center">
+        <label className="mx-4 text-lg">Truck Type</label>
+        <select
+          className="px-4"
+          value={selectedTruck}
+          onChange={(e) => setSelectedTruck(e.target.value)}
+        >
+          <option value="">All</option>
+          <option value="short">Medium Duty (350/3500)</option>
+          <option value="long">Heavy Duty (450/550/4500/5500)</option>
+        </select>
+      </div>
       <section className="mx-auto px-6 my-2 lg:m-4">
         <div className="max-w-screen-xl mx-auto">
           <div className="flex flex-wrap -mx-1 lg:-mx-4">
             {props.data.allMarkdownRemark.edges.length > 0 ? (
-              props.data.allMarkdownRemark.edges.map((b) => (
-                <div
-                  key={b.node.fields.slug}
-                  className="my-4 px-4 w-full sm:w-1/2 xl:w-1/3"
-                >
-                  <ModelCard
-                    name={b.node.frontmatter.name}
-                    short_description={b.node.frontmatter.short_description}
-                    price={b.node.frontmatter.shell_price}
-                    image={b.node.frontmatter.photo?.childImageSharp?.fixed}
-                    imageAlt={b.node.frontmatter.name}
-                    linkTo={b.node.fields.slug}
-                  />
-                </div>
-              ))
+              props.data.allMarkdownRemark.edges
+                .filter(
+                  (b) =>
+                    !selectedTruck ||
+                    b.node.fields.slug.includes(selectedTruck) ||
+                    (selectedTruck === "long" &&
+                      b.node.fields.slug.includes("med"))
+                )
+                .map((b) => (
+                  <div
+                    key={b.node.fields.slug}
+                    className="my-4 px-4 w-full sm:w-1/2 xl:w-1/3"
+                  >
+                    <ModelCard
+                      name={b.node.frontmatter.name}
+                      short_description={b.node.frontmatter.short_description}
+                      price={b.node.frontmatter.shell_price}
+                      image={b.node.frontmatter.photo?.childImageSharp?.fixed}
+                      imageAlt={b.node.frontmatter.name}
+                      linkTo={b.node.fields.slug}
+                    />
+                  </div>
+                ))
             ) : (
               <h2 className="mx-auto">Oops, something went wrong!</h2>
             )}

@@ -1,6 +1,6 @@
 ---
 name: Whole Enchilada
-short_description: Fits heavy duty trucks with 8' beds
+short_description: Fits 450/550/4500/5500 trucks
 description: "The ultimate chassis mounted camper..."
 photo: /images/uploads/20240229_170253.jpg
 shell_price: 36000
