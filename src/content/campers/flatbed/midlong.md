@@ -5,7 +5,7 @@ description: "Designed for midsized trucks like the Ford Ranger and Toyota
   Tacoma, this truck camper is ready for whatever adventure you throw its way.
   Its compact and lightweight construction helps you get to the places you love
   without sacrificing comfort. "
-photo: /images/uploads/20240222_103050.jpg
+photo: /images/uploads/20230728_150234-5-.jpg
 shell_price: 14500
 lead_time_weeks: 16
 features:
@@ -106,4 +106,6 @@ options:
     category: accessory
 gallery:
   - image: /images/uploads/20240222_103050.jpg
+  - image: /images/uploads/20230728_150234-5-.jpg
+  - image: /images/uploads/20231213_140633.jpg
 ---
