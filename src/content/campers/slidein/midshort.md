@@ -1,5 +1,5 @@
 ---
-name: Butte
+name: Butte 5'
 short_description: Fits mid size trucks with 5' beds
 description: "Designed for midsized trucks like the Ford Ranger and Toyota
   Tacoma, this truck camper is ready for whatever adventure you throw its way.
