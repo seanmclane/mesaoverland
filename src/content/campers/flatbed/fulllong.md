@@ -119,14 +119,14 @@ options:
     category: accessory
   - name: Luxury Package (read description, so you do not select options that are
       included)
-    description: "Includes upgraded Arctic Tern Euro door, increases capacity of
-      water storage, and refrigerator. Upgrades electrical system to 24v system
-      with 800w bifacial solar,400ah 24v battery, Victron multiplus 24/3000
-      inverter, Victron DC to DC charging, and many other electrical upgrades.
-      Also includes heat/hot water, outdoor shower, air conditioning, 24v
-      infrared  in floor heating, and many other luxury amenities generally only
-      found in full size RVs! "
-    price: 14560
+    description: "All the standard build features plus Includes upgraded Arctic Tern
+      Euro door, increases capacity of water storage, and refrigerator. Upgrades
+      electrical system to 24v system with 800w bifacial solar,400ah 24v
+      battery, Victron multiplus 24/3000 inverter, Victron DC to DC charging,
+      and many other electrical upgrades. Also includes heat/hot water, outdoor
+      shower, air conditioning, 24v infrared  in floor heating, and many other
+      luxury amenities generally only found in full size RVs! "
+    price: 36000
     category: standard
   - name: Arctic Tern Euro door upgrade
     description: 'rctic Tern Euro doors feature the styling and high quality typical
