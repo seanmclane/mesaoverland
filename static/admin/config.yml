@@ -406,7 +406,7 @@ collections:
   - label: Chassis Mount Campers
     name: chassiscampers
     files:
-    - label: '6.5 Bed'
+    - label: 'Grand Mesa'
       name: 'chassisshort'
       file: 'src/content/campers/chassis/short.md'
       extension: md
@@ -444,7 +444,7 @@ collections:
           widget: list
           fields:
           - { label: Image, name: image, widget: image }
-    - label: '8 Bed'
+    - label: 'Whole Enchilada'
       name: 'chassislong'
       file: 'src/content/campers/chassis/long.md'
       extension: md

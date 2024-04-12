@@ -137,6 +137,8 @@ export default function Template({
       (total, current) => total + current.name + ", ",
       ""
     )
+    console.log({ configuration, serializedOptions })
+    return
     if (emailValidState && configuration.customerEmail) {
       fetch("/", {
         method: "POST",
@@ -190,15 +192,7 @@ export default function Template({
 
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col justify-center text-center mx-auto">
-          <form
-            name="configure"
-            method="post"
-            action="/thankyou"
-            data-netlify="true"
-            onSubmit={handleSubmit}
-            className="mt-4"
-          >
-            <input type="hidden" name="form-name" value="configure" />
+          <form onSubmit={handleSubmit} className="mt-4">
             <h3 className="bg-outline text-gray-100 rounded-lg mb-0">
               Standard Build Out
             </h3>
