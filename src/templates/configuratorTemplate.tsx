@@ -137,8 +137,6 @@ export default function Template({
       (total, current) => total + current.name + ", ",
       ""
     )
-    console.log({ configuration, serializedOptions })
-    return
     if (emailValidState && configuration.customerEmail) {
       fetch("/", {
         method: "POST",
