@@ -125,6 +125,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -163,6 +164,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -201,6 +203,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -239,6 +242,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -277,6 +281,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -318,6 +323,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -356,6 +362,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -394,6 +401,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -435,6 +443,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -473,6 +482,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select
@@ -511,6 +521,7 @@ collections:
           - { label: Name, name: name, widget: string }
           - { label: 'Description', name: 'description', widget: 'string', required: false }
           - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
           - label: Category
             name: category
             widget: select

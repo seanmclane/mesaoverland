@@ -32,6 +32,11 @@ interface TemplateInput {
           price: number
           description: string
           category: string
+          image: {
+            childImageSharp?: {
+              fixed: any
+            }
+          }
         }>
         gallery: Array<{
           image?: {
@@ -237,7 +242,7 @@ export default function Template({
                 })}
             </div>
             <h3 className="bg-outline text-gray-100 rounded-lg mb-0">
-              Paint Color
+              Appearance
             </h3>
             <div className="flex flex-row flex-wrap">
               {camper.options
@@ -430,6 +435,13 @@ export const pageQuery = graphql`
           price
           description
           category
+          image {
+            childImageSharp {
+              fixed(height: 200) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
         }
         features {
           name
@@ -441,7 +453,7 @@ export const pageQuery = graphql`
         }
         photo {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -449,7 +461,7 @@ export const pageQuery = graphql`
         gallery {
           image {
             childImageSharp {
-              fluid(maxWidth: 1200) {
+              fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
               }
             }

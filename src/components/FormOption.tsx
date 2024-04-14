@@ -1,4 +1,5 @@
-import React, { ChangeEvent, ChangeEventHandler, useState } from "react"
+import React, { ChangeEventHandler, useState } from "react"
+import Img from "gatsby-image"
 const infoicon = require("../../static/images/icon-info.svg")
 
 interface Props {
@@ -10,6 +11,11 @@ interface Props {
     category: string
     price: number
     description: string
+    image?: {
+      childImageSharp?: {
+        fixed: any
+      }
+    }
   }
 }
 
@@ -55,15 +61,15 @@ function FormOption({ handleChange, option, checked, fullWidth }: Props) {
           } `}
         >
           <div className="flex flex-row align-middle">
-            {option.category === "color" ? (
-              <div
+            {option.category === "color" && option.image ? (
+              <Img
+                fixed={option.image.childImageSharp?.fixed}
                 style={{
-                  backgroundColor: `${option.description}`,
                   width: "3em",
                   height: "3em",
                 }}
                 className="border-2 border-solid border-gray-800 rounded-lg"
-              ></div>
+              />
             ) : null}
             <input
               className="text-black hidden"
