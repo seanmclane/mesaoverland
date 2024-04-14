@@ -112,6 +112,11 @@ options:
       East to West. "
     price: 2550
     category: standard
+  - category: color
+    name: Accent wall and counter top surface finish (standard selection)
+    description: "Wilsonart laminate, highly durable and attractive finish on top of
+      our ultra-lightweight honeycomb interior panels. "
+    price: 0
 gallery:
   - image: /images/uploads/20230810_121712-1-.jpg
   - image: /images/uploads/20230810_121637.jpg
