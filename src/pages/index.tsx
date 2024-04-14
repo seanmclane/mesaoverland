@@ -205,7 +205,7 @@ export const query = graphql`
         tagline_desc
         hero_image {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -215,7 +215,7 @@ export const query = graphql`
         highlight_camper_1_button
         highlight_camper_1_image {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -225,7 +225,7 @@ export const query = graphql`
         highlight_camper_2_button
         highlight_camper_2_image {
           childImageSharp {
-            fluid(maxWidth: 1200) {
+            fluid(maxWidth: 1600) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -233,7 +233,7 @@ export const query = graphql`
         gallery {
           image {
             childImageSharp {
-              fluid(maxWidth: 1200) {
+              fluid(maxWidth: 1600) {
                 ...GatsbyImageSharpFluid
               }
             }

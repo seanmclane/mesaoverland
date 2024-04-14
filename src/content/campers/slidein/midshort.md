@@ -9,7 +9,8 @@ photo: /images/uploads/20240201_130609.jpg
 shell_price: 13600
 lead_time_weeks: 16
 features:
-  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
+  - name:
+      Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
   - name: '2" thick high R value composite construction '
   - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction (easily
@@ -89,8 +90,8 @@ options:
     category: exterior
   - name: Default White
     price: 0
-    description: "#ffffff"
     category: color
+    image: /images/white-square.jpg
 gallery:
   - image: /images/uploads/20240201_130609.jpg
   - image: /images/uploads/20240205_173700.jpg
