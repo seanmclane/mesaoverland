@@ -9,8 +9,7 @@ photo: /images/uploads/20240201_130609.jpg
 shell_price: 13600
 lead_time_weeks: 16
 features:
-  - name:
-      Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
+  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
   - name: '2" thick high R value composite construction '
   - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction (easily
@@ -62,19 +61,19 @@ options:
     category: window
   - name: Large window in drivers side wall (one window total per side)
     description: 550mmx900mm
-    price: 1020
+    price: 980
     category: window
   - description: 550mmx900mm
     name: Large window in passenger side wall (one window total per side)
-    price: 1020
+    price: 980
     category: window
   - name: Medium window in drivers side (one window total per side)
     description: 550mmx700mm
-    price: 930
+    price: 889
     category: window
   - description: 550mmx700mm
     name: Medium window in passenger side (one window total per side)
-    price: 930
+    price: 889
     category: window
   - name: Additional 100ah battery
     price: 550
