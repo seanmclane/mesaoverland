@@ -9,7 +9,8 @@ photo: /images/uploads/20230810_121637.jpg
 shell_price: 14000
 lead_time_weeks: 16
 features:
-  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
+  - name:
+      Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
   - name: '2" thick high R value composite construction '
   - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction
@@ -60,7 +61,8 @@ options:
     description: 550mmx900mm
     price: 989
     category: window
-  - name: Medium-Large window on passenger side of main body (one window total per
+  - name:
+      Medium-Large window on passenger side of main body (one window total per
       side)
     description: 550mm x 900mm
     price: 989
@@ -71,15 +73,17 @@ options:
     category: interior
   - name: Victron DC to DC charger install and vehicle prep package.
     price: 460
-    description: VICTRON ORION-TR SMART 12/12-30 30A (360W) ISOLATED DC-DC CHARGER
+    description:
+      VICTRON ORION-TR SMART 12/12-30 30A (360W) ISOLATED DC-DC CHARGER
       OR POWER SUPPLY
     category: interior
   - name: Camper jacks and custom mounts
     price: 1550
     description: "Manual camper jacks for easy camper removal. "
     category: exterior
-    - category: color
-    name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Mystique
+  - category: color
+    name:
+      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Mystique
       Dawn w/ Matte finish (Choose up to two premium or standard)"
     description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -87,7 +91,8 @@ options:
       quality.
     price: 1000
     image: /images/uploads/wilsonart-laminate-sheets-4762607354896-64_400.jpg
-  - name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Graphite
+  - name:
+      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Graphite
       Nebula w/ Matte finish (Choose up to two premium or standard)"
     description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -100,7 +105,8 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pinnacle
+    name:
+      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pinnacle
       Walnut  (Choose up to two premium or standard)"
     price: 1000
     category: color
@@ -112,7 +118,8 @@ options:
     category: color
     image: /images/uploads/wilsonart-laminate-sheets-4779607354896-64_400.jpg
     price: 1000
-    name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pewter
+    name:
+      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pewter
       Brush (Choose up to two premium or standard)"
   - description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -127,7 +134,8 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Indigo
+    name:
+      "*STANDARD* Counter top and face panels Wilsonart laminate finish Indigo
       (Choose one if not choosing a premium option as well)"
     price: 0
     image: /images/uploads/wilsonart-laminate-sheets-d379607354896-64_400.jpg
@@ -136,12 +144,14 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Fashion
+    name:
+      "*STANDARD* Counter top and face panels Wilsonart laminate finish Fashion
       Grey (Choose one if not choosing a premium option as well)"
     price: 0
     image: /images/uploads/wilsonart-laminate-sheets-d381607354896-64_400.jpg
     category: color
-  - name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Orange
+  - name:
+      "*STANDARD* Counter top and face panels Wilsonart laminate finish Orange
       Grove (Choose one if not choosing a premium option as well)"
     description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -157,7 +167,8 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Pasadena
+    name:
+      "*STANDARD* Counter top and face panels Wilsonart laminate finish Pasadena
       Oak (Choose one if not choosing a premium option as well)"
   - name: Cushion fabric Sky Blue (Choose one)
     description: 600 Denier
