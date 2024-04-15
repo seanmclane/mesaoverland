@@ -46,42 +46,38 @@ options:
   - name: Matress ventilation
     price: 220
     category: interior
-  - name: Small window in cabover area drivers side (one window total per side)
-    price: 700
-    description: "300mm x 500mm "
-    category: window
   - name: Small window in cabover area passenger side (one window total per side)
     description: "300mm x 500mm "
     price: 700
     category: window
   - name: Medium window in cabover area drivers side (one window total per side)
     description: 300mm x 700mm
-    price: 799
+    price: 793
     category: window
   - name: Medium window in cabover area passenger side (one window total per side)
     description: 300mm x 700mm
-    price: 799
+    price: 793
     category: window
   - name: Medium-large window on drivers side of main body (one window total per
       side)
     description: 550mm x 900mm
-    price: 1020
+    price: 989
     category: window
   - name: Medium-large window on passenger side of main body (one window total per
       side)
     description: 550mm x 900mm
-    price: 1020
+    price: 989
     category: window
   - name: Large window on drivers side of main body (one window total per side)
     description: 550mm x 1100mm
-    price: 1220
+    price: 1141
     category: window
   - name: Large window on passenger side of main body (one window total per side)
     description: 550mm x 1100mm
-    price: 1218
+    price: 1140
     category: window
   - name: Electric roof hatch
-    price: 2055
+    price: 1999
     description: Arctic Tern electric roof hatch
     category: window
   - name: Additional 200ah battery
