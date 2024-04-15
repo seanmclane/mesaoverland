@@ -38,7 +38,7 @@ specs:
     value: "73.87"
 options:
   - name: Standard Build Out
-    price: 10780
+    price: 12136
     category: standard
   - description: ""
     name: Dickinson P9000 propane heater
@@ -50,10 +50,6 @@ options:
   - name: Matress ventilation
     price: 220
     category: interior
-  - name: Small window in cabover area (add up to two)
-    price: 600
-    description: "300mm x 500mm "
-    category: window
   - name: Additional 100ah battery
     price: 550
     description: 100ah LiFePO4 battery
@@ -66,6 +62,30 @@ options:
     price: 1550
     description: "Manual camper jacks for easy camper removal. "
     category: color
+  - name: Small window in cabover area drivers side (one per side in cabover))
+    price: 700
+    description: "300mm x 500mm "
+    category: window
+  - name: Small window in cabover area passenger side (one per side in cabover))
+    description: "300mm x 500mm "
+    price: 700
+    category: window
+  - name: Medium window in drivers side (one window total per side)
+    description: 550mm x 700mm
+    price: 902
+    category: window
+  - name: Medium window in passenger side (one window total per side)
+    description: 550mm x 700mm
+    price: 902
+    category: window
+  - name: Large window in drivers side wall (one window total per side)
+    description: 550mm x 900mm
+    price: 989
+    category: window
+  - name: Large window in passenger side wall (one window total per side)
+    description: 550mm x 900mm
+    price: 989
+    category: window
 gallery:
   - image: /images/uploads/20240201_130609.jpg
   - image: /images/uploads/20240205_173700.jpg
