@@ -36,8 +36,8 @@ function FormOption({ handleChange, option, checked, fullWidth }: Props) {
     >
       <h4 className="mb-1 mt-1 mx-4 text-sm flex flex-row justify-between">
         {option.name}{" "}
-        {option.category === "color" || !option.description ? null : (
-          <div>
+        {!option.description ? null : (
+          <div className="relative">
             <img
               src={infoicon}
               alt="info"
@@ -47,9 +47,15 @@ function FormOption({ handleChange, option, checked, fullWidth }: Props) {
             <div
               className={`${
                 show ? "block" : "hidden"
-              } bg-white border-2 border-outline border-solid absolute p-2 rounded-lg font-body`}
+              } bg-white border-2 border-outline border-solid absolute right-0 p-2 rounded-lg font-body max-w-md z-10`}
             >
-              {option.description}
+              <div className="">
+                {option.description}
+                <br />
+                {option.image && (
+                  <Img fixed={option.image.childImageSharp?.fixed} />
+                )}
+              </div>
             </div>
           </div>
         )}
