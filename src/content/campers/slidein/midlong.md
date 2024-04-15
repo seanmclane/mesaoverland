@@ -15,17 +15,16 @@ features:
   - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction (easily
       repairable fiberglass!)
   - name: Strong mounting points
-  - name: Arctic Tern windows
+  - name: Up to four Arctic Tern windows
   - name: Full size bed (75”x54”)
   - name: Power roof fan with light
   - name: 100ah LiFePO4 battery with Bluetooth monitoring
   - name: 200w solar panel
   - name: "Victron smart solar 100/30 "
   - name: Victron phoenix 12/250 inverter
-  - name: dimmable LED lights
+  - name: Dimmable LED lights
   - name: Portable propane stove
   - name: Removable table
-  - name: Externally mounted propane tank
   - name: 12v Fridge with small freezer
 specs:
   - name: Total height
