@@ -42,11 +42,12 @@ specs:
     value: 76"
 options:
   - name: Standard Build Out
-    price: 17740
+    price: 19012
     category: standard
+    description: Choose your windows below
   - description: Hydronic diesel heater with air and water heating.
     name: Heat and hot water (Diesel)
-    price: 2975
+    price: 4095
     category: interior
   - name: Awning
     price: 1230
