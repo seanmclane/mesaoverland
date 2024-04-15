@@ -25,7 +25,6 @@ features:
   - name: Dimmable LED lights
   - name: Portable propane cooktop
   - name: Removable table
-  - name: Externally mounted propane tank
   - name: 12v Fridge with small freezer
   - name: 28" wide door with window and screen door
 specs:
@@ -59,21 +58,21 @@ options:
     price: 700
     description: "300mm x 500mm "
     category: window
-  - name: Large window in drivers side wall (one window total per side)
-    description: 550mmx900mm
-    price: 980
-    category: window
-  - description: 550mmx900mm
-    name: Large window in passenger side wall (one window total per side)
-    price: 980
-    category: window
   - name: Medium window in drivers side (one window total per side)
     description: 550mmx700mm
-    price: 889
+    price: 902
     category: window
   - description: 550mmx700mm
     name: Medium window in passenger side (one window total per side)
-    price: 889
+    price: 902
+    category: window
+  - name: Large window in drivers side wall (one window total per side)
+    description: 550mmx900mm
+    price: 989
+    category: window
+  - description: 550mmx900mm
+    name: Large window in passenger side wall (one window total per side)
+    price: 989
     category: window
   - name: Additional 100ah battery
     price: 550
