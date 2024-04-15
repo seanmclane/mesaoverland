@@ -29,7 +29,7 @@ features:
   - name: ICECO VL35 proS 35 Liters portable refrigerator
     description: "TF49 "
   - name: 28" wide door with window and screen door
-  - name: Sleeping and seating 4 at least 3 adults via cabover and convertible
+  - name: Sleeping and seating for at least 3 adults via cabover and convertible
       dining area
   - name: "Customizable interior "
   - name: Lightweight durable interior with ZERO wood construction
