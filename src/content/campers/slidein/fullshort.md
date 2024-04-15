@@ -57,19 +57,19 @@ options:
     category: window
   - name: Medium window in cabover area drivers side (one window total per side)
     description: "300mm x 700mm "
-    price: 799
+    price: 780
     category: window
   - name: Medium window in cabover area passenger side (one window total per side)
     description: "300mm x 700mm "
-    price: 799
+    price: 779
     category: window
   - name: Large window on drivers side of main body (one window total per side)
     description: 550mmx900mm
-    price: 1020
+    price: 980
     category: window
   - name: Large window on passenger side of main body (one window total per side)
-    description: 550mmx900mm
-    price: 1021
+    description: 550mm x 900mm
+    price: 980
     category: window
   - name: Additional 200ah battery
     price: 1200
