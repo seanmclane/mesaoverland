@@ -44,6 +44,7 @@ options:
   - name: Standard Build Out
     price: 20002
     category: standard
+    description: Select your windows below.
   - description: Hydronic diesel heater with air and water heating.
     name: Heat and hot water (Diesel)
     price: 4095
