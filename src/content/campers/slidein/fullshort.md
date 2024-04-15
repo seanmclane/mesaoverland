@@ -47,29 +47,23 @@ options:
   - name: Matress ventilation
     price: 220
     category: interior
-  - name: Small window in cabover area drivers side (one window total per side)
-    price: 700
-    description: "300mm x 500mm "
-    category: window
-  - name: Small window in cabover area passenger side (one window total per side)
-    description: "300mm x 500mm "
-    price: 700
-    category: window
   - name: Medium window in cabover area drivers side (one window total per side)
+    price: 792
     description: "300mm x 700mm "
-    price: 780
     category: window
   - name: Medium window in cabover area passenger side (one window total per side)
     description: "300mm x 700mm "
-    price: 779
+    price: 792
     category: window
-  - name: Large window on drivers side of main body (one window total per side)
+  - name: Medium-Large window on drivers side of main body (one window total per
+      side)
     description: 550mmx900mm
-    price: 980
+    price: 989
     category: window
-  - name: Large window on passenger side of main body (one window total per side)
+  - name: Medium-Large window on passenger side of main body (one window total per
+      side)
     description: 550mm x 900mm
-    price: 980
+    price: 989
     category: window
   - name: Additional 200ah battery
     price: 1200
