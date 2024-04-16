@@ -1,30 +1,35 @@
 ---
 name: Full Size 6.5' Flat Bed
-short_description: Fits full size trucks with 6.5' beds
+short_description: Fits full size trucks with 6.5' aftermarket flatbed.
 description: Designed for full-size trucks with aftermarket flatbeds such as a
   Ram 2500/3500 or a Ford F250/f350.
 photo: /images/uploads/20230728_150234-5-.jpg
 shell_price: 15300
 lead_time_weeks: 16
 features:
-  - name:
-      Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
+  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
   - name: '2" thick high R value composite construction '
-  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction
-  - name: Arctic Tern windows
+  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided ZERO-WOOD construction
+  - name: Up to five Arctic Tern windows
   - name: Queen size bed
   - name: Power roof fan with intake and exhaust
   - name: 200ah LiFePO4 battery with Bluetooth monitoring
   - name: 400w solar
   - name: Victron smart solar 100/30
-  - name: Victron phoenix 12/500 inverter
+  - name: VICTRON MULTIPLUS 12/500 - 20-16 - 120V - VE. BUS UL APPROVED
+  - name: Victron LYNX power distribution system
+  - name: Marine grade wiring and components
   - name: Dimmable LED lights
+  - name: GSI Pinnacle Pro 2 Burner Stove with storage location
   - name: Removable table
-  - name: "12v Fridge with freezer "
+  - name: ICECO VL35 proS 35 Liters portable refrigerator
     description: "TF49 "
-  - name: Portable stove with storage location
   - name: 28" wide door with window and screen door
+  - name: Sleeping and seating for at least 3 adults via cabover and convertible
+      dining area
+  - name: Customizable interior
+  - name: Lightweight durable interior with ZERO wood construction
 specs:
   - name: Total height
     value: 86.60"
@@ -32,16 +37,23 @@ specs:
     value: 81"
 options:
   - name: Standard Build Out
-    price: 19460
+    price: 20960
     category: standard
-  - name: Small window in cabover area drivers side (one window total per side)
-    description: 300mm x 500mm
-    price: 700
-    category: window
-  - name: Small window in cabover area passenger side (one window total per side)
-    description: 300mm x 500mm
-    price: 700
-    category: window
+  - price: 50966
+    description: Arctic Tern Euro entry door, x1 550mm x 1100mm window on drivers
+      side, x1 550mm x 1450mm in rear, x1 550mm x 900mm in passenger wall, x2
+      300mm x 700mm windows in cabover, Cabover extension,400ah EG4 LL 24v
+      batteries, Victron 150/45 solar controller, Victron Multiplus 24/3000
+      inverter, Victron LYNX power distribution system, Marine grade systems,
+      800w bifacial solar panels, Victron Cerbo GX and Touch 50 communication
+      center, 50a Victron Buck Boost alternator charging prep package, Induction
+      cooking, Hydronic Diesel heat and hot water, Isotherm slim
+      refrigerator/freezer, 24v lightweight efficient AC system, Maxxair fans,
+      Shower, Laveo dry flush toilet, Same buld quality as our standard model
+      with more features and premium appearance options if desired.
+    name: Luxury fully outfitted 24v build (read description of inclusions such as
+      upgraded door and 5 windows)
+    category: standard
   - name: Medium window in cabover area drivers side (one window total per side)
     description: 300mm x 700mm
     price: 797
@@ -64,12 +76,6 @@ options:
     description: 550mm x 700mm
     price: 799
     category: window
-  - name:
-      Medium window on passenger side of main body in front of door (two windows
-      total per side)
-    description: 550mm x 700mm
-    price: 799
-    category: window
   - name: Medium-large window on rear of main body (one window total on rear wall)
     description: 550mm x 900mm
     price: 1020
@@ -83,8 +89,9 @@ options:
     price: 1420
     category: window
   - name: Electric roof hatch
-    price: 2055
+    price: 1998
     category: window
+    description: Arctic Tern standard electric roof hatch
   - name: Additional 200ah battery
     description: 200ah LiFePO4 battery
     price: 1200
@@ -93,33 +100,39 @@ options:
     price: 620
     category: exterior
   - name: North to South cabover extension
-    description:
-      Extend the cabover to accommodate North to South sleeping over East
+    description: Extend the cabover to accommodate North to South sleeping over East
       to West.
     price: 2550
     category: standard
   - name: Victron DC to DC charger install and vehicle prep package
-    description:
-      VICTRON ORION-TR SMART 12/12-30 30A (360W) ISOLATED DC-DC CHARGER
+    description: VICTRON ORION-TR SMART 12/12-30 30A (360W) ISOLATED DC-DC CHARGER
       OR POWER SUPPLY
     price: 460
     category: accessory
   - name: Camper jacks and custom mounting brackets
-    description:
-      For loading and unloading the camper, they incorporate turnbuckle
+    description: For loading and unloading the camper, they incorporate turnbuckle
       tie down points, but turnbuckles are not included.
     price: 2200
     category: accessory
   - name: Heat and hot water (Diesel)
     description: Hydronic diesel heater with air and water heating.
-    price: 2975
+    price: 4095
     category: interior
   - name: Awning
     price: 1230
     category: exterior
+  - name: Default White
+    description: If no color is selected or desired the default color is white.
+      *White faces will be present in areas with appearance selection as well.
+      Add $0 *PREMIUM* Counter top and face panels Wilsonart laminate finish
+      Mystique Dawn w/ Matte finish (Choose up to two premium or standard)
+      info  Add $1,000 *PREMIUM* Counter top and face panels Wilsonart laminate
+      finish Graphite Nebula w/ Matte finish (Choose up to two premium or
+      standard)
+    price: 0
+    category: color
   - category: color
-    name:
-      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Mystique
+    name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Mystique
       Dawn w/ Matte finish (Choose up to two premium or standard)"
     description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -127,8 +140,7 @@ options:
       quality.
     price: 1000
     image: /images/uploads/wilsonart-laminate-sheets-4762607354896-64_400.jpg
-  - name:
-      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Graphite
+  - name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Graphite
       Nebula w/ Matte finish (Choose up to two premium or standard)"
     description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -141,8 +153,7 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name:
-      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pinnacle
+    name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pinnacle
       Walnut  (Choose up to two premium or standard)"
     price: 1000
     category: color
@@ -154,8 +165,7 @@ options:
     category: color
     image: /images/uploads/wilsonart-laminate-sheets-4779607354896-64_400.jpg
     price: 1000
-    name:
-      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pewter
+    name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pewter
       Brush (Choose up to two premium or standard)"
   - description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -170,8 +180,7 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name:
-      "*STANDARD* Counter top and face panels Wilsonart laminate finish Indigo
+    name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Indigo
       (Choose one if not choosing a premium option as well)"
     price: 0
     image: /images/uploads/wilsonart-laminate-sheets-d379607354896-64_400.jpg
@@ -180,14 +189,12 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name:
-      "*STANDARD* Counter top and face panels Wilsonart laminate finish Fashion
+    name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Fashion
       Grey (Choose one if not choosing a premium option as well)"
     price: 0
     image: /images/uploads/wilsonart-laminate-sheets-d381607354896-64_400.jpg
     category: color
-  - name:
-      "*STANDARD* Counter top and face panels Wilsonart laminate finish Orange
+  - name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Orange
       Grove (Choose one if not choosing a premium option as well)"
     description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -203,8 +210,7 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name:
-      "*STANDARD* Counter top and face panels Wilsonart laminate finish Pasadena
+    name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Pasadena
       Oak (Choose one if not choosing a premium option as well)"
   - name: Cushion fabric Sky Blue (Choose one)
     description: 600 Denier
