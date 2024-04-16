@@ -237,6 +237,20 @@ options:
       OR POWER SUPPLY
     price: 460
     category: interior
+  - name: "Luxury fully outfitted 24v build (read description of inclusions such as
+      upgraded door and 4 windows) "
+    description: "Arctic Tern Euro entry door, x2 550mm x 1450mm windows in body, x2
+      300mm x 700mm windows in cabover, Cabover extension,400ah EG4 LL 24v
+      batteries, Victron 150/45 solar controller, Victron Multiplus 24/3000
+      inverter, Victron LYNX power distribution system, Marine grade systems,
+      800w bifacial solar panels, Victron Cerbo GX and Touch 50 communication
+      center, 50a Victron Buck Boost alternator charging prep package, Induction
+      cooking, Hydronic Diesel heat and hot water, Isotherm slim
+      refrigerator/freezer, 24v lightweight efficient AC system, Maxxair fans,
+      Shower, Laveo dry flush toilet, Same buld quality as our standard model
+      with more features and premium appearance options if desired.  "
+    price: 52166
+    category: standard
 gallery:
   - image: /images/uploads/20230810_121712-1-.jpg
   - image: /images/uploads/20230810_121637.jpg
