@@ -39,61 +39,53 @@ specs:
     value: 81"
 options:
   - name: Standard Build Out
-    price: 21560
+    price: 22802
     category: standard
   - name: North to South cabover extension
     description: Extend the cabover to accommodate North to South sleeping over East
       to West.
     price: 2550
     category: standard
-  - name: Small window in cabover area drivers side (one window total per side)
-    description: 300mm x 500mm
-    price: 700
-    category: window
-  - name: Small window in cabover area passenger side (one window total per side)
-    description: 300mm x 500mm
-    price: 700
-    category: window
   - name: Medium window in cabover area drivers side (one window total per side)
     description: 300mm x 700mm
-    price: 799
+    price: 792
     category: window
   - name: Medium window in cabover area passenger side (one window total per side)
     description: 300mm x 700mm
-    price: 799
+    price: 792
     category: window
   - name: Medium-large window on drivers side of main body (one window total per
       side)
     description: 550mm x 900mm
-    price: 1020
+    price: 989
     category: window
   - name: Large window on drivers side of main body (one window total per side)
     description: 550mm x 1100mm
-    price: 1220
+    price: 1141
     category: window
   - name: Xtra-Large window on drivers side of main body (one window total per side)
     description: 550mm x 1450mm
-    price: 1420
+    price: 1395
     category: window
   - name: Medium window on passenger side of main body behind door (two windows
       total per side)
     description: 550mm x 700mm
-    price: 799
+    price: 902
     category: window
   - name: Medium window on passenger side of main body in front of door (two windows
       total per side)
     description: 550mm x 700mm
-    price: 799
+    price: 902
     category: window
   - name: Medium-large window on rear of main body (one window total on rear wall)
     description: 550mm x 900mm
-    price: 1020
+    price: 989
     category: window
   - name: Large window on rear of main body (one window total on rear wall)
     description: 550mm x 1100mm
-    price: 1220
+    price: 1141
     category: window
-  - price: 1420
+  - price: 1395
     description: 550mm x 1450mm
     category: window
     name: Xtra-Large window on rear of main body (one window total on rear wall)
@@ -110,7 +102,7 @@ options:
     category: interior
   - name: Heat and hot water (Diesel)
     description: Hydronic diesel heater with air and water heating.
-    price: 2975
+    price: 4095
     category: interior
   - name: Victron DC to DC charger install and vehicle prep package
     description: VICTRON ORION-TR SMART 12/12-30 30A (360W) ISOLATED DC-DC CHARGER
@@ -131,7 +123,7 @@ options:
       and many other electrical upgrades. Also includes heat/hot water, outdoor
       shower, air conditioning, 24v infrared  in floor heating, and many other
       luxury amenities generally only found in full size RVs! "
-    price: 36000
+    price: 54266
     category: standard
   - name: Arctic Tern Euro door upgrade
     description: 'Arctic Tern Euro doors feature the styling and high quality
@@ -178,6 +170,15 @@ options:
       overall quality of this door is without peer.'
     price: 1550
     category: standard
+  - name: Default White
+    description: If no color is selected or desired the default color is white.
+      *White faces will be present in areas with appearance selection as well.
+      Add $0 *PREMIUM* Counter top and face panels Wilsonart laminate finish
+      Mystique Dawn w/ Matte finish (Choose up to two premium or standard) info
+      Add $1,000 *PREMIUM* Counter top and face panels Wilsonart laminate finish
+      Graphite Nebula w/ Matte finish (Choose up to two premium or standard)
+    price: 0
+    category: color
   - category: color
     name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Mystique
       Dawn w/ Matte finish (Choose up to two premium or standard)"
