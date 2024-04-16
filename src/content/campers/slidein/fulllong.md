@@ -67,12 +67,12 @@ options:
       side)
     description: 550mm x 900mm
     price: 989
-    category: interior
+    category: window
   - name: Medium-large window on passenger side of main body (one window total per
       side)
     description: 550mm x 900mm
     price: 989
-    category: interior
+    category: window
   - name: Large window on drivers side of main body (one window total per side)
     description: 550mm x 1100mm
     price: 1141
