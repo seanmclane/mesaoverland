@@ -7,25 +7,29 @@ photo: /images/uploads/20231226_124421.jpg
 shell_price: 16600
 lead_time_weeks: 16
 features:
-  - name:
-      Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
+  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
       to eliminate “thermal bridging”)
   - name: '2" thick high R value composite construction '
-  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction (easily
-      repairable fiberglass!)
+  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided ZERO-WOOD construction
   - name: Arctic Tern windows (up to 6)
   - name: Queen size bed
   - name: Power roof fan with intake and exhaust
   - name: 200ah LiFePO4 battery with Bluetooth monitoring
   - name: 400w solar
   - name: Victron smart solar 100/30
-  - name: Victron phoenix 12/500 inverter
+  - name: VICTRON MULTIPLUS 12/500 - 20-16 - 120V - VE. BUS UL APPROVED
+  - name: Victron LYNX power distribution system
+  - name: Marine grade wiring and components
   - name: Dimmable LED lights
+  - name: GSI Pinnacle Pro 2 Burner Stove with storage location
   - name: Removable table
-  - name: 12v Fridge with freezer
+  - name: ICECO VL35 proS 35 Liters portable
     description: "TF49 "
-  - name: Portable stove with storage location
   - name: 28" wide door with window and screen door
+  - name: Sleeping and seating for at least 3 adults via cabover and convertible
+      dining area
+  - name: Customizable interior
+  - name: Lightweight durable interior with ZERO wood construction
 specs:
   - name: Total height
     value: 86.60"
@@ -38,8 +42,7 @@ options:
     price: 21560
     category: standard
   - name: North to South cabover extension
-    description:
-      Extend the cabover to accommodate North to South sleeping over East
+    description: Extend the cabover to accommodate North to South sleeping over East
       to West.
     price: 2550
     category: standard
@@ -77,8 +80,7 @@ options:
     description: 550mm x 700mm
     price: 799
     category: window
-  - name:
-      Medium window on passenger side of main body in front of door (two windows
+  - name: Medium window on passenger side of main body in front of door (two windows
       total per side)
     description: 550mm x 700mm
     price: 799
@@ -111,22 +113,18 @@ options:
     price: 2975
     category: interior
   - name: Victron DC to DC charger install and vehicle prep package
-    description:
-      VICTRON ORION-TR SMART 12/12-30 30A (360W) ISOLATED DC-DC CHARGER
+    description: VICTRON ORION-TR SMART 12/12-30 30A (360W) ISOLATED DC-DC CHARGER
       OR POWER SUPPLY
     price: 460
     category: accessory
   - name: Camper jacks and custom mounting brackets
-    description:
-      For loading and unloading the camper, they incorporate turnbuckle
+    description: For loading and unloading the camper, they incorporate turnbuckle
       tie down points, but turnbuckles are not included.
     price: 2200
     category: accessory
-  - name:
-      Luxury Package (read description, so you do not select options that are
+  - name: Luxury Package (read description, so you do not select options that are
       included)
-    description:
-      "All the standard build features plus Includes upgraded Arctic Tern
+    description: "All the standard build features plus Includes upgraded Arctic Tern
       Euro door, increases capacity of water storage, and refrigerator. Upgrades
       electrical system to 24v system with 800w bifacial solar,400ah 24v
       battery, Victron multiplus 24/3000 inverter, Victron DC to DC charging,
@@ -136,17 +134,16 @@ options:
     price: 36000
     category: standard
   - name: Arctic Tern Euro door upgrade
-    description:
-      'Arctic Tern Euro doors feature the styling and high quality typical
-      in European camper components.  They feature a European made double
-      locking system and European made acrylic glazing.  The double seals and
-      considerable heft of these doors feel like a bank vault closing!  These
-      doors feature powder coated aluminum exterior surfaces, substantial
-      insulation, and ABS interior panels.  Rounded corners prevent cracking in
-      composite walls.  The double glazed window features a retractable roller
-      blind.  This door includes a European, fine mesh roller screen
-      door.  Available in right hinge only.  Our doors are warranted by Tern
-      Overland LLC for one year against defects in workmanship and
+    description: 'Arctic Tern Euro doors feature the styling and high quality
+      typical in European camper components.  They feature a European made
+      double locking system and European made acrylic glazing.  The double seals
+      and considerable heft of these doors feel like a bank vault
+      closing!  These doors feature powder coated aluminum exterior surfaces,
+      substantial insulation, and ABS interior panels.  Rounded corners prevent
+      cracking in composite walls.  The double glazed window features a
+      retractable roller blind.  This door includes a European, fine mesh roller
+      screen door.  Available in right hinge only.  Our doors are warranted by
+      Tern Overland LLC for one year against defects in workmanship and
       materials.  We have a complete in house parts and service
       department.  This is truly a quality door!  Additional features:  Powder
       coated aluminum frame Waste bin in door Sturdy interior handle *optional
@@ -157,8 +154,7 @@ options:
     price: 1950
     category: standard
   - name: Arctic Tern Wildland door upgrade
-    description:
-      'Arctic Tern Wildlands doors are an exceptional choice for maximum
+    description: 'Arctic Tern Wildlands doors are an exceptional choice for maximum
       ventilation and security.  This door is 42" high by 26" wide for the cut
       hole. The door is unique in that it incorporates a triple deadbolted lock
       system on a high-security screen door. Attachments to the latches wrap
@@ -183,8 +179,7 @@ options:
     price: 1550
     category: standard
   - category: color
-    name:
-      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Mystique
+    name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Mystique
       Dawn w/ Matte finish (Choose up to two premium or standard)"
     description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -192,8 +187,7 @@ options:
       quality.
     price: 1000
     image: /images/uploads/wilsonart-laminate-sheets-4762607354896-64_400.jpg
-  - name:
-      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Graphite
+  - name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Graphite
       Nebula w/ Matte finish (Choose up to two premium or standard)"
     description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -206,8 +200,7 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name:
-      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pinnacle
+    name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pinnacle
       Walnut  (Choose up to two premium or standard)"
     price: 1000
     category: color
@@ -219,8 +212,7 @@ options:
     category: color
     image: /images/uploads/wilsonart-laminate-sheets-4779607354896-64_400.jpg
     price: 1000
-    name:
-      "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pewter
+    name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Pewter
       Brush (Choose up to two premium or standard)"
   - description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -235,8 +227,7 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name:
-      "*STANDARD* Counter top and face panels Wilsonart laminate finish Indigo
+    name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Indigo
       (Choose one if not choosing a premium option as well)"
     price: 0
     image: /images/uploads/wilsonart-laminate-sheets-d379607354896-64_400.jpg
@@ -245,14 +236,12 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name:
-      "*STANDARD* Counter top and face panels Wilsonart laminate finish Fashion
+    name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Fashion
       Grey (Choose one if not choosing a premium option as well)"
     price: 0
     image: /images/uploads/wilsonart-laminate-sheets-d381607354896-64_400.jpg
     category: color
-  - name:
-      "*STANDARD* Counter top and face panels Wilsonart laminate finish Orange
+  - name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Orange
       Grove (Choose one if not choosing a premium option as well)"
     description: Laminate construction contains a minimum of 20% post-consumer
       recycled content for environmental-friendliness. Stain resistance provides
@@ -268,8 +257,7 @@ options:
       recycled content for environmental-friendliness. Stain resistance provides
       a long-lasting attractive appearance. GREENGUARD certified for indoor air
       quality.
-    name:
-      "*STANDARD* Counter top and face panels Wilsonart laminate finish Pasadena
+    name: "*STANDARD* Counter top and face panels Wilsonart laminate finish Pasadena
       Oak (Choose one if not choosing a premium option as well)"
   - name: Cushion fabric Sky Blue (Choose one)
     description: 600 Denier
