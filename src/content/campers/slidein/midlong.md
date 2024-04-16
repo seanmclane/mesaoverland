@@ -65,7 +65,7 @@ options:
   - name: Camper jacks
     price: 1550
     description: "Manual camper jacks for easy camper removal. "
-    category: color
+    category: accessory
   - name: Small window in cabover area drivers side (one per side in cabover))
     price: 700
     description: "300mm x 500mm "
