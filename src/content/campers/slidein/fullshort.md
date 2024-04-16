@@ -195,6 +195,50 @@ options:
     price: 0
     image: /images/uploads/stripes_1.jpg
     category: color
+  - description: 'Arctic Tern Euro doors feature the styling and high quality
+      typical in European camper components. They feature a European made double
+      locking system and European made acrylic glazing. The double seals and
+      considerable heft of these doors feel like a bank vault closing! These
+      doors feature powder coated aluminum exterior surfaces, substantial
+      insulation, and ABS interior panels. Rounded corners prevent cracking in
+      composite walls. The double glazed window features a retractable roller
+      blind. This door includes a European, fine mesh roller screen door.
+      Available in right hinge only. Our doors are warranted by Tern Overland
+      LLC for one year against defects in workmanship and materials. We have a
+      complete in house parts and service department. This is truly a quality
+      door! Additional features: Powder coated aluminum frame Waste bin in door
+      Sturdy interior handle *optional matching keys, if you purchase cargo
+      doors ($5 per lock) Notes:​ Doors placed on curbside in North America must
+      be right hinge only (Looking at the exterior of the door) Weight is 25.5kg
+      (56lbs) Pass through dimensions: 69" x 21"'
+    name: Arctic Tern Euro door upgrade
+    price: 1949
+    category: standard
+  - name: Arctic Tern Wildland door upgrade
+    description: 'Arctic Tern Wildlands doors are an exceptional choice for maximum
+      ventilation and security. This door is 42" high by 26" wide for the cut
+      hole. The door is unique in that it incorporates a triple deadbolted lock
+      system on a high-security screen door. Attachments to the latches wrap
+      around the inside of the wall so that you would have to tear out the wall
+      to pry out the door. The screen door features a stainless steel powder
+      coated #6 woven mesh with .040 wire. #6 was chosen because it is the
+      largest mesh that a grizzly cannot get a claw into. The door frame is
+      recessed to foil prying claws or tools. This allows you to sleep in safety
+      with the outer door open in hot weather. This has traditionally been a big
+      problem for small off-road camp trailers. The door also features our fine
+      mesh bug screen on the outside. This prevents pets from damaging the bug
+      screen. The bug screen is easily replaced using conventional screen tools.
+      This door has been 4 years in development, for use in areas like Africa
+      and Australia for protection primarily from dangerous animals. It presents
+      a serious deterrent to 2 legged animals as well. We added our refinements
+      and brought it to North America. The door frame is all powdercoated
+      aluminum with heavy duty stainless steel latches. The single handle
+      actuates all three latch points. The door lock shares the same European
+      lock set as our cargo doors and other accessories, so everything can be
+      keyed to match for a small fee. The overall quality of this door is
+      without peer.'
+    price: 1550
+    category: standard
 gallery:
   - image: /images/uploads/20240205_173745.jpg
 ---
