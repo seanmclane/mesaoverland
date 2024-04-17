@@ -1,6 +1,6 @@
 ---
 tagline: Build Your Dream Camper
-tagline_desc: At Mesa Overland, we love making customers' dream adventure rigs into reality.
+tagline_desc: At Mesa Overland, we're all about turning dreams into epic adventure rigs!
 hero_image: /images/uploads/20240222_103058.jpg
 highlight_camper_1_tagline: Discover The Whole Enchilada
 highlight_camper_1_tagline_desc: The ultimate chassis-mounted truck camper for going anywhere in comfort
