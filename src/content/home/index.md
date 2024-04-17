@@ -7,7 +7,7 @@ highlight_camper_1_tagline_desc: The ultimate chassis-mounted truck camper for g
 highlight_camper_1_button: Learn more
 highlight_camper_1_image: /images/uploads/20240229_170253.jpg
 highlight_camper_2_tagline: Or go lightweight in the Butte
-highlight_camper_2_tagline_desc: Your midsize truck with a 5' bed will hardly notice it's there
+highlight_camper_2_tagline_desc: Both you and your mid-sized truck will benefit from the weight savings
 highlight_camper_2_button: See the specs
 highlight_camper_2_image: /images/uploads/20240201_130609.jpg
 gallery:
