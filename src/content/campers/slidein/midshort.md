@@ -1,9 +1,9 @@
 ---
 name: Butte 5'
-short_description: Fits mid size trucks with 5' beds
-description: "Designed for midsized trucks like the Ford Ranger and Toyota
+short_description: Fits mid-sized trucks with 5' beds
+description: "Designed for mid-sized trucks like the Ford Ranger and Toyota
   Tacoma, this truck camper is ready for whatever adventure you throw its way.
-  Its compact and lightweight construction helps you get to the places you love
+  It's compact and lightweight construction helps you get to the places you love
   without sacrificing comfort. "
 photo: /images/uploads/20240201_130609.jpg
 shell_price: 13600
@@ -16,17 +16,22 @@ features:
       repairable fiberglass!)
   - name: Strong mounting points
   - name: Up to four Arctic Tern windows
-  - name: Full size bed (75”x54”)
+  - name: Full-size bed (75”x54”)
   - name: Power roof fan with light
   - name: 100ah LiFePO4 battery with Bluetooth monitoring
   - name: "Victron smart solar 100/30 "
   - name: Victron phoenix 12/250 inverter
   - name: 200w solar panel
   - name: Dimmable LED lights
-  - name: Portable propane cooktop
+  - name: GSI Pinnacle Pro 2 Burner Stove w/ storage location
   - name: Removable table
-  - name: 12v Fridge with small freezer
+  - name: ICECO APL20 12 Volt Car Refrigerator, 21 Quart (20 Liter) Light Duty
+      Aluminum 12v Portable Fridge Freezer
   - name: 28" wide door with window and screen door
+  - name: Sleeping and seating for at least 3 adults via cabover and convertible
+      dining area
+  - name: Customizable interior
+  - name: Lightweight durable interior with ZERO wood construction
 specs:
   - name: Total height
     value: 78.5"
