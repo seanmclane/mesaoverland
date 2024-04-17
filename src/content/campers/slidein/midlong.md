@@ -1,7 +1,7 @@
 ---
 name: Butte 6'
-short_description: Fits mid size trucks with 6' beds
-description: "Designed for mid sized trucks like the Ford Ranger and Toyota
+short_description: Fits mid-sized trucks with 6' beds
+description: "Designed for mid-sized trucks like the Ford Ranger and Toyota
   Tacoma, this truck camper is ready for whatever adventure you throw its way.
   Its compact and lightweight construction helps you get to the places you love
   without sacrificing comfort. "
@@ -16,7 +16,7 @@ features:
       (easily repairable fiberglass!)
   - name: Strong mounting points
   - name: Up to four Arctic Tern windows
-  - name: Full size bed (75”x54”)
+  - name: Full-size bed (75”x54”)
   - name: Power roof fan with light
   - name: 100ah LiFePO4 battery with Bluetooth monitoring
   - name: 200w solar panel
