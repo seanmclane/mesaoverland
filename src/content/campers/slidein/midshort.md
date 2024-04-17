@@ -28,6 +28,10 @@ features:
   - name: ICECO APL20 12 Volt Car Refrigerator, 21 Quart (20 Liter) Light Duty
       Aluminum 12v Portable Fridge Freezer
   - name: 28" wide door with window and screen door
+  - name: Sleeping and seating for at least 3 adults via cabover and convertible
+      dining area
+  - name: Customizable interior
+  - name: Lightweight durable interior with ZERO wood construction
 specs:
   - name: Total height
     value: 78.5"
