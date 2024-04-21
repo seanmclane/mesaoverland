@@ -93,10 +93,10 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-  - label: Slide In Campers
+  - label: Slide-In Campers
     name: slideincampers
     files:
-    - label: 'Mid Size Short Bed'
+    - label: 'Mid-Size Short Bed'
       name: 'slideinmidshort'
       file: 'src/content/campers/slidein/midshort.md'
       extension: md
@@ -135,7 +135,7 @@ collections:
           widget: list
           fields:
           - { label: Image, name: image, widget: image }
-    - label: 'Mid Size Long Bed'
+    - label: 'Mid-Size Long Bed'
       name: 'slideinmidlong'
       file: 'src/content/campers/slidein/midlong.md'
       extension: md
@@ -174,7 +174,7 @@ collections:
           widget: list
           fields:
           - { label: Image, name: image, widget: image }
-    - label: 'Full Size 5.5 Bed'
+    - label: 'Full-Size 5.5 Bed'
       name: 'slideinfullshort'
       file: 'src/content/campers/slidein/fullshort.md'
       extension: md
@@ -213,7 +213,7 @@ collections:
           widget: list
           fields:
           - { label: Image, name: image, widget: image }      
-    - label: 'Full Size 6.5 Bed'
+    - label: 'Full-Size 6.5 Bed'
       name: 'slideinfullmed'
       file: 'src/content/campers/slidein/fullmed.md'
       extension: md
@@ -252,7 +252,7 @@ collections:
           widget: list
           fields:
           - { label: Image, name: image, widget: image }
-    - label: 'Full Size 8 Bed'
+    - label: 'Full-Size 8 Bed'
       name: 'slideinfulllong'
       file: 'src/content/campers/slidein/fulllong.md'
       extension: md
@@ -291,10 +291,10 @@ collections:
           widget: list
           fields:
           - { label: Image, name: image, widget: image }
-  - label: Flat Bed Campers
+  - label: Flatbed Campers
     name: flatbedcampers
     files:
-    - label: 'Mid Size Long Bed'
+    - label: 'Mid-Size Long Bed'
       name: 'flatbedmidlong'
       file: 'src/content/campers/flatbed/midlong.md'
       extension: md
@@ -333,7 +333,7 @@ collections:
           widget: list
           fields:
           - { label: Image, name: image, widget: image }
-    - label: 'Full Size 6.5 Bed'
+    - label: 'Full-Size 6.5 Bed'
       name: 'flatbedfullmed'
       file: 'src/content/campers/flatbed/fullmed.md'
       extension: md
@@ -372,7 +372,7 @@ collections:
           widget: list
           fields:
           - { label: Image, name: image, widget: image }
-    - label: 'Full Size 8 Bed'
+    - label: 'Full-Size 8 Bed'
       name: 'flatbedfulllong'
       file: 'src/content/campers/flatbed/fulllong.md'
       extension: md

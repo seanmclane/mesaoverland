@@ -54,7 +54,7 @@ function ContactUs() {
     <div>
       <SEO
         title="Contact Us"
-        description="Contact us about a slide in camper or custom RV work"
+        description="Contact us about a slide-in camper or custom RV work"
       />
       <div
         className="bg-mesa text-gray-100 py-20 px-2"

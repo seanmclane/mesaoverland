@@ -44,7 +44,7 @@ function FlatBed(props: Props): ReactElement {
   return (
     <>
       <SEO
-        title="Flat Bed Campers"
+        title="Flatbed Campers"
         description="Flat bed camper models from Mesa Overland"
         image={
           props.data.allMarkdownRemark.edges[0].node.frontmatter.photo
@@ -54,9 +54,9 @@ function FlatBed(props: Props): ReactElement {
       <div className="bg-mesa text-gray-100 md:py-8">
         <div className="flex w-full flex-wrap flex-row justify-between text-center mx-auto">
           <div className="m-auto w-full md:w-1/2 p-4 max-w-md">
-            <h2 className="text-5xl font-title uppercase">Flat Bed Campers</h2>
+            <h2 className="text-5xl font-title uppercase">Flatbed Campers</h2>
             <p className="text-xl flex-wrap">
-              These flat bed campers attach to flat bed mid size or full size
+              These flatbed campers attach to flatbed mid-size or full-size
               trucks
             </p>
           </div>
@@ -78,8 +78,8 @@ function FlatBed(props: Props): ReactElement {
           onChange={(e) => setSelectedTruck(e.target.value)}
         >
           <option value="">All</option>
-          <option value="mid">Mid Size</option>
-          <option value="full">Full Size</option>
+          <option value="mid">Mid-Size</option>
+          <option value="full">Full-Size</option>
         </select>
       </div>
       <section className="mx-auto px-6 my-2 lg:m-4">
@@ -113,7 +113,7 @@ function FlatBed(props: Props): ReactElement {
         </div>
       </section>
       <div className="my-4 text-center">
-        <h2 className="text-2xl">Flat Bed Camper Photos</h2>
+        <h2 className="text-2xl">Flatbed Camper Photos</h2>
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="w-full overflow-auto whitespace-nowrap mr-2">
             {props.data.allMarkdownRemark.edges.map((n) =>

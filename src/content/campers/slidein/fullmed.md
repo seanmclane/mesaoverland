@@ -1,7 +1,7 @@
 ---
-name: Full Size 6.5' Slide In
-short_description: Fits full size trucks with 6.5' beds
-description: Designed for full size trucks like the Ford F-250 and Ram 2500,
+name: Full-Size 6.5' Slide-In
+short_description: Fits full-size trucks with 6.5' beds
+description: Designed for full-size trucks like the Ford F-250 and Ram 2500,
   this truck camper is ready for whatever adventure you throw its way. Its
   compact and lightweight construction helps you get to the places you love
   without sacrificing comfort.

@@ -1,6 +1,6 @@
 ---
-name: Full Size 8' Flat Bed
-short_description: Fits full size trucks with 8' flat beds
+name: Full-Size 8' Flatbed
+short_description: Fits full-size trucks with 8' flatbeds
 description: "Designed for full-size flatbed trucks with aftermarket flatbeds
   such as a Ram 3500 or a Ford 350. "
 photo: /images/uploads/20231226_124421.jpg
@@ -122,7 +122,7 @@ options:
       battery, Victron multiplus 24/3000 inverter, Victron DC to DC charging,
       and many other electrical upgrades. Also includes heat/hot water, outdoor
       shower, air conditioning, 24v infrared  in floor heating, and many other
-      luxury amenities generally only found in full size RVs! "
+      luxury amenities generally only found in full-size RVs! "
     price: 54266
     category: standard
   - name: Arctic Tern Euro door upgrade

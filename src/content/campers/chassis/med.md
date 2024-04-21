@@ -1,7 +1,7 @@
 ---
 name: Grand Mesa
 short_description: Fits 450/550/4500/5500 trucks
-description: "A more nimble chassis mounted camper..."
+description: "A more nimble chassis-mounted camper..."
 photo: /images/uploads/20240229_170253.jpg
 shell_price: 31000
 lead_time_weeks: 16
