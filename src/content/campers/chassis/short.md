@@ -1,7 +1,7 @@
 ---
 name: 8'
 short_description: Fits 350/3500 trucks
-description: "A more nimble chassis mounted camper for 350/3500 trucks..."
+description: "A more nimble chassis-mounted camper for 350/3500 trucks..."
 photo: /images/uploads/20240229_170253.jpg
 shell_price: 31000
 lead_time_weeks: 16

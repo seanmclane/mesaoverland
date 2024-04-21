@@ -44,8 +44,8 @@ function SlideIn(props: Props): ReactElement {
   return (
     <>
       <SEO
-        title="Slide In Campers"
-        description="Slide In camper models from Mesa Overland"
+        title="Slide-In Campers"
+        description="Slide-In camper models from Mesa Overland"
         image={
           props.data.allMarkdownRemark.edges[0].node.frontmatter.photo
             ?.childImageSharp?.fixed
@@ -54,10 +54,10 @@ function SlideIn(props: Props): ReactElement {
       <div className="bg-mesa text-gray-100 md:py-8">
         <div className="flex w-full flex-wrap flex-row justify-between text-center mx-auto">
           <div className="m-auto w-full md:w-1/2 p-4 max-w-md">
-            <h2 className="text-5xl font-title uppercase">Slide In Campers</h2>
+            <h2 className="text-5xl font-title uppercase">Slide-In Campers</h2>
             <p className="text-xl flex-wrap">
-              These slide in campers go between the bed rails of mid size or
-              full size trucks
+              These slide-in campers go between the bed rails of mid-size or
+              full-size trucks
             </p>
           </div>
           <Img
@@ -78,8 +78,8 @@ function SlideIn(props: Props): ReactElement {
           onChange={(e) => setSelectedTruck(e.target.value)}
         >
           <option value="">All</option>
-          <option value="mid">Mid Size</option>
-          <option value="full">Full Size</option>
+          <option value="mid">Mid-Size</option>
+          <option value="full">Full-Size</option>
         </select>
       </div>
       <section className="mx-auto px-6 my-2 lg:m-4">
@@ -113,7 +113,7 @@ function SlideIn(props: Props): ReactElement {
         </div>
       </section>
       <div className="my-4 text-center">
-        <h2 className="text-2xl">Slide In Camper Photos</h2>
+        <h2 className="text-2xl">Slide-In Camper Photos</h2>
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="w-full overflow-auto whitespace-nowrap mr-2">
             {props.data.allMarkdownRemark.edges.map((n) =>

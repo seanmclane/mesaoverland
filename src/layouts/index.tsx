@@ -14,15 +14,15 @@ const linkList = [
     href: "/",
   },
   {
-    title: "Slide In",
+    title: "Slide-In",
     href: "/campers/slidein",
   },
   {
-    title: "Flat Bed",
+    title: "Flatbed",
     href: "/campers/flatbed",
   },
   {
-    title: "Chassis Mounted",
+    title: "Chassis-Mounted",
     href: "/campers/chassis",
   },
   {

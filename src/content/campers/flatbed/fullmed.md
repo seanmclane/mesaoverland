@@ -1,6 +1,6 @@
 ---
-name: Full Size 6.5' Flat Bed
-short_description: Fits full size trucks with 6.5' beds
+name: Full-Size 6.5' Flatbed
+short_description: Fits full-size trucks with 6.5' beds
 description: Designed for full-size trucks with aftermarket flatbeds such as a
   Ram 2500/3500 or a Ford F250/f350.
 photo: /images/uploads/20230728_150234-5-.jpg

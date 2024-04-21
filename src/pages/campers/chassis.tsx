@@ -44,7 +44,7 @@ function Chassis(props: Props): ReactElement {
   return (
     <>
       <SEO
-        title="Chassis Mounted Campers"
+        title="Chassis-Mounted Campers"
         description="Chassis mounted camper models from Mesa Overland"
         image={
           props.data.allMarkdownRemark.edges[0].node.frontmatter.photo
@@ -55,10 +55,10 @@ function Chassis(props: Props): ReactElement {
         <div className="flex w-full flex-wrap flex-row justify-between text-center mx-auto">
           <div className="m-auto w-full md:w-1/2 p-4 max-w-md">
             <h2 className="text-5xl font-title uppercase">
-              Chassis Mounted Campers
+              Chassis-Mounted Campers
             </h2>
             <p className="text-xl flex-wrap">
-              These chassis mounted campers attach directly to the frame on
+              These chassis-mounted campers attach directly to the frame on
               heavy duty trucks
             </p>
           </div>
@@ -118,7 +118,7 @@ function Chassis(props: Props): ReactElement {
         </div>
       </section>
       <div className="my-4 text-center">
-        <h2 className="text-2xl">Chassis Mounted Camper Photos</h2>
+        <h2 className="text-2xl">Chassis-Mounted Camper Photos</h2>
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="w-full overflow-auto whitespace-nowrap mr-2">
             {props.data.allMarkdownRemark.edges.map((n) =>
