@@ -51,6 +51,8 @@ specs:
     value: 21.25"
   - name: In-between wheel well width (H)
     value: 41"
+  - name: Weight with door
+    value: 440 lbs.
 options:
   - name: Standard Build Out
     price: 12036
