@@ -5,7 +5,7 @@ description: Designed for full-size trucks like the Ford F-250/350 and Ram
   2500/3500, this truck camper is ready for whatever adventure you throw its
   way. Its compact and lightweight construction helps you get to the places you
   love without sacrificing comfort.
-photo: /images/uploads/20230810_121712-1-.jpg
+photo: /images/uploads/20240502_175626.jpg
 shell_price: 15500
 lead_time_weeks: 16
 features:
@@ -40,6 +40,20 @@ specs:
     value: 85"
   - name: Floor length
     value: 95"
+  - name: Interior height (J)
+    value: 81.37"
+  - name: Overall length (A + B)
+    value: 155"
+  - name: Cabover length (B)
+    value: 60" (72.5" extended option)
+  - name: Bed floor to cabover height (C)
+    value: 46"
+  - name: Bed floor to box overhang height (side-rails) (G)
+    value: 22"
+  - name: In-between wheel well width (H)
+    value: 48"
+  - name: Shell weight with door
+    value: 700lbs
 options:
   - name: Standard Build Out
     price: 20002
@@ -296,7 +310,7 @@ options:
     price: 1550
     category: standard
 gallery:
-  - image: /images/uploads/20230810_121712-1-.jpg
+  - image: /images/uploads/20240502_175612.jpg
   - image: /images/uploads/20230810_121637.jpg
-  - image: /images/uploads/20240201_141044.jpg
+  - image: /images/uploads/20240502_175647.jpg
 ---
