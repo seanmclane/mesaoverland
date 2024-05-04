@@ -34,11 +34,11 @@ features:
   - name: Customizable interior
   - name: Lightweight durable interior with ZERO wood construction
 specs:
-  - name: Total height
+  - name: Total height (C+D)
     value: 86"
-  - name: Total width
+  - name: Total width (E)
     value: 85"
-  - name: Floor length
+  - name: Floor length (A)
     value: 95"
   - name: Interior height (J)
     value: 81.37"
@@ -313,4 +313,5 @@ gallery:
   - image: /images/uploads/20240502_175612.jpg
   - image: /images/uploads/20230810_121637.jpg
   - image: /images/uploads/20240502_175647.jpg
+  - image: /images/uploads/screenshot-2024-05-03-083042.png
 ---
