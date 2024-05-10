@@ -1,7 +1,9 @@
 ---
 tagline: Build Your Dream Camper
-tagline_desc: At Mesa Overland, we're all about turning dreams into epic adventure rigs!
-hero_image: /images/uploads/20240222_103058.jpg
+tagline_desc: 'At Mesa Overland, we build campers that are ready for any
+  adventure life throws you. Built at affordable prices, our "homes on wheels"
+  are ready to bring comfort and ease to wherever you explore. '
+hero_image: /images/uploads/20240429_130956.jpg
 highlight_camper_1_tagline: Discover The Whole Enchilada
 highlight_camper_1_tagline_desc: The ultimate chassis-mounted truck camper for going anywhere in comfort
 highlight_camper_1_button: Learn more
