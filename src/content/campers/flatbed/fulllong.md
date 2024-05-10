@@ -1,5 +1,5 @@
 ---
-name: Full-Size 8' Flatbed
+name: Lamborn 8' Flatbed
 short_description: Fits full-size trucks with 8' flatbeds
 description: "Designed for full-size flatbed trucks with aftermarket flatbeds
   such as a Ram 3500 or a Ford 350. "
