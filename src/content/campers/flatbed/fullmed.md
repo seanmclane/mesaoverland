@@ -1,5 +1,5 @@
 ---
-name: Full-Size 6.5' Flatbed
+name: Lands End 6.5' Flatbed
 short_description: Fits full-size trucks with 6.5' aftermarket flatbed
 description: Designed for full-size trucks with aftermarket flatbeds such as a
   Ram 2500/3500 or a Ford F250/f350.
