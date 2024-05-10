@@ -1,5 +1,5 @@
 ---
-name: Butte 6' Slide-In
+name: "Butte 6' Slide-In "
 short_description: Fits mid-sized trucks with 6' beds
 description: "Designed for mid-sized trucks like the Ford Ranger and Toyota
   Tacoma, this truck camper is ready for whatever adventure you throw its way.
