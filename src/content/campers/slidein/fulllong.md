@@ -1,10 +1,11 @@
 ---
 name: SunKat 8' Slide-In
 short_description: Fits full-size trucks with 8' beds
-description: Designed for full-size trucks like the Ford F-250/350 and Ram
+description: "Designed for full-size trucks like the Ford F-250/350 and Ram
   2500/3500, this truck camper is ready for whatever adventure you throw its
   way. Its compact and lightweight construction helps you get to the places you
-  love without sacrificing comfort.
+  love without sacrificing comfort. The added length means you'll have more
+  build options and room for storage. "
 photo: /images/uploads/20240502_175626.jpg
 shell_price: 15500
 lead_time_weeks: 16
