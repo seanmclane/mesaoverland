@@ -30,10 +30,26 @@ features:
     description: "TF49 "
   - name: 28" wide door with window and screen door
 specs:
-  - name: Total height
+  - name: Total height (C+D)
     value: 86"
-  - name: Total width
+  - name: Total width (E)
     value: 85"
+  - name: Floor length (A)
+    value: 66"
+  - name: Interior height (J)
+    value: 81.37"
+  - name: Overall length (A+D)
+    value: "126"
+  - name: Cabover length (B)
+    value: 60"
+  - name: Bed floor to cabover height (C)
+    value: 46"
+  - name: Bed floor to box overhang height (side-rails) (G)
+    value: 22"
+  - name: In-between wheel well width (H)
+    value: 48"
+  - name: Shell weight with door
+    value: 500 lbs
 options:
   - name: Standard Build Out
     price: 16000
