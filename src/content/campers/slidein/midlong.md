@@ -268,6 +268,7 @@ options:
     price: 1550
     name: Arctic Tern Wildland door upgrade
 gallery:
+  - image: /images/uploads/screenshot-2024-05-03-083042.png
   - image: /images/uploads/20240201_130609.jpg
   - image: /images/uploads/20240205_173700.jpg
   - image: /images/uploads/20240205_174213.jpg
