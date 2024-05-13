@@ -32,14 +32,26 @@ features:
   - name: Customizable interior
   - name: Lightweight durable interior with ZERO wood construction
 specs:
-  - name: Total height
-    value: 79.5"
-  - name: Total width
+  - name: Total height (C+D)
+    value: 78.5"
+  - name: Total width (E)
     value: 78"
-  - name: Floor length
+  - name: Floor length (A)
     value: 72.5"
-  - name: Interior height
-    value: "73.87"
+  - name: Interior height (J)
+    value: 73.87"
+  - name: Overall length (A+D)
+    value: 128.5"
+  - name: Cabover length (B)
+    value: 56"
+  - name: Bed floor to cabover height (C)
+    value: 42"
+  - name: Bed floor to box overhang height (side-rails) (G)
+    value: 21.25"
+  - name: In-between wheel well width (H)
+    value: 41"
+  - name: Shell weight with door
+    value: 500lbs
 options:
   - name: Standard Build Out
     price: 12136
