@@ -38,15 +38,15 @@ specs:
   - name: Interior height (I)
     value: 82"
   - name: Floor length (F)
-    value: 78"
+    value: 96"
   - name: Overall length (A+B)
     value: 180"
   - name: Cabover length (B)
     value: 60"
-  - name: Cabover Overhang height (C)
+  - name: Cabover Overhang height (D)
     value: 43.87"
   - name: Overall floor length (A)
-    value: 101"
+    value: 120"
 options:
   - name: Standard Build Out
     price: 22802
