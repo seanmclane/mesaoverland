@@ -48,7 +48,7 @@ specs:
   - name: Cabover Overhang height (D)
     value: 43.87'
   - name: Shell weight with door
-    value: 900 lbs
+    value: 750 lbs
 options:
   - name: Standard Build Out
     price: 20960
