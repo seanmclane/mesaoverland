@@ -306,6 +306,7 @@ options:
     price: 1550
     category: standard
 gallery:
+  - image: /images/uploads/screenshot-39-.png
   - image: /images/uploads/20240222_103050.jpg
   - image: /images/uploads/20231226_124357.jpg
 ---
