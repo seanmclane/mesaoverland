@@ -37,7 +37,9 @@ specs:
     value: 81"
   - name: Interior height (I)
     value: 82"
-  - name: Floor length (F)
+  - name: Overall floor length (A)
+    value: 120"
+  - name: Flat floor length (F)
     value: 96"
   - name: Overall length (A+B)
     value: 180"
@@ -45,8 +47,8 @@ specs:
     value: 60"
   - name: Cabover Overhang height (D)
     value: 43.87"
-  - name: Overall floor length (A)
-    value: 120"
+  - name: Shell weight with door
+    value: 900 lbs
 options:
   - name: Standard Build Out
     price: 22802
@@ -306,6 +308,7 @@ options:
     image: /images/uploads/stripes_1.jpg
     category: color
 gallery:
+  - image: /images/uploads/screenshot-39-.png
   - image: /images/uploads/20231226_124357.jpg
   - image: /images/uploads/20240222_092026.jpg
 ---
