@@ -37,17 +37,17 @@ specs:
     value: 81"
   - name: Interior height (I)
     value: 82"
-  - name: Floor length (F)
+  - name: Flat floor length (F)
     value: 78"
+  - name: Overall Floor length (F)
+    value: 101"
   - name: Overall length (A+B)
     value: 166"
   - name: Cabover length (B)
     value: 60"
   - name: Cabover Overhang height (D)
     value: 43.87'
-  - name: Overall floor length (A)
-    value: 101'
-  - name: Weight
+  - name: Shell weight with door
     value: 900 lbs
 options:
   - name: Standard Build Out
