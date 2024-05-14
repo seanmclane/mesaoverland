@@ -33,10 +33,24 @@ features:
   - name: Customizable interior
   - name: Lightweight durable interior with ZERO wood construction
 specs:
-  - name: Total height
-    value: coming soon
-  - name: Total width
-    value: coming soon
+  - name: Total height (C+D)
+    value: 86.60"
+  - name: Total width (H)
+    value: 81"
+  - name: Interior height (I)
+    value: 82"
+  - name: Overall floor length (A)
+    value: 95"
+  - name: Flat floor length (F)
+    value: 72"
+  - name: Overall length (A+B)
+    value: 160"
+  - name: Cabover length (B)
+    value: 60"
+  - name: Cabover Overhang height (D)
+    value: 43.87"
+  - name: Shell weight with door
+    value: 640 lbs
 options:
   - name: Standard Build Out
     price: 13146
@@ -257,6 +271,7 @@ options:
     price: 1550
     category: standard
 gallery:
+  - image: /images/uploads/screenshot-39-.png
   - image: /images/uploads/20240222_103050.jpg
   - image: /images/uploads/20230728_150234-5-.jpg
   - image: /images/uploads/20231213_140633.jpg
