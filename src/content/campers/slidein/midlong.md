@@ -15,7 +15,7 @@ features:
   - name: "- Reinforced, high density floor panel. A Composite Fiber board/honeycomb
       core equals low weight + high strength."
   - name: "- FRP internal structures for added rigidity and strong mounting points."
-  - name: "- Water/Freeze proof."
+  - name: "- Water/Freeze proof. ZERO wood construction used. "
   - name: Up to four Arctic Tern windows
   - name: Full-size bed (75”x54”)
   - name: Power roof fan with light
@@ -55,7 +55,7 @@ specs:
     value: 500lbs
 options:
   - name: Standard Build Out
-    price: 12136
+    price: 0
     category: standard
   - description: ""
     name: Dickinson P9000 propane heater
