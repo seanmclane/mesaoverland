@@ -6,7 +6,7 @@ description: Designed for full-size trucks like the Ford F-250 and Ram 2500,
   compact and lightweight construction helps you get to the places you love
   without sacrificing comfort.
 photo: /images/uploads/20230810_121637.jpg
-shell_price: -1
+shell_price: 0
 lead_time_weeks: 16
 features:
   - name: '- Laminated, lightweight and high density EPS foam for walls and
