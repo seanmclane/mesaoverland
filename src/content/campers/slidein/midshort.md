@@ -6,15 +6,15 @@ description: "Designed for mid-sized trucks like the Ford Ranger and Toyota
   It's compact and lightweight construction helps you get to the places you love
   without sacrificing comfort. "
 photo: /images/uploads/20240201_130609.jpg
-shell_price: 13600
+shell_price: 0
 lead_time_weeks: 16
 features:
-  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
-      to eliminate “thermal bridging”)
-  - name: '2" thick high R value composite construction '
-  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction (easily
-      repairable fiberglass!)
-  - name: Strong mounting points
+  - name: Laminated, lightweight and high density EPS foam for walls and ceilings.
+      Best in class impact resistance and tensile strength. 3-1/8" thick
+  - name: Reinforced, high density floor panel. A Composite Fiber board/honeycomb
+      core equals low weight + high strength.
+  - name: "FRP internal structures for added rigidity and strong mounting points. "
+  - name: Water/Freeze proof
   - name: Up to four Arctic Tern windows
   - name: Full-size bed (75”x54”)
   - name: Power roof fan with light
@@ -55,8 +55,9 @@ specs:
     value: 440 lbs.
 options:
   - name: Standard Build Out
-    price: 12036
+    price: 0
     category: standard
+    description: Contact for price
   - description: ""
     name: Dickinson P9000 propane heater
     price: 2000
