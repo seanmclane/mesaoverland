@@ -1,19 +1,22 @@
 ---
 name: SunKat 8' Slide-In
 short_description: Fits full-size trucks with 8' beds
-description: Designed for full-size trucks like the Ford F-250/350 and Ram
+description: "Designed for full-size trucks like the Ford F-250/350 and Ram
   2500/3500, this truck camper is ready for whatever adventure you throw its
   way. Its compact and lightweight construction helps you get to the places you
-  love without sacrificing comfort.
+  love without sacrificing comfort. The added length means you'll have more
+  build options and room for storage. "
 photo: /images/uploads/20240502_175626.jpg
-shell_price: 15500
+shell_price: 0
 lead_time_weeks: 16
 features:
-  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
-      to eliminate “thermal bridging”)
-  - name: '2" thick high R value composite construction '
-  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided ZERO-WOOD construction
-  - name: Strong mounting points
+  - name: '- Laminated, lightweight and high density EPS foam for walls and
+      ceilings. Best in class impact resistance and tensile strength. 3-1/8"
+      thick.'
+  - name: "- Reinforced, high density floor panel. A Composite Fiber board/honeycomb
+      core equals low weight + high strength."
+  - name: "- FRP internal structures for added rigidity and strong mounting points."
+  - name: "- Water/Freeze proof. ZERO wood construction used. "
   - name: Up to four Arctic Tern windows
   - name: Queen size bed
   - name: Power roof fan with intake and exhaust
@@ -56,7 +59,7 @@ specs:
     value: 700lbs
 options:
   - name: Standard Build Out
-    price: 20002
+    price: 0
     category: standard
     description: Select your windows below.
   - description: Hydronic diesel heater with air and water heating.
