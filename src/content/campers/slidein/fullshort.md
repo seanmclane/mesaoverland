@@ -6,14 +6,16 @@ description: Designed for full-size trucks like the Ford F-250 and Ram 2500,
   compact and lightweight construction helps you get to the places you love
   without sacrificing comfort.
 photo: /images/uploads/20230810_121637.jpg
-shell_price: 14000
+shell_price: -1
 lead_time_weeks: 16
 features:
-  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
-      to eliminate “thermal bridging”)
-  - name: '2" thick high R value composite construction '
-  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided construction
-  - name: Strong mounting points
+  - name: '- Laminated, lightweight and high density EPS foam for walls and
+      ceilings. Best in class impact resistance and tensile strength. 3-1/8"
+      thick.'
+  - name: "- Reinforced, high density floor panel. A Composite Fiber board/honeycomb
+      core equals low weight + high strength."
+  - name: "- FRP internal structures for added rigidity and strong mounting points."
+  - name: "- Water/Freeze proof."
   - name: Up to four Arctic Tern windows
   - name: Queen size bed
   - name: Power roof fan with intake and exhaust
@@ -52,8 +54,9 @@ specs:
     value: 500 lbs
 options:
   - name: Standard Build Out
-    price: 16000
+    price: 0
     category: standard
+    description: Contact for pricing
   - description: "Hydronic diesel heater with air and water heating. "
     name: Heat and hot water (Diesel)
     price: 4095
