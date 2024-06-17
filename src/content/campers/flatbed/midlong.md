@@ -6,14 +6,16 @@ description: "Designed for mid-sized trucks like the Ford Ranger and Toyota
   Its compact and lightweight construction helps you get to the places you love
   without sacrificing comfort. "
 photo: /images/uploads/20230728_150234-5-.jpg
-shell_price: 14500
+shell_price: 0
 lead_time_weeks: 16
 features:
-  - name: Aluminum extrusion exoskeleton frame for long life and rigidity. (2 pieces
-      to eliminate “thermal bridging”)
-  - name: '2" thick high R value composite construction '
-  - name: Lightweight FRP/Honeycomb/EPS/FRP hard-sided ZERO WOOD construction
-      (easily repairable fiberglass!)
+  - name: '- Laminated, lightweight and high density EPS foam for walls and
+      ceilings. Best in class impact resistance and tensile strength. 3-1/8"
+      thick.'
+  - name: "- Reinforced, high density floor panel. A Composite Fiber board/honeycomb
+      core equals low weight + high strength."
+  - name: "- FRP internal structures for added rigidity and strong mounting points."
+  - name: "- Water/Freeze proof. ZERO wood construction used. "
   - name: Up to five Arctic Tern windows
   - name: Full size bed (75”x54”)
   - name: Power roof fan with light
@@ -53,7 +55,7 @@ specs:
     value: 640 lbs
 options:
   - name: Standard Build Out
-    price: 13146
+    price: 0
     category: standard
   - name: Small window in cabover area drivers side (one window total per side)
     description: 300mm x 500mm
