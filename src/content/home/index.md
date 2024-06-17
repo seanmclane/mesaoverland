@@ -13,11 +13,10 @@ highlight_camper_2_tagline_desc: Both you and your mid-sized truck will benefit 
 highlight_camper_2_button: See the specs
 highlight_camper_2_image: /images/uploads/20240201_130609.jpg
 gallery:
-  - image: /images/uploads/20240514_185141.jpg
-  - image: /images/uploads/20240429_130956-1-.jpg
+  - image: /images/uploads/20240514_185141-1-.jpg
+  - image: /images/uploads/20240429_130956-1-1-.jpg
   - image: /images/uploads/img_2560.jpg
-  - image: /images/uploads/20240222_103058.jpg
   - image: /images/uploads/img_2343-1-.jpg
-  - image: /images/uploads/20240302_074649.jpg
-  - image: /images/uploads/20240229_170253.jpg
+  - image: /images/uploads/20240229_170253-1-.jpg
+  - image: /images/uploads/20240222_103058-1-.jpg
 ---
