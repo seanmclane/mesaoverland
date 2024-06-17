@@ -15,7 +15,7 @@ features:
   - name: "- Reinforced, high density floor panel. A Composite Fiber board/honeycomb
       core equals low weight + high strength."
   - name: "- FRP internal structures for added rigidity and strong mounting points."
-  - name: "- Water/Freeze proof."
+  - name: "- Water/Freeze proof. ZERO wood construction used. "
   - name: Up to four Arctic Tern windows
   - name: Queen size bed
   - name: Power roof fan with intake and exhaust
