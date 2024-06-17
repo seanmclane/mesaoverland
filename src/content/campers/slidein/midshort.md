@@ -6,7 +6,7 @@ description: "Designed for mid-sized trucks like the Ford Ranger and Toyota
   It's compact and lightweight construction helps you get to the places you love
   without sacrificing comfort. "
 photo: /images/uploads/20240201_130609.jpg
-shell_price: -1
+shell_price: 0
 lead_time_weeks: 16
 features:
   - name: Laminated, lightweight and high density EPS foam for walls and ceilings.
@@ -55,8 +55,9 @@ specs:
     value: 440 lbs.
 options:
   - name: Standard Build Out
-    price: 12036
+    price: 0
     category: standard
+    description: Contact for price
   - description: ""
     name: Dickinson P9000 propane heater
     price: 2000
