@@ -15,11 +15,9 @@ highlight_camper_2_image: /images/uploads/20240201_130609.jpg
 gallery:
   - image: /images/uploads/20240514_185141.jpg
   - image: /images/uploads/20240429_130956-1-.jpg
-  - image: /images/uploads/img_2560-1-.jpg
+  - image: /images/uploads/img_2560.jpg
   - image: /images/uploads/20240222_103058.jpg
-  - image: /images/uploads/img_2343.jpg
+  - image: /images/uploads/img_2343-1-.jpg
   - image: /images/uploads/20240302_074649.jpg
-  - image: /images/uploads/mesa_overland-13.jpg
   - image: /images/uploads/20240229_170253.jpg
-  - image: /images/uploads/img_2574.jpg
 ---
