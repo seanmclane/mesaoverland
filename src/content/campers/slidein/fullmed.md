@@ -6,7 +6,7 @@ description: Designed for full-size trucks like the Ford F-250 and Ram 2500,
   compact and lightweight construction helps you get to the places you love
   without sacrificing comfort.
 photo: /images/uploads/20240502_175820.jpg
-shell_price: 0
+shell_price: 19800
 lead_time_weeks: 16
 features:
   - name: '- Laminated, lightweight and high density EPS foam for walls and
@@ -37,28 +37,24 @@ features:
   - name: Lightweight durable interior with ZERO wood construction
 specs:
   - name: Total height (C+D)
-    value: 86"
+    value: 88"
   - name: Total width (E)
-    value: 85"
+    value: 79.5"
   - name: Floor length (A)
     value: 76"
   - name: Interior height (J)
-    value: 81.37"
+    value: 82"
   - name: Overall length (A+B)
-    value: 136"
+    value: 154"
   - name: Cabover length (B)
-    value: 60" (72.5" extended option)
-  - name: Bed floor to cabover height (C)
-    value: 46"
-  - name: Bed floor to box overhang height (side-rails) (G)
-    value: 22"
-  - name: In-between wheel well width (H)
-    value: 48"
+    value: 78"
+  - name: Wall thickness/R-value
+    value: 3"/R-15
   - name: Shell weight with door
     value: 600 lbs.
 options:
   - name: Standard Build Out
-    price: 0
+    price: 19800
     category: standard
     description: Choose your windows below
   - description: Hydronic diesel heater with air and water heating.
