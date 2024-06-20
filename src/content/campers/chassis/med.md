@@ -11,7 +11,7 @@ description: Designed for those who seek comfort without compromise. These
   on your adventures. Gear storage, full kitchens or baths, spacious living
   areas, etc. Dream big!
 photo: /images/uploads/20240229_170253.jpg
-shell_price: 30499
+shell_price: 50500
 lead_time_weeks: 16
 features:
   - name: '- Laminated, lightweight and high density EPS foam for walls and
@@ -40,7 +40,7 @@ specs:
     value: 3"/R-15
 options:
   - name: Standard Build Out
-    price: 33003
+    price: 50501
     category: standard
   - category: color
     name: "*PREMIUM* Counter top and face panels Wilsonart laminate finish Mystique
