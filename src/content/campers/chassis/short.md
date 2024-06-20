@@ -11,7 +11,7 @@ description: Designed for those who seek comfort without compromise. These
   on your adventures. Gear storage, full kitchens or baths, spacious living
   areas, etc. Dream big!
 photo: /images/uploads/20240229_170253.jpg
-shell_price: 1
+shell_price: 46000
 lead_time_weeks: 16
 features:
   - name: '- Laminated, lightweight and high density EPS foam for walls and
