@@ -2,9 +2,14 @@
 name: Lamborn 8' Flatbed
 short_description: Fits full-size trucks with 8' flatbeds
 description: "Designed for full-size flatbed trucks with aftermarket flatbeds
-  such as a Ram 3500 or a Ford 350. "
+  such as a Ram 3500 or a Ford 350. Designed for full-size trucks with
+  aftermarket flatbeds such as a Ram 2500/3500 or a Ford F250/f350.  Built to
+  withstand all terrains and weather conditions, allowing you to explore with
+  peace of mind. Inside you can maximize your usable space without having to
+  worry about wheel wells or bed sides. An easy to remove design makes these
+  perfect for those you need to use their flatbed for other activities. "
 photo: /images/uploads/20231226_124421.jpg
-shell_price: 0
+shell_price: 26000
 lead_time_weeks: 16
 features:
   - name: '- Laminated, lightweight and high density EPS foam for walls and
@@ -34,27 +39,25 @@ features:
   - name: Customizable interior
   - name: Lightweight durable interior with ZERO wood construction
 specs:
-  - name: Total height (C+D)
-    value: 86.60"
-  - name: Total width (H)
-    value: 81"
-  - name: Interior height (I)
+  - name: Floor length
+    value: 104"
+  - name: Overall height
+    value: 88"
+  - name: Interior height
     value: 82"
-  - name: Overall floor length (A)
-    value: 120"
-  - name: Flat floor length (F)
-    value: 96"
-  - name: Overall length (A+B)
-    value: 180"
-  - name: Cabover length (B)
-    value: 60"
-  - name: Cabover Overhang height (D)
-    value: 43.87"
-  - name: Shell weight with door
-    value: 900 lbs
+  - name: Cabover length
+    value: 78"
+  - name: Overall width
+    value: 81"
+  - name: Departure angle length
+    value: 24"
+  - name: Wall thickness/R-value
+    value: 3"/R-15
+  - name: Shell Weight
+    value: 1300lbs
 options:
   - name: Standard Build Out
-    price: 0
+    price: 26000
     category: standard
   - name: North to South cabover extension
     description: Extend the cabover to accommodate North to South sleeping over East
