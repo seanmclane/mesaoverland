@@ -4,9 +4,9 @@ short_description: Fits full-size trucks with 8' flatbeds
 description: "Designed for full-size flatbed trucks with aftermarket flatbeds
   such as a Ram 3500 or a Ford 350. Designed for full-size trucks with
   aftermarket flatbeds such as a Ram 2500/3500 or a Ford F250/f350.  Built to
-  withstand all terrains and weather conditions, allowing you to explore with
+  withstand all terrain and weather conditions, allowing you to explore with
   peace of mind. Inside you can maximize your usable space without having to
-  worry about wheel wells or bed sides. An easy to remove design makes these
+  worry about wheel wells or bed sides. An easy-to-remove design makes these
   perfect for those you need to use their flatbed for other activities. "
 photo: /images/uploads/20231226_124421.jpg
 shell_price: 26000
