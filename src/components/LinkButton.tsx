@@ -1,5 +1,5 @@
 import React, { ReactElement } from "react"
-import Link from "gatsby-link"
+import {Link} from "gatsby-link"
 
 interface Props {
   children: string

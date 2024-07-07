@@ -46,18 +46,18 @@ module.exports = {
         icon: `static/images/logo.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-eslint",
-      options: {
-        test: /\.ts$|\.tsx$/,
-        exclude: /(node_modules|.cache|public)/,
-        stages: ["develop", "build-javascript"],
-        options: {
-          emitWarning: true,
-          failOnError: false,
-        },
-      },
-    }, // this (optional) plugin enables Progressive Web App + Offline functionality
+    // {
+    //   resolve: "gatsby-plugin-eslint",
+    //   options: {
+    //     test: /\.ts$|\.tsx$/,
+    //     exclude: /(node_modules|.cache|public)/,
+    //     stages: ["develop", "build-javascript"],
+    //     options: {
+    //       emitWarning: true,
+    //       failOnError: false,
+    //     },
+    //   },
+    // }, // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     "gatsby-plugin-layout",

@@ -139,7 +139,7 @@ export const query = graphql`
   query SlideInQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/campers/slidein/" } }
-      sort: { order: ASC, fields: [frontmatter___name] }
+      sort: { frontmatter: {name: ASC} }
       limit: 10
     ) {
       edges {

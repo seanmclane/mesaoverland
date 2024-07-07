@@ -27,10 +27,12 @@ collections:
           - { label: 'Highlighted Camper 1 Tagline Description', name: 'highlight_camper_1_tagline_desc', widget: 'string'}
           - { label: 'Highlighted Camper 1 Button Text', name: 'highlight_camper_1_button', widget: 'string'}
           - { label: 'Highlighted Camper 1 Image', name: 'highlight_camper_1_image', widget: 'image'}
+          - { label: 'Highlighted Camper 1 Link', name: 'highlight_camper_1_link', widget: 'string'}
           - { label: 'Highlighted Camper 2 Tagline', name: 'highlight_camper_2_tagline', widget: 'string'}
           - { label: 'Highlighted Camper 2 Tagline Description', name: 'highlight_camper_2_tagline_desc', widget: 'string'}
           - { label: 'Highlighted Camper 2 Button Text', name: 'highlight_camper_2_button', widget: 'string'}
           - { label: 'Highlighted Camper 2 Image', name: 'highlight_camper_2_image', widget: 'image'}
+          - { label: 'Highlighted Camper 2 Link', name: 'highlight_camper_2_link', widget: 'link'}
           - label: Gallery
             name: gallery
             widget: list

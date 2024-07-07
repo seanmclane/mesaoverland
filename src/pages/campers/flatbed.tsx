@@ -139,7 +139,7 @@ export const query = graphql`
   query FlatBedQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/campers/flatbed/" } }
-      sort: { order: ASC, fields: [frontmatter___name] }
+      sort: { frontmatter: {name: ASC} }
       limit: 10
     ) {
       edges {

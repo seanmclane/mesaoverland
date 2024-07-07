@@ -38,6 +38,7 @@ interface Props {
         highlight_camper_1_tagline: string
         highlight_camper_1_tagline_desc: string
         highlight_camper_1_button: string
+        highlight_camper_1_link: string
         highlight_camper_1_image: {
           childImageSharp?: {
             fluid: any
@@ -46,6 +47,7 @@ interface Props {
         highlight_camper_2_tagline: string
         highlight_camper_2_tagline_desc: string
         highlight_camper_2_button: string
+        highlight_camper_2_link: string
         highlight_camper_2_image: {
           childImageSharp?: {
             fluid: any
@@ -91,7 +93,7 @@ function Index(props: Props): ReactElement {
             <p className="text-xl flex-wrap">
               {HomeData.highlight_camper_1_tagline_desc}
             </p>
-            <LinkButton to="/campers/chassis/long" classNames="no-underline">
+            <LinkButton to={HomeData.highlight_camper_1_link} classNames="no-underline">
               {HomeData.highlight_camper_1_button}
             </LinkButton>
           </div>
@@ -107,7 +109,7 @@ function Index(props: Props): ReactElement {
               {HomeData.highlight_camper_2_tagline_desc}
             </p>
             <LinkButton
-              to="/campers/slidein/midshort"
+              to={HomeData.highlight_camper_2_link}
               classNames="no-underline"
               bgColor="bg-mesa"
             >
@@ -213,6 +215,7 @@ export const query = graphql`
         highlight_camper_1_tagline
         highlight_camper_1_tagline_desc
         highlight_camper_1_button
+        highlight_camper_1_link
         highlight_camper_1_image {
           childImageSharp {
             fluid(maxWidth: 1600) {
@@ -223,6 +226,7 @@ export const query = graphql`
         highlight_camper_2_tagline
         highlight_camper_2_tagline_desc
         highlight_camper_2_button
+        highlight_camper_2_link
         highlight_camper_2_image {
           childImageSharp {
             fluid(maxWidth: 1600) {
@@ -243,7 +247,7 @@ export const query = graphql`
     }
     reviews: allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/review/" } }
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: {date: DESC} }
       limit: 3
     ) {
       edges {

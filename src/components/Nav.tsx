@@ -1,9 +1,9 @@
 import React, { ReactElement, useState } from "react"
 import { Link } from "gatsby"
-const logo = require("../../static/images/logo.png")
-const ig = require("../../static/images/icon-ig.svg")
-const fb = require("../../static/images/icon-fb.svg")
-const yt = require("../../static/images/icon-yt.svg")
+import logo from "../../static/images/logo.png"
+import ig from "../../static/images/icon-ig.svg"
+import fb from "../../static/images/icon-fb.svg"
+import yt from "../../static/images/icon-yt.svg"
 
 interface Props {
   links: Array<{
