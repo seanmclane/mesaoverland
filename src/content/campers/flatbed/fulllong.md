@@ -1,5 +1,5 @@
 ---
-name: '"HooDoo" 102F18DA Flatbed'
+name: '"SunKat" 102F18DA Flatbed'
 short_description: Fits full-size trucks with 102" or similar flatbeds
 description: "Designed for full-size flatbed trucks with aftermarket flatbeds
   such as a Ram 3500 or a Ford 350. Designed for full-size trucks with
