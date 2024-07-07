@@ -1,5 +1,5 @@
 ---
-name: HooDoo 104F18DA Chassis-mounted
+name: '"SunKat" 102F18DA Chassis-mounted'
 short_description: Fits 350/3500 trucks
 description: Designed for those who seek comfort without compromise. These
   campers seamlessly integrate with your truck, attaching directly to the frame.
@@ -21,9 +21,10 @@ features:
       core equals low weight + high strength."
   - name: "- FRP internal structures for added rigidity and strong mounting points."
   - name: "- Water/Freeze proof. ZERO wood construction used."
+  - name: "- Price includes torsion free subframe and mounting to vehicle"
 specs:
   - name: Floor length
-    value: 104"
+    value: 102"
   - name: Overall height
     value: 88"
   - name: Interior height
@@ -31,16 +32,20 @@ specs:
   - name: Cabover length
     value: 78"
   - name: Overall width
-    value: 81"
+    value: 93"
   - name: Departure angle length
-    value: 24"
+    value: 18"
   - name: Shell Weight
-    value: 1300lbs
+    value: "0"
   - name: Wall thickness/R-value
     value: 3 1/8"/R-15
 options:
   - name: Standard Build Out
     price: 66750
+    category: standard
+  - name: Storage boxes under camper
+    description: "locking storage boxes under camper in front of and behind rear wheels. "
+    price: 8000
     category: standard
 gallery: []
 ---
