@@ -1,5 +1,5 @@
 ---
-name: HooDoo 84F18DA Flatbed
+name: '"HooDoo" 84F18DA Flatbed'
 short_description: Fits full-size trucks with 84" aftermarket flatbed
 description: "Designed for full-size trucks with aftermarket flatbeds such as a
   Ram 2500/3500 or a Ford F250/f350.  Built to withstand all terrains and
