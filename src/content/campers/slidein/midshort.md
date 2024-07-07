@@ -8,5 +8,6 @@ lead_time_weeks: 0
 features: []
 specs: []
 options: []
-gallery: []
+gallery:
+  - image: /images/uploads/product-page-slide-in-02-1-800x449.png
 ---

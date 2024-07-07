@@ -8,5 +8,6 @@ lead_time_weeks: 0
 features: []
 specs: []
 options: []
-gallery: []
+gallery:
+  - image: /images/uploads/product-page-flat-deck-w-departure-angle-02-800x450.png
 ---

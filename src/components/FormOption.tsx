@@ -47,9 +47,9 @@ function FormOption({ handleChange, option, checked, fullWidth }: Props) {
             <div
               className={`${
                 show ? "block" : "hidden"
-              } bg-white border-2 border-outline border-solid absolute right-0 p-2 rounded-lg font-body max-w-md z-10`}
+              } bg-white border-2 border-outline border-solid absolute right-0 p-2 rounded-lg font-body z-10`}
             >
-              <div className="">
+              <div className="w-80 text-center">
                 {option.description}
                 <br />
                 {option.image && (

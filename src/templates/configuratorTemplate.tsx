@@ -421,6 +421,15 @@ export default function Template({
     </div>
   )
 }
+
+//removed image query from options since there are no color options and that broke the build
+/*image {
+  childImageSharp {
+    fixed(height: 200) {
+      ...GatsbyImageSharpFixed
+    }
+  }
+}*/
 export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -435,13 +444,6 @@ export const pageQuery = graphql`
           price
           description
           category
-          image {
-            childImageSharp {
-              fixed(height: 200) {
-                ...GatsbyImageSharpFixed
-              }
-            }
-          }
         }
         features {
           name
