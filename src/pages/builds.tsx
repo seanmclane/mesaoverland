@@ -75,7 +75,7 @@ export const query = graphql`
         fileAbsolutePath: { regex: "/content/build/" }
         frontmatter: { active: { eq: "true" } }
       }
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { frontmatter: {date: DESC} }
       limit: 10
     ) {
       edges {

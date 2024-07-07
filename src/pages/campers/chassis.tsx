@@ -144,7 +144,7 @@ export const query = graphql`
   query ChassisQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/content/campers/chassis/" } }
-      sort: { order: ASC, fields: [frontmatter___name] }
+      sort: { frontmatter: {name: ASC} }
       limit: 10
     ) {
       edges {
