@@ -1,6 +1,6 @@
 import React, { ChangeEventHandler, useState } from "react"
 import Img from "gatsby-image"
-const infoicon = require("../../static/images/icon-info.svg")
+import infoicon from "../../static/images/icon-info.svg"
 
 interface Props {
   handleChange: ChangeEventHandler
