@@ -97,124 +97,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - label: Slide-In Campers
     name: slideincampers
-    files:
-    - label: 'Mid-Size Short Bed'
-      name: 'slideinmidshort'
-      file: 'src/content/campers/slidein/midshort.md'
-      extension: md
-      fields:
-        - { label: 'Name', name: 'name', widget: 'string' }
-        - { label: 'Short Description', name: 'short_description', widget: 'string' }
-        - { label: 'Description', name: 'description', widget: 'string' }
-        - { label: 'Photo', name: 'photo', widget: 'image' }
-        - { label: 'Shell Price', name: 'shell_price', widget: 'number' }
-        - { label: 'Lead Time (# of weeks)', name: 'lead_time_weeks', widget: 'number' }
-        - label: Features
-          name: features
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-        - label: Specifications
-          name: specs
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Value, name: value, widget: string }
-        - label: Options
-          name: options
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-          - { label: 'Description', name: 'description', widget: 'string', required: false }
-          - { label: Price, name: price, widget: number }
-          - { label: Image, name: image, widget: image, required: false }
-          - label: Category
-            name: category
-            widget: select
-            options: ['standard', 'exterior', 'interior', 'window', 'accessory', 'color']
-        - label: Gallery
-          name: gallery
-          widget: list
-          fields:
-          - { label: Image, name: image, widget: image }
-    - label: 'Mid-Size Long Bed'
-      name: 'slideinmidlong'
-      file: 'src/content/campers/slidein/midlong.md'
-      extension: md
-      fields:
-        - { label: 'Name', name: 'name', widget: 'string' }
-        - { label: 'Short Description', name: 'short_description', widget: 'string' }
-        - { label: 'Description', name: 'description', widget: 'string' }
-        - { label: 'Photo', name: 'photo', widget: 'image' }
-        - { label: 'Shell Price', name: 'shell_price', widget: 'number' }
-        - { label: 'Lead Time (# of weeks)', name: 'lead_time_weeks', widget: 'number' }
-        - label: Features
-          name: features
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-        - label: Specifications
-          name: specs
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Value, name: value, widget: string }
-        - label: Options
-          name: options
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-          - { label: 'Description', name: 'description', widget: 'string', required: false }
-          - { label: Price, name: price, widget: number }
-          - { label: Image, name: image, widget: image, required: false }
-          - label: Category
-            name: category
-            widget: select
-            options: ['standard', 'exterior', 'interior', 'window', 'accessory', 'color']
-        - label: Gallery
-          name: gallery
-          widget: list
-          fields:
-          - { label: Image, name: image, widget: image }
-    - label: 'Full-Size 5.5 Bed'
-      name: 'slideinfullshort'
-      file: 'src/content/campers/slidein/fullshort.md'
-      extension: md
-      fields:
-        - { label: 'Name', name: 'name', widget: 'string' }
-        - { label: 'Short Description', name: 'short_description', widget: 'string' }
-        - { label: 'Description', name: 'description', widget: 'string' }
-        - { label: 'Photo', name: 'photo', widget: 'image' }
-        - { label: 'Shell Price', name: 'shell_price', widget: 'number' }
-        - { label: 'Lead Time (# of weeks)', name: 'lead_time_weeks', widget: 'number' }
-        - label: Features
-          name: features
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-        - label: Specifications
-          name: specs
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Value, name: value, widget: string }
-        - label: Options
-          name: options
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-          - { label: 'Description', name: 'description', widget: 'string', required: false }
-          - { label: Price, name: price, widget: number }
-          - { label: Image, name: image, widget: image, required: false }
-          - label: Category
-            name: category
-            widget: select
-            options: ['standard', 'exterior', 'interior', 'window', 'accessory', 'color']
-        - label: Gallery
-          name: gallery
-          widget: list
-          fields:
-          - { label: Image, name: image, widget: image }      
+    files:  
     - label: 'Full-Size 6.5 Bed'
       name: 'slideinfullmed'
       file: 'src/content/campers/slidein/fullmed.md'
@@ -296,45 +179,6 @@ collections:
   - label: Flatbed Campers
     name: flatbedcampers
     files:
-    - label: 'Mid-Size Long Bed'
-      name: 'flatbedmidlong'
-      file: 'src/content/campers/flatbed/midlong.md'
-      extension: md
-      fields:
-        - { label: 'Name', name: 'name', widget: 'string' }
-        - { label: 'Short Description', name: 'short_description', widget: 'string' }
-        - { label: 'Description', name: 'description', widget: 'string' }
-        - { label: 'Photo', name: 'photo', widget: 'image' }
-        - { label: 'Shell Price', name: 'shell_price', widget: 'number' }
-        - { label: 'Lead Time (# of weeks)', name: 'lead_time_weeks', widget: 'number' }
-        - label: Features
-          name: features
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-        - label: Specifications
-          name: specs
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Value, name: value, widget: string }
-        - label: Options
-          name: options
-          widget: list
-          fields:
-          - { label: Name, name: name, widget: string }
-          - { label: 'Description', name: 'description', widget: 'string', required: false }
-          - { label: Price, name: price, widget: number }
-          - { label: Image, name: image, widget: image, required: false }
-          - label: Category
-            name: category
-            widget: select
-            options: ['standard', 'exterior', 'interior', 'window', 'accessory', 'color']
-        - label: Gallery
-          name: gallery
-          widget: list
-          fields:
-          - { label: Image, name: image, widget: image }
     - label: 'Full-Size 6.5 Bed'
       name: 'flatbedfullmed'
       file: 'src/content/campers/flatbed/fullmed.md'
@@ -497,6 +341,45 @@ collections:
     - label: 'Whole Enchilada'
       name: 'chassislong'
       file: 'src/content/campers/chassis/long.md'
+      extension: md
+      fields:
+        - { label: 'Name', name: 'name', widget: 'string' }
+        - { label: 'Short Description', name: 'short_description', widget: 'string' }
+        - { label: 'Description', name: 'description', widget: 'string' }
+        - { label: 'Photo', name: 'photo', widget: 'image' }
+        - { label: 'Shell Price', name: 'shell_price', widget: 'number' }
+        - { label: 'Lead Time (# of weeks)', name: 'lead_time_weeks', widget: 'number' }
+        - label: Features
+          name: features
+          widget: list
+          fields:
+          - { label: Name, name: name, widget: string }
+        - label: Specifications
+          name: specs
+          widget: list
+          fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Value, name: value, widget: string }
+        - label: Options
+          name: options
+          widget: list
+          fields:
+          - { label: Name, name: name, widget: string }
+          - { label: 'Description', name: 'description', widget: 'string', required: false }
+          - { label: Price, name: price, widget: number }
+          - { label: Image, name: image, widget: image, required: false }
+          - label: Category
+            name: category
+            widget: select
+            options: ['standard', 'exterior', 'interior', 'window', 'accessory', 'color']
+        - label: Gallery
+          name: gallery
+          widget: list
+          fields:
+          - { label: Image, name: image, widget: image }
+    - label: 'El Capitan'
+      name: 'chassisextralong'
+      file: 'src/content/campers/chassis/extralong.md'
       extension: md
       fields:
         - { label: 'Name', name: 'name', widget: 'string' }
