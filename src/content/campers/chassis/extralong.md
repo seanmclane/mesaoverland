@@ -35,5 +35,5 @@ options:
     price: 0
     description: includes...
     category: standard
-gallery:
+gallery: []
 ---
