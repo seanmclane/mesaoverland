@@ -41,6 +41,9 @@ interface Props {
 
 function Chassis(props: Props): ReactElement {
   const [selectedTruck, setSelectedTruck] = useState("")
+
+  //sort by size matching full slugs
+  const sortArray = ["/campers/chassis/short/", "/campers/chassis/med/", "/campers/chassis/long/", "/campers/chassis/extralong/"]
   return (
     <>
       <SEO
@@ -95,7 +98,7 @@ function Chassis(props: Props): ReactElement {
                     b.node.fields.slug.includes(selectedTruck) ||
                     (selectedTruck === "long" &&
                       b.node.fields.slug.includes("med"))
-                )
+                ).sort((a,b) => sortArray.indexOf(a.node.fields.slug) - sortArray.indexOf(b.node.fields.slug))
                 .map((b) => (
                   <div
                     key={b.node.fields.slug}
