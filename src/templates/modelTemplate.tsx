@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/SEO"
 import LinkButton from "../components/LinkButton"
-import VRViewer from "../components/VRViewer"
+import PanoViewer from "../components/PanoViewer"
 
 interface TemplateInput {
   data: {
@@ -39,6 +39,7 @@ interface TemplateInput {
             }
           }
         }>
+        panos: string[]
       }
       fields: {
         slug: string
@@ -124,9 +125,12 @@ export default function Template({
           </p>
         </div>
       </div>
-      <div className="" style={{minHeight: '50vh', minWidth: '100%'}}>
-        <VRViewer slug={data.markdownRemark.fields.slug} />
-      </div>
+      {ModelData.panos && ModelData.panos.length > 0 ? 
+        ModelData.panos.map(p => 
+        <div className="" style={{minHeight: '50vh', minWidth: '100%'}}>
+          <PanoViewer path={p} />
+        </div>)
+        : null}
       <div className="mt-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="w-full overflow-auto whitespace-nowrap mr-2">
@@ -212,6 +216,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        panos
       }
       fields {
         slug

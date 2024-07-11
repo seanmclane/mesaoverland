@@ -36,4 +36,6 @@ options:
     description: includes...
     category: standard
 gallery: []
+panos:
+  - "/panos/campers/chassis/extralong/"
 ---
