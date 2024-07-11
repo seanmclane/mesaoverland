@@ -9,32 +9,32 @@ photo: /images/uploads/product-page-slide-in-02-1-800x449.png
 shell_price: 22000
 lead_time_weeks: 16
 features:
-  - name: '- High impact FRP skins, lightweight and high density EPS foam for walls
+  - name: 'High impact FRP skins, lightweight and high density EPS foam for walls
       and ceilings. Best in class impact resistance and tensile strength. 3-1/8"
       thick R-15 insulation. .'
-  - name: "- Reinforced, high density floor panel. A composite fiber board/honeycomb
+  - name: "Reinforced, high density floor panel. A composite fiber board/honeycomb
       core equals low weight + high strength."
-  - name: "- FRP internal structures for added rigidity and strong mounting points."
-  - name: "- Water/Freeze proof. ZERO wood construction used. "
-  - name: "- Up to four Arctic Tern windows"
-  - name: "- Queen size bed East to West orientation "
-  - name: "- Power roof fan with intake and exhaust"
-  - name: "- 200ah LiFePO4 battery with Bluetooth monitoring"
-  - name: "- 400w solar"
-  - name: "- Victron smart solar 100/30"
-  - name: "- VICTRON MULTIPLUS 12/500 - 20-16 - 120V - VE. BUS UL APPROVED"
-  - name: "- Victron LYNX power distribution system"
-  - name: "- Marine grade wiring and components"
-  - name: "- Dimmable LED lights"
-  - name: "- Portable stove with storage location"
-  - name: "- Removable table"
-  - name: "- ICECO VL35 proS 35 Liters portable refrigerator"
+  - name: "FRP internal structures for added rigidity and strong mounting points."
+  - name: "Water/Freeze proof. ZERO wood construction used. "
+  - name: "Up to four Arctic Tern windows"
+  - name: "Queen size bed East to West orientation "
+  - name: "Power roof fan with intake and exhaust"
+  - name: "200ah LiFePO4 battery with Bluetooth monitoring"
+  - name: "400w solar"
+  - name: "Victron smart solar 100/30"
+  - name: "VICTRON MULTIPLUS 12/500 - 20-16 - 120V - VE. BUS UL APPROVED"
+  - name: "Victron LYNX power distribution system"
+  - name: "Marine grade wiring and components"
+  - name: "Dimmable LED lights"
+  - name: "Portable stove with storage location"
+  - name: "Removable table"
+  - name: "ICECO VL35 proS 35 Liters portable refrigerator"
     description: "TF49 "
-  - name: "- Arctic Tern Wildlands entry door"
-  - name: "- Sleeping and seating for at least 3 adults via cabover and convertible
+  - name: "Arctic Tern Wildlands entry door"
+  - name: "Sleeping and seating for at least 3 adults via cabover and convertible
       dining area"
-  - name: "- Customizable interior "
-  - name: "- Lightweight durable interior with ZERO wood construction"
+  - name: "Customizable interior "
+  - name: "Lightweight durable interior with ZERO wood construction"
 specs:
   - name: "Total height "
     value: 88"
