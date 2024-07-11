@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/SEO"
 import LinkButton from "../components/LinkButton"
+import PanoViewer from "../components/PanoViewer"
 
 interface TemplateInput {
   data: {
@@ -38,6 +39,7 @@ interface TemplateInput {
             }
           }
         }>
+        panos: string[]
       }
       fields: {
         slug: string
@@ -92,7 +94,7 @@ export default function Template({
             <ul className="text-xl flex-wrap m-8 text-left">
               {ModelData.features.map((f) => (
                 <li key={f.name} className="py-1 ml-0 group">
-                  {f.name}
+                  - {f.name}
                 </li>
               ))}
             </ul>
@@ -110,7 +112,7 @@ export default function Template({
                     className="flex flex-row justify-between py-1 ml-0"
                   >
                     <span>{o.name}</span>
-                    <span className="font-bold">
+                    <span className="pl-1 font-bold">
                       {formatter.format(o.price)}
                     </span>
                   </li>
@@ -123,6 +125,12 @@ export default function Template({
           </p>
         </div>
       </div>
+      {ModelData.panos && ModelData.panos.length > 0 ? 
+        ModelData.panos.map(p => 
+        <div className="mt-2" style={{minHeight: '50vh', minWidth: '100%'}}>
+          <PanoViewer path={p} />
+        </div>)
+        : null}
       <div className="mt-2">
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="w-full overflow-auto whitespace-nowrap mr-2">
@@ -143,7 +151,7 @@ export default function Template({
         <div className="flex w-full flex-wrap justify-center text-center">
           <div className="">
             <h2 className="text-3xl font-title uppercase">Specifications</h2>
-            <table className="m-4 text-lg text-left w-full">
+            <table className="text-lg text-left w-full">
               {ModelData.specs.map((s) => (
                 <tr
                   key={s.name}
@@ -208,6 +216,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        panos
       }
       fields {
         slug

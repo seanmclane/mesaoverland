@@ -206,7 +206,7 @@ export default function Template({
                   className="px-4 pb-0 w-full md:w-1/2"
                   style={{ borderBottomWidth: "1px", borderColor: "black" }}
                 >
-                  {f.name}
+                  - {f.name}
                 </p>
               ))}
             </div>

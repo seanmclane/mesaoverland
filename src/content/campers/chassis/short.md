@@ -14,16 +14,14 @@ photo: /images/uploads/product-mockup-01v3-800x418.png
 shell_price: 46000
 lead_time_weeks: 16
 features:
-  - name:
-      '- High impact FRP skins, lightweight and high density EPS foam for walls
+  - name: 'High impact FRP skins, lightweight and high density EPS foam for walls
       and ceilings. Best in class impact resistance and tensile strength. 3-1/8"
       thick R-15 insulation.'
-  - name:
-      "- Reinforced, high density floor panel. A Composite Fiber board/honeycomb
+  - name: "Reinforced, high density floor panel. A Composite Fiber board/honeycomb
       core equals low weight + high strength."
-  - name: "- FRP internal structures for added rigidity and strong mounting points."
-  - name: "- Water/Freeze proof. ZERO wood construction used."
-  - name: "- Price includes torsion free subframe and mounting to vehicle"
+  - name: "FRP internal structures for added rigidity and strong mounting points."
+  - name: "Water/Freeze proof. ZERO wood construction used."
+  - name: "Price includes torsion free subframe and mounting to vehicle"
 specs:
   - name: Floor length
     value: 102"
