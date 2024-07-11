@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import SEO from "../components/SEO"
 import LinkButton from "../components/LinkButton"
+import VRViewer from "../components/VRViewer"
 
 interface TemplateInput {
   data: {
@@ -122,6 +123,9 @@ export default function Template({
             and vehicle approval. Contact us for a quote.
           </p>
         </div>
+      </div>
+      <div className="" style={{minHeight: '50vh', minWidth: '100%'}}>
+        <VRViewer slug={data.markdownRemark.fields.slug} />
       </div>
       <div className="mt-2">
         <div className="flex w-full flex-wrap justify-center text-center">
