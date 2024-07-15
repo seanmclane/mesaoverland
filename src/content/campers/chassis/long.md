@@ -47,4 +47,6 @@ gallery:
   - image: /images/uploads/screen-shot-2024-07-06-at-1.31.50-pm.png
   - image: /images/uploads/screen-shot-2024-07-06-at-1.32.32-pm.png
   - image: /images/uploads/product-mockup-01v3-800x418.png
+panos:
+  - "/panos/campers/chassis/long/"
 ---
