@@ -9,7 +9,7 @@ description: "Designed for full-size flatbed trucks with aftermarket flatbeds
   worry about wheel wells or bed sides. An easy-to-remove design makes these
   perfect for those you need to use their flatbed for other activities. "
 photo: /images/uploads/product-page-flat-deck-w-departure-angle-02-800x450.png
-shell_price: 32000
+shell_price: 34800
 lead_time_weeks: 16
 features:
   - name: High impact FRP skins, lightweight and high density EPS foam for walls and
