@@ -3,7 +3,7 @@ tagline: Build Your Dream Camper
 tagline_desc: 'Our campers are ready for any adventure life throws you. Built at
   affordable prices, our "homes on wheels" are ready to bring comfort and ease
   to wherever you explore. '
-hero_image: /images/uploads/mesa_overland-13.jpg
+hero_image: /images/uploads/a9078fee-24c7-475b-8eaf-4a6819f3cab0.jpg
 highlight_camper_1_tagline: Discover The Whole Enchilada
 highlight_camper_1_tagline_desc: The ultimate chassis-mounted truck camper for going anywhere in comfort
 highlight_camper_1_button: Learn more
