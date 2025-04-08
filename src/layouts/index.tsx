@@ -26,10 +26,6 @@ const linkList = [
     href: "/campers/chassis",
   },
   {
-    title: "Builds",
-    href: "/builds",
-  },
-  {
     title: "Services",
     href: "/services",
   },
