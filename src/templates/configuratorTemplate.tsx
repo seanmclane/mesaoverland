@@ -158,10 +158,12 @@ export default function Template({
   }
 
   const handleContact = (e) => {
+    validateRequiredFields()
     setConfiguration({ ...configuration, [e.target.name]: e.target.value })
   }
 
   const handleSubmit = (e) => {
+    console.log(requiredFieldsState)
     e.preventDefault()
     // eslint-disable-next-line
     const form = e.target
