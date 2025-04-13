@@ -557,6 +557,10 @@ export default function Template({
         <input type="hidden" name="customerName" value="" />
         <input type="hidden" name="customerEmail" value="" />
         <input type="hidden" name="customerMessage" value="" />
+        <input type="hidden" name="customerPhone" value="" />
+        <input type="hidden" name="customerAddress" value="" />
+        <input type="hidden" name="customerCity" value="" />
+        <input type="hidden" name="customerState" value="" />
       </form>
     </div>
   )
