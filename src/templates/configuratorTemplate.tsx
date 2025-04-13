@@ -403,7 +403,7 @@ export default function Template({
                   required
                   className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
                   type="text"
-                  name="phone"
+                  name="customerPhone"
                   onChange={handleChange}
                 />
               </label>
@@ -415,7 +415,7 @@ export default function Template({
                 <input
                   className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
                   type="text"
-                  name="address"
+                  name="customerAddress"
                   onChange={handleChange}
                 />
               </label>
@@ -429,7 +429,7 @@ export default function Template({
                     required
                     className="text-outline font-body p-2 w-full border-gray-300 border-2"
                     type="text"
-                    name="city"
+                    name="customerCity"
                     onChange={handleChange}
                   />
                 </label>
@@ -441,7 +441,7 @@ export default function Template({
                 <select 
                   className="text-black font-body p-2 w-full"
                   required
-                  name="st"
+                  name="customerState"
                   onChange={handleChange}
                 >
                   <option value="">---</option>
