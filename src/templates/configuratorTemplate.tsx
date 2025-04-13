@@ -404,7 +404,7 @@ export default function Template({
                   className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
                   type="text"
                   name="customerPhone"
-                  onChange={handleChange}
+                  onChange={handleContact}
                 />
               </label>
             </p>
@@ -416,7 +416,7 @@ export default function Template({
                   className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
                   type="text"
                   name="customerAddress"
-                  onChange={handleChange}
+                  onChange={handleContact}
                 />
               </label>
             </p>
@@ -430,7 +430,7 @@ export default function Template({
                     className="text-outline font-body p-2 w-full border-gray-300 border-2"
                     type="text"
                     name="customerCity"
-                    onChange={handleChange}
+                    onChange={handleContact}
                   />
                 </label>
               </p>
@@ -442,7 +442,7 @@ export default function Template({
                   className="text-black font-body p-2 w-full"
                   required
                   name="customerState"
-                  onChange={handleChange}
+                  onChange={handleContact}
                 >
                   <option value="">---</option>
                   <option value="AL">Alabama</option>
