@@ -62,7 +62,11 @@ interface Configuration {
   }>
   customerName: string
   customerEmail: string
+  customerPhone: string
   customerMessage: string
+  customerAddress: string
+  customerCity: string
+  customerState: string
 }
 
 function encode(data: FormData) {
@@ -83,7 +87,11 @@ export default function Template({
     selectedOptions: [],
     customerName: "",
     customerEmail: "",
+    customerPhone: "",
     customerMessage: "",
+    customerAddress: "",
+    customerCity: "",
+    customerState: ""
   })
 
   //Keep other unnecessary form data local
@@ -101,6 +109,25 @@ export default function Template({
     var re = /\S+@\S+\.\S+/
     setEmailValidState(re.test(email))
   }
+  
+  const [requiredFieldsState, setRequiredFieldsState] = useState(false)
+    
+      const validateRequiredFields = () => {
+        const {
+          customerName,
+          customerEmail,
+          customerMessage,
+          customerPhone,
+          customerCity,
+          customerState
+        } = configuration
+        if (customerName && customerEmail && customerMessage && customerPhone && customerCity && customerState) {
+          setRequiredFieldsState(true)
+        } else {
+          setRequiredFieldsState(false)
+        }
+      }
+  
 
   const handleChange = (e) => {
     //Go through all options and see if they're selected or not
@@ -142,7 +169,7 @@ export default function Template({
       (total, current) => total + current.name + ", ",
       ""
     )
-    if (emailValidState && configuration.customerEmail) {
+    if (emailValidState && requiredFieldsState) {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -216,6 +243,7 @@ export default function Template({
                 .map((o) => {
                   return (
                     <FormOption
+                      key={o.name}
                       option={o}
                       handleChange={handleChange}
                       checked={optionState[o.name]}
@@ -233,6 +261,7 @@ export default function Template({
                 .map((o) => {
                   return (
                     <FormOption
+                      key={o.name}
                       option={o}
                       handleChange={handleChange}
                       checked={optionState[o.name]}
@@ -250,6 +279,7 @@ export default function Template({
                 .map((o) => {
                   return (
                     <FormOption
+                      key={o.name}
                       option={o}
                       handleChange={handleChange}
                       checked={optionState[o.name]}
@@ -267,6 +297,7 @@ export default function Template({
                 .map((o) => {
                   return (
                     <FormOption
+                      key={o.name}
                       option={o}
                       handleChange={handleChange}
                       checked={optionState[o.name]}
@@ -284,6 +315,7 @@ export default function Template({
                 .map((o) => {
                   return (
                     <FormOption
+                      key={o.name}
                       option={o}
                       handleChange={handleChange}
                       checked={optionState[o.name]}
@@ -301,6 +333,7 @@ export default function Template({
                 .map((o) => {
                   return (
                     <FormOption
+                      key={o.name}
                       option={o}
                       handleChange={handleChange}
                       checked={optionState[o.name]}
@@ -330,7 +363,7 @@ export default function Template({
                 </div> */}
             <p>
               <label className="font-title">
-                Name
+                Name*
                 <br />
                 <input
                   className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
@@ -344,7 +377,7 @@ export default function Template({
             </p>
             <p>
               <label className="font-title">
-                Email
+                Email*
                 <br />
                 <input
                   className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
@@ -362,11 +395,118 @@ export default function Template({
                 )}
               </label>
             </p>
+            <p>
+              <label className="font-title">
+                Phone*
+                <br />
+                <input
+                  required
+                  className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
+                  type="text"
+                  name="phone"
+                  onChange={handleChange}
+                />
+              </label>
+            </p>
+            <p>
+              <label className="font-title">
+                Address
+                <br />
+                <input
+                  className="text-outline font-body p-2 w-2/3 border-gray-300 border-2"
+                  type="text"
+                  name="address"
+                  onChange={handleChange}
+                />
+              </label>
+            </p>
+            <div className="flex w-2/3 m-auto justify-around flex-wrap">
+              <p className="w-full md:w-2/5">
+                <label className="font-title">
+                  City*
+                  <br />
+                  <input
+                    required
+                    className="text-outline font-body p-2 w-full border-gray-300 border-2"
+                    type="text"
+                    name="city"
+                    onChange={handleChange}
+                  />
+                </label>
+              </p>
+              <p className="md:w-2/5">
+                <label className="font-title">
+                  State*
+                  <br />
+                <select 
+                  className="text-black font-body p-2 w-full"
+                  required
+                  name="st"
+                  onChange={handleChange}
+                >
+                  <option value="">---</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">Dist of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="GU">Guam</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+                </label>
+              </p>
+            </div>
             <p style={{ minHeight: "30em" }}>
               <label className="font-title">
-                Message
+                Message*
                 <br />
                 <textarea
+                  required
                   className="resize-none text-outline font-body p-2 w-2/3 h-40 border-gray-300 border-2"
                   name="customerMessage"
                   value={configuration.customerMessage}
