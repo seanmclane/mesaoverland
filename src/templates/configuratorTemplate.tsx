@@ -21,7 +21,6 @@ interface TemplateInput {
         lead_time_weeks: number
         features: Array<{
           name: string
-          description: string
         }>
         specs: Array<{
           name: string
@@ -593,7 +592,6 @@ export const pageQuery = graphql`
         }
         features {
           name
-          description
         }
         specs {
           name
