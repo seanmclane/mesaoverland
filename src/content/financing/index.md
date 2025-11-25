@@ -1,6 +1,6 @@
 ---
 title: Financing
-image: /images/uploads/mesa_overland-13.jpg
+image: /images/uploads/20251106_110121.jpg
 ---
 
 ### Financing
